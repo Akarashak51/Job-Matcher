@@ -1,394 +1,354 @@
 # Job Finder
 
-Enter a company + role, get live matching job openings from that company's
-job board (Greenhouse, Lever, SmartRecruiters, Ashby, Workday, or a
-generic career-page scrape as a fallback).
+## Razorpay Hackathon Submission
 
-- **321 companies pre-loaded from `companies.csv`** (name, country, career
-  website, platform hint) - see "Updating the company list" below. This
-  replaces the old hardcoded 30-company list, which is kept as a fallback
-  only (`hulk_job_search._BUILTIN_COMPANIES`) in case `companies.csv` is
-  ever missing.
-- Any other company name (not in the CSV) is still auto-detected on a
-  best-effort basis, same as before.
-- **AI-reranked matching** (optional, see "How AI is used" below) - an
-  LLM re-scores the keyword-matched shortlist to catch titles that pass
-  a keyword filter but aren't actually the role being searched for
-  (`"Manager, Product Photography Studio"` matching a `"product manager"`
-  search, for example).
-- **Job Watcher** scans the *entire* CSV-driven company list in parallel,
-  not just an API-backed subset - companies without a public JSON API
-  (Own Portal / Taleo / unrecognized platform) are checked via a generic
-  HTML career-page scraper instead of being skipped. When AI matching is
-  configured, each scan cycle also gets a short AI-written digest instead
-  of just a match count.
-- **Google sign-in** (optional) - lets people log in; when combined with
-  MongoDB Atlas (below), their history syncs across every device.
-- **Light/dark theme** toggle (top-right), remembered per browser.
-- **Search history** - synced to the cloud for signed-in users (via
-  MongoDB Atlas), or saved in the browser only otherwise. Re-run or
-  delete past searches.
+**Job Finder** is an AI-assisted job discovery product for candidates who are tired of opening dozens of career pages and still missing relevant opportunities.
 
-## How AI is used
+The product combines a deterministic job-search pipeline with an optional Gemini reasoning layer. A candidate can search for a role at one company, or turn on **Job Watcher** to scan the configured company directory in parallel. Gemini improves the quality of the shortlist, explains why a result is relevant, summarizes a scan cycle, and can draft a short outreach note for the strongest matches.
 
-Everything up through the keyword pass (`role_search.build_role_pattern`)
-is the pipeline's always-on, deterministic first filter - it has to run
-regardless of whether AI is configured, since it's what turns "backend
-developer" into something that can query 300+ different job boards at
-all. What AI adds sits strictly on top of that, in `ai_match.py`, and is
-entirely optional:
+Razorpay is included as a pre-configured company in the directory, alongside hundreds of other companies. The app is independent of Razorpay and uses publicly available careers pages and job-board endpoints.
 
-1. **Re-ranking a single search's shortlist** (`ai_match.score_candidates`).
-   A keyword match on "product" and "manager" also matches `"Manager,
-   Product Photography Studio"` - the words are right, the job isn't. The
-   already-keyword-filtered shortlist (never the full unfiltered job
-   list, to keep prompt size and cost bounded) gets sent to the model,
-   which scores each listing 0-100 for actual fit and gives a one-line
-   reason. Jobs are then sorted by that score.
-2. **A digest for each Job Watcher cycle** (`ai_match.summarize_watcher_cycle`).
-   The recurring background scan reasons over the *pattern* of a whole
-   cycle's matches - a standout fit, a cluster of postings at one
-   company - instead of just reporting a number, once per cycle over the
-   small already-matched shortlist (not per company; scanning 300+
-   companies with one LLM call each, every cycle, would make Job Watcher
-   both slow and expensive - see the comment above `search_all_known_companies`
-   in `role_search.py`).
+## The Problem
 
-**Both are fail-open by construction.** If `GEMINI_API_KEY` isn't set,
-`ai_match.is_configured()` returns `False` and every function in that
-module returns `None` immediately - callers treat `None` as "keep the
-regex-only result," never as an error. The exact same fallback triggers
-on a network error, a timeout, or a malformed model response, so a flaky
-API can only ever cost you the AI layer, never break a search. This is
-the same pattern `db.py` uses for MongoDB and `app.py` uses for Google
-sign-in - the app runs in full without any of the three configured.
+Job seekers face three practical problems:
 
-**Measured evidence, not a cherry-picked example:** `eval_matching.py` is
-a small hand-labeled test set of role queries against job titles,
-including deliberate keyword-matching traps (see above), run through the
-regex-only baseline and the regex+AI pipeline side by side:
+- Job openings are spread across different ATS platforms and company websites.
+- Keyword matching produces false positives. For example, a search for `product manager` can incorrectly return `Manager, Product Photography Studio`.
+- A candidate can miss a relevant opening because the title uses a synonym such as `software engineer` instead of `developer`.
 
-```bash
-python3 eval_matching.py                    # regex-only baseline (no key needed)
-GEMINI_API_KEY=AI... python3 eval_matching.py   # + the regex+AI comparison
-```
+Job Finder addresses these problems with a layered workflow:
 
-On the included test set, regex-only precision is 0.60 (four of the ten
-labeled titles are keyword-matching traps it can't tell apart from a real
-match); adding the AI re-ranking step raises precision to 1.00 with
-recall unchanged, since AI can only remove regex false positives, not
-recover jobs the regex pass already excluded (that ceiling is inherent to
-re-ranking a shortlist rather than reading every job, and is called out
-explicitly in the script's own output, not glossed over). That number was
-produced against a scripted stand-in for the model's responses, not a
-live call - see the note in "Setting up Gemini" below before you quote it
-in a pitch.
+1. Discover jobs from supported ATS platforms or a public careers page.
+2. Normalize common role synonyms and title variations.
+3. Filter by role, seniority, experience, and posting age.
+4. Optionally ask Gemini to judge fit on the already-filtered shortlist.
+5. Present direct application links, fit scores, reasons, and useful follow-up actions.
 
-Configure with:
+## Why This Fits the Hackathon
 
-- `GEMINI_API_KEY` - from [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
-  (Google AI Studio's free tier is enough for this). Leave unset to run
-  without the AI layer.
-- `GEMINI_MODEL` (optional) - defaults to `gemini-3.6-flash`, a small,
-  fast model, since job-listing classification doesn't need a large one;
-  override if you want a different model.
+The project demonstrates a practical AI workflow rather than using an LLM as a decorative chatbot:
 
-### Setting up Gemini (free tier available)
+- **Real user value:** less manual searching and fewer irrelevant results.
+- **Agentic behavior:** Job Watcher scans many sources, then Gemini reasons over the pattern of matches and creates a digest.
+- **Bounded autonomy:** outreach drafts are generated only for strong matches, are capped per search, and are never sent automatically.
+- **Graceful degradation:** the core product works without Gemini, Google OAuth, or MongoDB.
+- **Transparent evaluation:** the repository includes a labeled evaluation script comparing the deterministic baseline with the Gemini-enhanced pipeline.
+- **Production-minded behavior:** timeouts, malformed responses, unavailable platforms, and partial failures become clear fallback messages instead of application crashes.
 
-1. Go to [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
-   and sign in with a Google account.
-2. Click **Create API key** (a free-tier key with rate limits is enough
-   for this app - re-ranking a shortlist of a few jobs per search is a
-   small, cheap call).
-3. Set it as the `GEMINI_API_KEY` environment variable (see "Deploy for
-   free on Render" below for where to put it in production, or export it
-   locally before running `uvicorn`).
-4. **Verify it actually works before you rely on it for a demo**: this
-   project was built and code-reviewed in a sandboxed environment with no
-   network access to `generativelanguage.googleapis.com`, so every
-   AI-layer test here runs against a scripted stand-in for Gemini's
-   response format, not a live call. That's normal engineering practice
-   for unit tests, but it also means the real API's exact behavior
-   (latency, JSON-mode compliance, rate limits) hasn't been observed
-   firsthand - run `eval_matching.py` with a real key yourself once
-   before recording your pitch, and treat the printed numbers as the
-   ones to quote, not the ones in this README.
+## Main Features
 
-## Updating the company list
+### Search one company
 
-Edit `companies.csv` directly - it's a plain CSV with 4 columns:
+Enter a company and a free-text role such as:
 
-```
-company_name,country,careers_url,platform_hint
-Razorpay,India,https://razorpay.com/careers,Lever
-```
+- `backend developer`
+- `product manager`
+- `data analyst`
+- `UI/UX designer`
 
-`platform_hint` can be `Greenhouse`, `Lever`, `SmartRecruiters`, `Ashby`,
-`Workday`, or anything else (`Own Portal`, `Taleo`, blank, etc.) - anything
-not recognized is treated as `custom` and handled by the generic scraper.
-The hint doesn't need to be the exact API token/tenant - the app figures
-that out itself the first time each company is searched (see below) and
-remembers it, so you only ever need the company name + its public careers
-page URL in the CSV.
+The result includes the job title, location when available, posting age, experience information, source platform, and a direct application link.
 
-Restart the app after editing `companies.csv` for changes to take effect
-(it's loaded once at startup).
+### Job Watcher
 
-### How company resolution & caching works
+Job Watcher scans the CSV-driven company directory in parallel. It returns:
 
-The CSV only gives a careers page URL and a rough platform hint - not the
-actual Greenhouse token or Workday tenant/host/site. The first time a
-company is searched (either from the dashboard or Job Watcher), the app:
+- companies scanned and companies skipped,
+- companies with matching roles,
+- total matches,
+- matching jobs grouped by company,
+- an optional Gemini-written cycle digest.
 
-1. Fetches the careers URL once and looks for a known ATS pattern in the
-   final redirected URL / page HTML (e.g. `boards.greenhouse.io/<token>`,
-   `<tenant>.wd1.myworkdayjobs.com/<site>`).
-2. Confirms the match with one real API call.
-3. Saves the result to `platform_cache.json` so every future search/scan
-   for that company reuses it instantly - no repeated discovery cost.
-4. If nothing is found (common for heavily JS-rendered career pages),
-   falls back to scraping the careers page's HTML directly for job-like
-   links, and caches "this one really is custom" so it doesn't re-probe
-   the page needlessly next time.
+The watcher intentionally does not make one Gemini call per company. It scans with the deterministic matcher first, then applies AI once to the small matched shortlist. This keeps latency and API usage bounded.
 
-For Workday specifically, step 1 alone often isn't enough (many "Own
-Portal"-style Workday pages don't put the tenant/host/site in plain HTML).
-A single dashboard search will also try a slower brute-force guess as a
-last resort (since the result gets cached and benefits every future scan)
-- but Job Watcher's bulk scan intentionally skips that expensive guess
-per company, so a never-before-searched Workday company may show 0
-results in a scan until it's been searched once individually, or until
-you run:
+### Gemini fit scoring
 
-```bash
-python warm_cache.py                 # resolve every company once, ahead of time
-python warm_cache.py --limit 20       # quick test run on the first 20
-python warm_cache.py --workday-only   # focus on just the Workday-hinted rows
-```
+When `GEMINI_API_KEY` is configured, Gemini scores each already-matched listing from 0 to 100 and supplies a short reason. Results are sorted by score.
 
-This can take a while for 300+ companies (Workday guessing tries several
-tenant/host/site combinations per company, capped at 45s total per
-company so one stubborn site can't stall the whole run) - it's meant to
-be run once after a fresh deploy or after a big CSV update, not on every
-startup. `platform_cache.json` is safe to delete any time to force full
-re-resolution (e.g. after fixing bad URLs in the CSV) - note that once a
-company is marked "custom, confirmed" or "workday, unresolved" in the
-cache, it's skipped instantly on future runs; delete its entry (or the
-whole file) if you want it re-checked, e.g. after updating its URL.
+Gemini is not the first or only filter. It cannot restore a listing that the deterministic pass excluded. This design keeps prompts smaller, limits cost, and ensures the product remains useful when the API is unavailable.
 
-### Coverage expectations
+### Outreach note drafts
 
-The generic scraper (used for `custom`-platform companies, and as a last
-resort when a hinted ATS doesn't resolve) does a plain HTML fetch and
-looks for job-like links - it works well on simple static career pages,
-but can find nothing on heavily JavaScript-rendered ones (common on large
-corporate career portals). When that happens, the response clearly says
-so and links to the page directly rather than showing a false empty
-result.
+For the strongest AI-ranked results, the app can draft a short recruiter or hiring-manager outreach note. Drafting is bounded to a maximum of three attempts per search and the text is only displayed to the user. Nothing is sent automatically.
 
-## The one failure case handled gracefully, end to end
+### Authentication and history
 
-Worth calling out explicitly (as the buildathon brief asks every track
-to do): a Workday-hinted company from the CSV where the tenant/host/site
-can't be found in the page's plain HTML - common on Workday deployments
-that render the careers page client-side. The fallback chain, in order:
+- Google sign-in is optional.
+- Without MongoDB, history is stored in browser `localStorage`.
+- With Google sign-in and MongoDB Atlas, the most recent 50 searches are stored per account and available across devices.
+- Light/dark theme preference is stored in the browser.
 
-1. **Discovery** (`hulk_job_search.discover_platform_from_url`) tries to
-   read the tenant/host/site straight from the redirected URL or page
-   HTML - fails silently for JS-rendered pages, no exception raised.
-2. **Brute-force guess** - a single dashboard search (not a Job Watcher
-   scan, which explicitly skips this to stay fast) tries several
-   tenant/host/site combinations, capped at 45s total so one stubborn
-   site can't hang the request.
-3. **Generic scrape fallback** (`fetch_custom_site_jobs`) - if Workday
-   guessing also fails, the app falls back to scraping the plain careers
-   page HTML for job-like links directly.
-4. **Explicit "we couldn't" response** - if even that finds nothing (a
-   heavily JS-rendered page with no plain-HTML job links either), the API
-   returns `match_count: 0` with a `note` that says exactly what was
-   tried and links straight to the company's careers page - never a
-   silent empty result indistinguishable from "no jobs right now."
+## Quick Start
 
-Every step either succeeds or fails **quietly** into the next one; the
-only thing the person searching ever sees is either real results or one
-clear sentence telling them what happened and where to look themselves.
-Nothing in this chain raises an unhandled exception or returns a 500 -
-confirmed by running the app with network access to job-board APIs fully
-blocked (simulating every site above failing at once): every endpoint
-still returns a clean `200` with an honest empty result and that same
-explanatory note, rather than crashing.
+The app is a Python FastAPI service and has no frontend build step.
 
-The AI layer (`ai_match.py`) follows the identical philosophy one level
-up: not configured, rate-limited, timed out, or a malformed response all
-collapse to the same `None` return, which every caller treats as "fall
-back to the regex-only result" - see "How AI is used" above.
+### Requirements
 
-## Run locally
+- Python 3.10 or newer is recommended.
+- Internet access is needed for live careers pages and optional Gemini calls.
+- API keys are optional for local exploration.
 
-```bash
+### Install and run
+
+Windows PowerShell:
+
+```powershell
+cd "Job"
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 uvicorn app:app --reload
 ```
 
-Open http://127.0.0.1:8000
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-The site works fully without Google sign-in configured - the "Sign in
-with Google" button just shows a friendly message until you set it up.
-The AI re-ranking/digest layer works the same way: fully optional, see
-"How AI is used" above.
+For macOS or Linux, replace the activation command with:
 
-## Setting up MongoDB Atlas (free, for cross-device history)
+```bash
+source .venv/bin/activate
+```
 
-Without this, history still works but only in the visitor's browser (see
-"About history" below). With it, signed-in users' history follows them
-to any device.
+The basic search experience works immediately. Optional services are configured below.
 
-1. Go to https://www.mongodb.com/cloud/atlas/register -> sign up (free).
-2. Create a cluster: choose the **M0 Free** tier (always free, no credit
-   card charge - 512MB storage, plenty for search history).
-3. **Database Access** -> Add a database user (username + password -
-   save these, you'll need them in the connection string).
-4. **Network Access** -> Add IP Address -> **Allow access from anywhere**
-   (`0.0.0.0/0`). This is the simplest option since Render's free tier
-   uses dynamic IPs; the database user's password is what actually
-   protects the data, so use a strong generated one.
-5. Once the cluster is ready, click **Connect** -> **Drivers** -> copy
-   the connection string. It looks like:
-   `mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority`
-6. Replace `<username>` and `<password>` with your actual database user
-   credentials.
-7. Set this as the `MONGODB_URI` environment variable (see deploy steps
-   below). No need to create the database or collection by hand - the
-   app creates them automatically on first write.
+## Gemini Setup
 
-## Setting up Google sign-in (free)
+1. Create a key at [Google AI Studio](https://aistudio.google.com/apikey).
+2. Set `GEMINI_API_KEY` in the environment where the app runs.
+3. Optionally set `GEMINI_MODEL`; the code default is `gemini-2.5-flash`.
+4. Restart the server.
 
-1. Go to https://console.cloud.google.com/ -> create a project (free).
-2. **APIs & Services -> OAuth consent screen** -> set it up as "External",
-   fill in app name/support email, publish it (or leave in Testing mode
-   and add your own Google account as a test user - both are free and
-   fine for personal use).
-3. **APIs & Services -> Credentials -> Create Credentials -> OAuth client ID**
-   - Application type: **Web application**
-   - Authorized redirect URI:
-     - Local testing: `http://127.0.0.1:8000/auth/callback`
-     - Production: `https://<your-render-url>.onrender.com/auth/callback`
-4. Copy the generated **Client ID** and **Client Secret**.
-5. Set these as environment variables (see deploy steps below):
-   - `GOOGLE_CLIENT_ID`
-   - `GOOGLE_CLIENT_SECRET`
-   - `SESSION_SECRET` - any long random string, e.g. generate one with
-     `python3 -c "import secrets; print(secrets.token_hex(32))"`
+PowerShell example:
 
-## Deploy for free on Render
+```powershell
+$env:GEMINI_API_KEY = "your-key"
+$env:GEMINI_MODEL = "gemini-2.5-flash"
+uvicorn app:app --reload
+```
 
-1. Push this folder to a **GitHub repo** (`app.py`, `role_search.py`,
-   `hulk_job_search.py`, `requirements.txt`, this README).
-2. Go to https://render.com -> sign up (free) -> **New +** -> **Web Service**.
-3. Connect your GitHub repo.
-4. Fill in:
-   - **Name**: whatever you like (e.g. `job-finder`)
-   - **Runtime**: Python 3
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn app:app --host 0.0.0.0 --port $PORT`
-   - **Instance Type**: **Free**
-5. Under **Environment**, add:
-   - The three Google sign-in variables from above (skip if you don't
-     want login enabled yet).
-   - `MONGODB_URI` from the Atlas setup above (skip if you don't want
-     cloud history yet - the site falls back to browser-only history
-     automatically).
-   - `GEMINI_API_KEY` (skip if you don't want AI re-ranking/digests -
-     the site falls back to regex-only matching automatically).
-6. Click **Create Web Service**. Render builds and deploys automatically.
-7. You'll get a URL like `https://job-finder-xxxx.onrender.com`. Go back
-   to Google Cloud Console and make sure that exact URL + `/auth/callback`
-   is listed as an authorized redirect URI (step 3 above).
+Gemini is used for three bounded tasks:
 
-### Free tier notes (be aware, not a blocker)
+| Task | Input | Output |
+| --- | --- | --- |
+| Fit scoring | Keyword-matched shortlist | 0-100 score and a short reason per listing |
+| Watcher digest | Matches from one scan cycle | Two to four sentence summary |
+| Outreach draft | Strong match, role, and company | Short draft message, never auto-sent |
 
-- Render's free web services **spin down after ~15 minutes of no traffic**
-  and take ~30-50 seconds to wake up on the next request. That's normal
-  for the free tier, not a bug.
-- Searching an **unlisted company** tries several job-board APIs in a row
-  and can take up to ~20-30 seconds.
-- No database, no paid services used anywhere in this stack.
+Every Gemini request has a timeout. Missing keys, HTTP errors, timeouts, rate limits, invalid JSON, or empty responses return control to the deterministic result. A Gemini failure therefore reduces enrichment but does not break a search.
 
-### About history
+## Evaluation
 
-- **Signed in + `MONGODB_URI` set**: history is stored in MongoDB Atlas,
-  scoped to your Google account's email. Sign in on any device, any
-  browser, and it's there.
-- **Signed in but `MONGODB_URI` not set**: history falls back to that
-  browser's `localStorage`, scoped to your email (won't sync elsewhere).
-  The History section says this explicitly.
-- **Not signed in**: history is always browser-only (`localStorage`),
-  scoped to "guest" on that browser. Clearing browser data / incognito
-  wipes it.
-- MongoDB Atlas's free M0 tier has no time limit and no cost - 512MB is
-  far more than search history needs. The app keeps only the most
-  recent 50 entries per account to stay well within that.
+The repository includes `eval_matching.py`, a small hand-labeled test set designed around realistic role-title traps and synonym gaps. It compares:
+
+1. **Regex-only baseline:** the deterministic pipeline used by the application.
+2. **Regex plus AI:** the same shortlist after Gemini scoring and a score threshold.
+
+Run the baseline without any API key:
+
+```powershell
+python eval_matching.py
+```
+
+Run the full comparison with Gemini enabled:
+
+```powershell
+$env:GEMINI_API_KEY = "your-key"
+python eval_matching.py
+```
+
+The script prints true positives, false positives, false negatives, precision, recall, and F1 for each query and for the combined test set.
+
+### How to interpret the results
+
+The evaluation deliberately documents a limitation: AI only sees listings that pass the deterministic shortlist. It can remove false positives, but it cannot recover a true match excluded by the first pass. Therefore:
+
+- precision is the primary metric for the Gemini enhancement,
+- recall remains bounded by the deterministic matcher,
+- results from a live Gemini run should be quoted instead of hard-coded numbers in a pitch.
+
+This makes the evaluation reproducible and honest: the test set, labels, scoring threshold, and limitation are all visible in the repository.
+
+## Company and Platform Coverage
+
+The default directory is loaded from `companies.csv`. The application supports:
+
+- Greenhouse
+- Lever
+- SmartRecruiters
+- Ashby
+- Workday
+- generic public HTML career pages as a fallback
+
+The CSV has four columns:
+
+```csv
+company_name,country,careers_url,platform_hint
+Razorpay,India,https://razorpay.com/careers,Greenhouse
+```
+
+The platform hint is only a starting point. The app resolves the actual public ATS details and stores them in `platform_cache.json`. Restart the app after editing the CSV.
+
+### Cache warming
+
+To resolve companies before a large Job Watcher run:
+
+```powershell
+python warm_cache.py
+python warm_cache.py --limit 20
+python warm_cache.py --workday-only
+```
+
+Delete an entry from `platform_cache.json`, or delete the file, when a careers URL changes and a company needs to be resolved again.
+
+### Coverage limitations
+
+Some career pages render job listings only in the browser with JavaScript. A plain HTML scraper cannot see those listings. When platform discovery and fallback scraping both fail, the API returns a clear note and the careers-page link rather than pretending there are no jobs.
+
+Unknown companies are handled on a best-effort basis using common ATS slug variants. They are not guaranteed to work, especially for Workday and custom portals.
+
+## Optional MongoDB Atlas History
+
+Set `MONGODB_URI` to enable cloud history. The app creates the database collection and index automatically on first write.
+
+For a free Atlas setup:
+
+1. Create an Atlas account and an M0 free cluster.
+2. Create a database user with a strong password.
+3. Add the deployment network to Network Access. Render's free tier commonly requires `0.0.0.0/0`; use a strong database password.
+4. Copy the Drivers connection string.
+5. Set `MONGODB_URI` and optionally `MONGODB_DB_NAME`.
+
+Example:
+
+```powershell
+$env:MONGODB_URI = "mongodb+srv://user:password@cluster.mongodb.net/?retryWrites=true&w=majority"
+$env:MONGODB_DB_NAME = "jobfinder"
+```
+
+If MongoDB is not configured, the rest of the product continues to work and history remains browser-only.
+
+## Optional Google Sign-In
+
+1. Create an OAuth client in Google Cloud Console.
+2. Choose **Web application**.
+3. Add `http://127.0.0.1:8000/auth/callback` as a local redirect URI.
+4. For production, add `https://YOUR_DOMAIN/auth/callback`.
+5. Set `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, and a long random `SESSION_SECRET`.
+
+Without these variables, the sign-in control reports that authentication is not configured; it does not prevent job searching.
+
+## Deployment on Render
+
+Create a Render Web Service connected to this repository with:
+
+| Setting | Value |
+| --- | --- |
+| Runtime | Python 3 |
+| Build command | `pip install -r requirements.txt` |
+| Start command | `uvicorn app:app --host 0.0.0.0 --port $PORT` |
+
+Add the environment variables needed for the features you want:
+
+```text
+SESSION_SECRET
+GEMINI_API_KEY
+GEMINI_MODEL
+MONGODB_URI
+MONGODB_DB_NAME
+GOOGLE_CLIENT_ID
+GOOGLE_CLIENT_SECRET
+```
+
+After deployment, add the exact Render URL plus `/auth/callback` to the Google OAuth redirect list. Render's free service may sleep after inactivity, so the first request after a quiet period can take longer.
 
 ## Architecture
 
-See `architecture.svg` for the full data-flow diagram. In short:
-
-```
-companies.csv --> companies_source.py --> hulk_job_search.COMPANIES
-                                                    |
-platform_cache.json <--> platform_cache.py <-------+ (resolved ATS token/tenant, cached)
-                                                    |
-                                     hulk_job_search.py (per-ATS fetchers,
-                                     generic scraper, discovery/guessing)
-                                                    |
-                                          role_search.py
-                                     regex/keyword pass (always on)
-                                                    |
-                                     ai_match.py (optional re-ranking +
-                                     watcher digest - fails open to the
-                                     line above if unconfigured/unreachable)
-                                                    |
-                                              app.py (FastAPI)
-                                       /api/search, /api/search-all
-                                                    |
-                                       db.py (MongoDB, optional) <-- history
-                                                    |
-                                          single-page frontend
+```text
+companies.csv
+    |
+companies_source.py --> hulk_job_search.py --> platform_cache.json
+                                |
+                         role_search.py
+                    deterministic role matching
+                                |
+                         ai_match.py
+                 optional Gemini ranking and actions
+                                |
+                             app.py
+                 FastAPI API and single-page frontend
+                         |                |
+                 Google OAuth       db.py / MongoDB
 ```
 
-## Adding more pre-configured companies
+Important boundaries:
 
-Open `hulk_job_search.py` and add an entry to the `COMPANIES` list at the
-top, following the existing pattern (platform, token/tenant, careers_url).
-That's the only place you need to touch - `role_search.py` and `app.py`
-pick it up automatically.
+- `hulk_job_search.py` retrieves and normalizes data from job platforms.
+- `role_search.py` performs role normalization, seniority filtering, experience filtering, and date filtering.
+- `ai_match.py` enriches an existing shortlist and fails open.
+- `app.py` exposes the web page and API endpoints.
+- `db.py` stores optional per-user history.
 
-## Files
+## API Surface
 
-- `app.py` - FastAPI backend (search API, Google OAuth routes, history
-  API) and the single-page frontend (form, results, history, theme
-  toggle, auth UI), served as one HTML page with no build step.
-- `db.py` - MongoDB Atlas connection and per-account history storage.
-  Everything degrades gracefully to "not configured" if `MONGODB_URI`
-  isn't set - no crashes, just a fallback to browser-only history.
-- `role_search.py` - free-text role matching layer (the always-on regex
-  pass) plus the thin wrappers that optionally apply `ai_match.py`'s
-  re-ranking on top of it. Lets a visitor type any role ("product
-  manager", "data analyst") instead of being limited to a fixed keyword
-  list.
-- `ai_match.py` - optional LLM layer: re-scores an already keyword-
-  filtered shortlist for real fit, and writes a short digest each Job
-  Watcher cycle. Fails open to regex-only behavior if `GEMINI_API_KEY`
-  isn't set, the API errors, or the model's output can't be parsed - see
-  "How AI is used" above.
-- `eval_matching.py` - hand-labeled test set comparing the regex-only
-  baseline against the regex+AI pipeline, with honest precision/recall/F1
-  (including the recall-ceiling caveat) rather than a single example.
-- `hulk_job_search.py` - unchanged scraping/company logic (imported, not
-  duplicated).
-- `companies_source.py` / `platform_cache.py` / `warm_cache.py` - load
-  `companies.csv`, cache discovered ATS credentials to disk, and
-  pre-warm that cache in one batch run.
-- `architecture.svg` - data-flow diagram (see "Architecture" above).
-- `PITCH_OUTLINE.md` - a suggested structure for the 5-minute pitch video.
-- `requirements.txt` - pinned dependencies.
+| Endpoint | Purpose |
+| --- | --- |
+| `GET /` | Serves the single-page application |
+| `GET /api/search` | Searches one company and role |
+| `GET /api/search-all` | Runs Job Watcher across configured companies |
+| `GET /api/companies` | Lists company names |
+| `GET /api/companies-full` | Lists company metadata and careers links |
+| `GET /api/roles` | Lists role suggestions |
+| `GET /api/me` | Reports sign-in and cloud-history status |
+| `GET/POST/DELETE /api/history` | Reads, writes, and clears signed-in history |
+
+Example request:
+
+```text
+/api/search?company=Razorpay&role=backend%20developer&max_experience=3&days=30
+```
+
+The response includes `match_count`, `total_open_roles_seen`, `platform_used`, `note`, and a `jobs` array. AI-enriched jobs may also include `ai_score`, `ai_reason`, and `draft_note`.
+
+## Repository Guide
+
+- `app.py` - FastAPI routes and the single-page web interface.
+- `role_search.py` - free-text role matching, filters, AI integration, and Job Watcher.
+- `ai_match.py` - Gemini calls, response parsing, scoring, digest, and outreach drafts.
+- `hulk_job_search.py` - platform adapters, discovery, scraping, and company data.
+- `companies.csv` - default company directory.
+- `companies_source.py` - company source loading and fallback data.
+- `platform_cache.py` - cached platform resolution.
+- `warm_cache.py` - batch cache warming utility.
+- `db.py` - optional MongoDB Atlas history.
+- `eval_matching.py` - labeled baseline-versus-AI evaluation.
+- `architecture.svg` - visual data-flow diagram.
+- `.env.example` - environment variable template.
+- `requirements.txt` - pinned Python dependencies.
+
+## Security and Privacy Notes
+
+- Never commit `.env`, API keys, OAuth secrets, or database passwords.
+- Gemini receives the role query and limited job-listing fields needed for scoring; it is not given the user's Google password.
+- Outreach drafts are not sent automatically.
+- MongoDB history is scoped to the signed-in Google email.
+- Use a strong `SESSION_SECRET` and a strong MongoDB password in production.
+
+## Troubleshooting
+
+**The app starts but Gemini scores do not appear**
+
+Check that `GEMINI_API_KEY` is set in the same terminal or deployment environment that starts Uvicorn. Invalid keys, rate limits, timeouts, and malformed responses intentionally fall back to deterministic results.
+
+**A company returns no jobs**
+
+Check the `note` field and open the returned careers URL. The portal may be JavaScript-rendered, may have changed its ATS, or may not publish matching roles in the selected date or experience range. Run `warm_cache.py` after correcting a URL.
+
+**Google login fails after deployment**
+
+Make sure the production callback URL exactly matches the deployed domain and that `SESSION_SECRET`, `GOOGLE_CLIENT_ID`, and `GOOGLE_CLIENT_SECRET` are present.
+
+**History is not syncing**
+
+Cloud history requires both a signed-in user and `MONGODB_URI`. Without either one, browser-only history is the expected behavior.
+
+## License
+
+See [LICENSE](LICENSE).
