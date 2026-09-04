@@ -1,0 +1,101 @@
+<svg viewBox="0 0 980 900" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4A4636"/>
+    </marker>
+    <marker id="arrowDashed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#A6741F"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="900" fill="#F7F5EC"/>
+  <text x="490" y="36" text-anchor="middle" font-size="21" font-weight="700" fill="#211E19">Job Finder — Architecture</text>
+  <text x="490" y="58" text-anchor="middle" font-size="12.5" fill="#6E6858">solid arrows = always-on path · dashed gold arrows = optional AI layer (fails open if unconfigured)</text>
+
+  <!-- Data source -->
+  <rect x="40" y="90" width="220" height="60" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5"/>
+  <text x="150" y="115" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">companies.csv</text>
+  <text x="150" y="133" text-anchor="middle" font-size="11" fill="#6E6858">321 companies · name, url, hint</text>
+
+  <rect x="330" y="90" width="240" height="60" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5"/>
+  <text x="450" y="115" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">companies_source.py</text>
+  <text x="450" y="133" text-anchor="middle" font-size="11" fill="#6E6858">normalizes platform hint</text>
+
+  <rect x="640" y="90" width="300" height="60" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5"/>
+  <text x="790" y="115" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">hulk_job_search.COMPANIES</text>
+  <text x="790" y="133" text-anchor="middle" font-size="11" fill="#6E6858">in-memory company records</text>
+
+  <line x1="260" y1="120" x2="330" y2="120" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="570" y1="120" x2="640" y2="120" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Platform cache -->
+  <rect x="640" y="200" width="300" height="70" rx="10" fill="#FBF0DA" stroke="#E3C688" stroke-width="1.5"/>
+  <text x="790" y="228" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">platform_cache.py / .json</text>
+  <text x="790" y="246" text-anchor="middle" font-size="11" fill="#6E6858">resolved ATS token/tenant, disk-cached</text>
+  <text x="790" y="261" text-anchor="middle" font-size="10.5" fill="#6E6858" font-style="italic">warm_cache.py pre-warms this in one batch run</text>
+
+  <line x1="790" y1="150" x2="790" y2="200" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="790" y1="200" x2="790" y2="150" stroke="#4A4636" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- hulk_job_search fetchers -->
+  <rect x="330" y="300" width="380" height="80" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5"/>
+  <text x="520" y="325" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">hulk_job_search.py</text>
+  <text x="520" y="343" text-anchor="middle" font-size="11" fill="#6E6858">Greenhouse / Lever / SmartRecruiters / Ashby / Workday</text>
+  <text x="520" y="359" text-anchor="middle" font-size="11" fill="#6E6858">fetchers + generic HTML career-page scraper fallback</text>
+
+  <line x1="790" y1="270" x2="790" y2="340" stroke="#4A4636" stroke-width="1.5"/>
+  <line x1="790" y1="340" x2="710" y2="340" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- role_search regex layer -->
+  <rect x="330" y="420" width="380" height="80" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5"/>
+  <text x="520" y="445" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">role_search.py — regex/keyword pass</text>
+  <text x="520" y="463" text-anchor="middle" font-size="11" fill="#6E6858">free-text role match, always on, sole filter</text>
+  <text x="520" y="479" text-anchor="middle" font-size="11" fill="#6E6858">when AI is unavailable</text>
+
+  <line x1="520" y1="380" x2="520" y2="420" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ai_match layer -->
+  <rect x="330" y="540" width="380" height="90" rx="10" fill="#FBF0DA" stroke="#E3C688" stroke-width="1.5"/>
+  <text x="520" y="565" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">ai_match.py — optional LLM layer</text>
+  <text x="520" y="583" text-anchor="middle" font-size="11" fill="#6E6858">score_candidates(): re-rank the shortlist for real fit</text>
+  <text x="520" y="599" text-anchor="middle" font-size="11" fill="#6E6858">summarize_watcher_cycle(): per-cycle digest</text>
+  <text x="520" y="620" text-anchor="middle" font-size="10.5" fill="#A6741F" font-style="italic">needs GEMINI_API_KEY — returns None on any failure</text>
+
+  <line x1="520" y1="500" x2="520" y2="540" stroke="#A6741F" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrowDashed)"/>
+  <text x="536" y="522" font-size="10" fill="#A6741F">if configured</text>
+  <line x1="330" y1="580" x2="270" y2="580" stroke="#A6741F" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <line x1="270" y1="580" x2="270" y2="460" stroke="#A6741F" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <line x1="270" y1="460" x2="330" y2="460" stroke="#A6741F" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrowDashed)"/>
+  <text x="150" y="470" font-size="10" fill="#A6741F" text-anchor="middle">fail open: None →</text>
+  <text x="150" y="483" font-size="10" fill="#A6741F" text-anchor="middle">keep regex-only result</text>
+
+  <!-- app.py -->
+  <rect x="330" y="670" width="380" height="80" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5"/>
+  <text x="520" y="695" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">app.py — FastAPI + frontend</text>
+  <text x="520" y="713" text-anchor="middle" font-size="11" fill="#6E6858">/api/search  ·  /api/search-all (Job Watcher)</text>
+  <text x="520" y="729" text-anchor="middle" font-size="11" fill="#6E6858">single-page HTML/CSS/JS, no build step</text>
+
+  <line x1="520" y1="630" x2="520" y2="670" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- db.py -->
+  <rect x="40" y="670" width="230" height="80" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5"/>
+  <text x="155" y="695" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">db.py</text>
+  <text x="155" y="713" text-anchor="middle" font-size="11" fill="#6E6858">MongoDB Atlas, optional</text>
+  <text x="155" y="729" text-anchor="middle" font-size="11" fill="#6E6858">per-account search history</text>
+
+  <line x1="330" y1="710" x2="270" y2="710" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Browser -->
+  <rect x="330" y="800" width="380" height="70" rx="10" fill="#E7F1E1" stroke="#3C6B31" stroke-width="1.5"/>
+  <text x="520" y="828" text-anchor="middle" font-size="13.5" font-weight="600" fill="#211E19">Browser</text>
+  <text x="520" y="846" text-anchor="middle" font-size="11" fill="#3C6B31">results, AI fit badges, watcher digest</text>
+
+  <line x1="520" y1="750" x2="520" y2="800" stroke="#4A4636" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- eval_matching.py note -->
+  <rect x="740" y="540" width="200" height="90" rx="10" fill="#FFFFFF" stroke="#DEDACB" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="840" y="565" text-anchor="middle" font-size="12.5" font-weight="600" fill="#211E19">eval_matching.py</text>
+  <text x="840" y="583" text-anchor="middle" font-size="10.5" fill="#6E6858">offline, hand-labeled</text>
+  <text x="840" y="598" text-anchor="middle" font-size="10.5" fill="#6E6858">regex vs regex+AI</text>
+  <text x="840" y="613" text-anchor="middle" font-size="10.5" fill="#6E6858">precision/recall/F1</text>
+</svg>
