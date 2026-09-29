@@ -1,27 +1,27 @@
 company_name,country,careers_url,platform_hint
-1mg (Tata Digital),India,https://www.1mg.com/,Own Portal
+1mg (Tata Digital),India,https://www.1mg.com/careers,Workday
 99acres,India,https://www.99acres.com/careers,Workday
-Accenture India,India,https://www.accenture.com/in-en/careers,Taleo
-Acko Insurance,India,https://www.acko.com/careers,Workday
+Accenture India,India,https://www.accenture.com/in-en/careers,Workday
+Acko Insurance,India,https://acko.com/careers,Custom
 Activision Blizzard,USA,https://careers.activisionblizzard.com,Workday
 Adobe,USA,https://adobe.wd5.myworkdayjobs.com,Workday
 Aerospike,USA,https://www.aerospike.com/careers,Greenhouse
 Agoda,Singapore,https://careers.agoda.com,Workday
 Airbnb,USA,https://careers.airbnb.com,Greenhouse
 Altran (Capgemini Engineering),France,https://www.capgemini-engineering.com/,Workday
-Amazon,USA,https://www.amazon.jobs,Own Portal
+Amazon,USA,https://www.amazon.jobs/en/locations/india,Custom
 Apna,India,https://apna.co/careers,Workday
 Apple,USA,https://www.apple.com/careers,Own Portal
 Arista Networks,USA,https://www.arista.com/en/careers,Greenhouse
 ARM,UK,https://careers.arm.com,Workday
-Ather Energy,India,https://atherenergy.com/careers,Workday
+Ather Energy,India,https://atherenergy.com/careers,Custom
 Atlassian,Australia,https://www.atlassian.com/company/careers,Greenhouse
 Atos,France/India,https://atos.net/en/careers,Workday
 Automattic,Remote,https://automattic.com/work-with-us,Workday
 Bain & Company Tech,Global,https://www.bain.com/careers,Own Portal
 BCG Digital Ventures,Global,https://www.bcgdv.com/careers,Own Portal
 BeatO,India,https://www.beatoapp.com/,Workday
-BigBasket,India,https://www.bigbasket.com/careers,Own Portal
+BigBasket,India,https://www.bigbasket.com/careers,Workday
 Biosense,India,https://www.biosense.in/careers,Workday
 BlackBuck,India,https://www.blackbuck.com/careers,Own Portal
 Blinkit,India,https://blinkit.com/careers,Workday
@@ -32,33 +32,33 @@ Bounce,India,https://www.bounce.in/careers,Own Portal
 Bounce Infinity,India,https://www.bounceinfinity.com/careers,Workday
 Broadcom,USA,https://www.broadcom.com/company/careers,Workday
 BrowserStack,India,https://www.browserstack.com/careers,Workday
-Byju’s,India,https://byjus.com/careers,Own Portal
-Capgemini,India,https://www.capgemini.com/careers,Workday
-CarDekho,India,https://www.cardekho.com/,Workday
+Byju’s,India,https://byjus.com/careers,Custom
+Capgemini,India,https://www.capgemini.com/in-en/careers,Workday
+CarDekho,India,https://careers.cardekho.com/,Custom
 Cars24,India,https://www.cars24.com/careers,Workday
 CGI,Canada/India,https://www.cgi.com/en/careers,Workday
 Check Point Software,Israel,https://www.checkpoint.com/careers,Own Portal
 Cisco,USA,https://jobs.cisco.com,Workday
 Classplus,India,https://classplusapp.com/careers,Workday
-ClearTax,India,https://cleartax.in/,Workday
+ClearTax,India,https://cleartax.in/careers,Custom
 Cleartrip,India,https://www.cleartrip.com/,Workday
 CleverTap,India,https://www.clevertap.com/careers,Greenhouse
 Cloudera,USA,https://www.cloudera.com/careers,Workday
 Coding Ninjas,India,https://www.codingninjas.com/careers,Own Portal
-Cognizant,India,https://careers.cognizant.com,Workday
+Cognizant,India,https://careers.cognizant.com/in/en,Workday
 Coinbase,USA,https://www.coinbase.com/careers,Greenhouse
 Confluent,USA,https://www.confluent.io/careers,Greenhouse
 Continental AG,Germany,https://www.continental.com/en/career,Workday
 Couchbase,USA,https://www.couchbase.com/careers,Greenhouse
 CRED,India,https://careers.cred.club,Greenhouse
 CureBay,India,https://www.curebay.com/careers,Workday
-CureFit,India,https://www.cult.fit/careers,Own Portal
+CureFit,India,https://www.cult.fit/careers,Custom
 CureSkin,India,https://www.cureskin.com/,Own Portal
 DailyHunt,India,https://www.dailyhunt.com/,Own Portal
 Darwinbox,India,https://darwinbox.com/careers,Workday
 Databricks,USA,https://databricks.com/company/careers,Greenhouse
 Datastax,USA,https://www.datastax.com/careers,Greenhouse
-Delhivery,India,https://www.delhivery.com/careers,Workday
+Delhivery,India,https://www.delhivery.com/careers,Custom
 Dell Technologies,USA,https://jobs.dell.com,Workday
 Deloitte Digital,Global,https://www2.deloitte.com/global/en/careers,Workday
 Digit Insurance,India,https://www.godigit.com/careers,Workday
@@ -132,7 +132,7 @@ LG CNS,South Korea,https://www.lgcns.com/,Own Portal
 LinkedIn,USA,https://careers.linkedin.com,Workday
 Livspace,India,https://www.livspace.com/careers,Workday
 Locus.sh,India,https://locus.sh/careers,Greenhouse
-LTIMindtree,India,https://www.ltimindtree.com/careers,Own Portal
+LTIMindtree,India,https://www.ltimindtree.com/careers,Workday
 Luxoft,Switzerland,https://career.luxoft.com,Workday
 Lyft,USA,https://www.lyft.com/careers,Greenhouse
 MagicBricks,India,https://www.magicbricks.com/careers,Workday
@@ -153,7 +153,7 @@ Microsoft,USA,https://careers.microsoft.com,Workday
 MindTickle,India/USA,https://www.mindtickle.com/careers,Greenhouse
 MoEngage,India,https://www.moengage.com/careers,Greenhouse
 MongoDB,USA,https://www.mongodb.com/careers,Greenhouse
-Mphasis,India,https://careers.mphasis.com,Own Portal
+Mphasis,India,https://www.mphasis.com/careers,Workday
 MPL,India,https://mplgaming.com/,Greenhouse
 Mu Sigma,India,https://www.mu-sigma.com/careers,Own Portal
 Myntra,India,https://careers.myntra.com,Workday
@@ -290,11 +290,11 @@ Vogo,India,https://vogo.in/careers,Own Portal
 Western Digital,USA,https://jobs.westerndigital.com,Workday
 WhiteHat Jr,India,https://www.whitehatjr.com/careers,Workday
 Wingify,India,https://wingify.com/careers,Own Portal
-Wipro,India,https://careers.wipro.com,Own Portal
+Wipro,India,https://careers.wipro.com/,Workday
 Wise (TransferWise),UK,https://www.wise.jobs,Lever
 WNS Global Services,India,https://www.wns.com/careers,Workday
 Workday,USA,https://workday.wd5.myworkdayjobs.com,Workday
-Yatra,India,https://www.yatra.com/careers,Own Portal
+Yatra,India,https://www.yatra.com/careers,Custom
 Yulu,India,https://www.yulu.bike/careers,Workday
 Zapier,Remote,https://zapier.com/jobs,Lever
 Zensar Technologies,India,https://www.zensar.com/careers,Own Portal
@@ -302,11 +302,11 @@ Zepto,India,https://www.zepto.com/careers,Workday
 Zerodha,India,https://zerodha.com/careers,Own Portal
 Zetwerk,India,https://www.zetwerk.com/careers,Workday
 Zoho,India,https://careers.zohocorp.com,Own Portal
-Zomato,India,https://www.zomato.com/careers,Greenhouse
-Zoomcar,India,https://www.zoomcar.com/careers,Workday
-Zynga,USA/India,https://www.zynga.com/careers,Greenhouse
+Zomato,India,https://www.zomato.com/careers,Custom
+Zoomcar,India,https://www.zoomcar.com/careers,Custom
+Zynga,USA/India,https://www.zynga.com/careers,Workday
 100ms,India,https://100ms.live/,Own Portal
-3i Infotech,India,https://3i-infotech.com/careers,Own Portal
+3i Infotech,India,https://www.3i-infotech.com/careers,Custom
 5paisa,India,https://5paisa.com/careers,Own Portal
 Abhibus,India,https://abhibus.com/careers,Own Portal
 Adani Green,India,https://adanigreenenergy.com/careers,Own Portal
@@ -318,15 +318,15 @@ Agilisium,India,https://agilisium.com/careers,Own Portal
 Agnikul Cosmos,India,https://agnikul.in/careers,Own Portal
 AgroStar,India,https://agrostar.in/,Own Portal
 Airtel Digital,India,https://airtel.in/careers,Own Portal
-Ajio,India,https://ajio.com/careers,Own Portal
+Ajio,India,https://careers.ril.com/,Workday
 Allsec Technologies,India,https://allsectech.com/careers,Own Portal
 Almabetter,India,https://almabetter.com/,Own Portal
 Amber Enterprises,India,https://ambergroupindia.com/careers,Own Portal
-Angel One,India,https://angelone.in/careers,Own Portal
+Angel One,India,https://angelone.in/careers,Custom
 Anthem Software,India,https://anthemsoftware.com/careers,Own Portal
 Apollo 24/7,India,https://apollo247.com/,Own Portal
 Appsecure,India,https://appsecure.security/,Own Portal
-Asian Paints Tech,India,https://asianpaints.com/careers,Own Portal
+Asian Paints Tech,India,https://www.asianpaints.com/careers,Workday
 Aspire Systems,India,https://aspiresys.com/careers,Own Portal
 Astra Microwave,India,https://astramwp.com/careers,Own Portal
 Ati Motors,India,https://atimotors.com/careers,Own Portal
@@ -341,9 +341,9 @@ Bajaj Capital,India,https://bajajcapital.com/careers,Own Portal
 Bajaj Electricals,India,https://bajajelectricals.com/careers,Own Portal
 Bajaj Finserv Health,India,https://bajajfinservhealth.in/,Own Portal
 Bandhan Bank Tech,India,https://bandhanbank.com/careers,Own Portal
-Bank of Baroda Tech,India,https://bankofbaroda.in/careers,Own Portal
+Bank of Baroda Tech,India,https://www.bankofbaroda.in/careers,Custom
 Bank of India Tech,India,https://bankofindia.co.in/careers,Own Portal
-BankBazaar,India,https://bankbazaar.com/careers,Own Portal
+BankBazaar,India,https://www.bankbazaar.com/careers.html,Custom
 Bellatrix Aerospace,India,https://bellatrix.space/careers,Own Portal
 Betterhome,India,https://betterhomes.com/careers,Own Portal
 Bewakoof,India,https://bewakoof.com/careers,Own Portal
@@ -361,7 +361,7 @@ Bikewale,India,https://bikewale.com/,Own Portal
 Bima Pehchan,India,https://bimapehchan.com/careers,Own Portal
 Bira91,India,https://bira91.com/careers,Own Portal
 Birlasoft,India,https://birlasoft.com/careers,Workday
-Blue Star,India,https://bluestarindia.com/careers,Own Portal
+Blue Star,India,https://www.bluestarindia.com/careers,Workday
 Bluepi,India,https://bluepi.in/careers,Own Portal
 BlueStone,India,https://bluestone.com/,Own Portal
 Blupine,India,https://blupineenergy.com/,Own Portal
@@ -397,7 +397,7 @@ CoinDCX,India,https://coindcx.com/careers,Own Portal
 CoinSwitch,India,https://coinswitch.co/,Own Portal
 CoLive,India,https://colive.com/careers,Own Portal
 CometChat,India,https://cometchat.com/,Own Portal
-Comviva,India,https://comviva.com/careers,Own Portal
+Comviva,India,https://www.comviva.com/careers,Custom
 ConfirmTkt,India,https://confirmtkt.com/careers,Own Portal
 CoRover,India,https://corover.ai/careers,Own Portal
 Country Delight,India,https://countrydelight.in/careers,Own Portal
@@ -406,20 +406,20 @@ Coverfox,India,https://coverfox.com/careers,Own Portal
 CredAvenue,India,https://credavenue.com/,Own Portal
 CRIF High Mark,India,https://crifhighmark.com/,Own Portal
 Crio.do,India,https://crio.do/careers,Own Portal
-Crompton,India,https://crompton.co.in/,Own Portal
+Crompton,India,https://www.crompton.co.in/careers,Custom
 Cropin,India,https://cropin.com/careers,Own Portal
 CSB Bank Tech,India,https://csb.co.in/careers,Own Portal
 CtrlS Datacenters,India,https://ctrls.com/careers,Own Portal
 Cuemath,India,https://cuemath.com/,Own Portal
 Cybage Software,India,https://cybage.com/careers,Own Portal
-Cyient,India,https://cyient.com/careers,Workday
+Cyient,India,https://www.cyient.com/careers,Workday
 Cyient DLM,India,https://cyientdlm.com/careers,Own Portal
 CynLr,India,https://cynlr.com/careers,Own Portal
 Cyware,India,https://cyware.com/careers,Own Portal
 Daikin India,India,https://daikinindia.com/careers,Own Portal
 Damco Solutions,India,https://damcogroup.com/careers,Own Portal
 Data Patterns,India,https://datapatternsindia.com/careers,Own Portal
-Datamatics,India,https://datamatics.com/,Own Portal
+Datamatics,India,https://www.datamatics.com/careers,Custom
 DealShare,India,https://dealshare.in/,Own Portal
 Decentro,India,https://decentro.tech/careers,Own Portal
 DeHaat,India,https://agrevolution.in/careers,Own Portal
@@ -450,7 +450,7 @@ ET Money,India,https://etmoney.com/,Own Portal
 Euler Motors,India,https://eulermotors.com/careers,Own Portal
 Evalueserve,India,https://evalueserve.com/careers,Own Portal
 Even Healthcare,India,https://even.in/,Own Portal
-Exide Energy,India,https://exideindustries.com/careers,Own Portal
+Exide Energy,India,https://www.exideindustries.com/careers,Custom
 Exotel,India,https://exotel.com/careers,Own Portal
 Experian India,India,https://experian.in/careers,Own Portal
 Extramarks,India,https://extramarks.com/careers,Own Portal
@@ -459,10 +459,10 @@ FabHotels,India,https://fabhotels.com/careers,Own Portal
 Fampay,India,https://fampay.in/careers,Own Portal
 Fasal,India,https://fasal.co/,Own Portal
 Fasttrack Carsome,India,https://carsome.com/careers,Own Portal
-Federal Bank Tech,India,https://federalbank.co.in/careers,Own Portal
+Federal Bank Tech,India,https://www.federalbank.co.in/careers,Custom
 Finbox,India,https://finbox.in/careers,Own Portal
 Fino Payments Bank,India,https://finobank.com/careers,Own Portal
-FirstCry,India,https://firstcry.com/careers,Own Portal
+FirstCry,India,https://www.firstcry.com/careers,Custom
 Firstsource,India,https://firstsource.com/careers,Workday
 Flexmoney,India,https://flexmoney.in/careers,Own Portal
 Foundit,India,https://foundit.in/careers,Own Portal
@@ -581,7 +581,7 @@ Loop Health,India,https://loophealth.com/careers,Own Portal
 M2P Fintech,India,https://m2pfintech.com/careers,Own Portal
 Mad Street Den,India,https://madstreetden.com/careers,Own Portal
 Magicpin,India,https://magicpin.in/careers,Own Portal
-Mahindra Finance Tech,India,https://mahindrafinance.com/careers,Own Portal
+Mahindra Finance Tech,India,https://www.mahindrafinance.com/careers,Workday
 Mahindra Last Mile,India,https://mahindralastmilemobility.com/,Own Portal
 Mahindra Susten,India,https://mahindrasusten.com/careers,Own Portal
 Mamaearth Honasa,India,https://honasa.in/,Own Portal
@@ -762,7 +762,7 @@ Ultratech Tech,India,https://ultratechcement.com/,Own Portal
 Ultraviolette,India,https://ultraviolette.com/careers,Own Portal
 Uni Pay,India,https://uni.club/,Own Portal
 Unicommerce,India,https://unicommerce.com/careers,Own Portal
-Union Bank Tech,India,https://unionbankofindia.co.in/careers,Own Portal
+Union Bank Tech,India,https://www.unionbankofindia.co.in/english/careers.aspx,Government
 Uniphore,India,https://uniphore.com/careers,Own Portal
 Univest,India,https://univest.in/,Own Portal
 Uno Minda,India,https://unominda.com/,Own Portal
@@ -776,8 +776,8 @@ Vedanta Digital,India,https://vedantalimited.com/,Own Portal
 Verloop,India,https://verloop.io/careers,Own Portal
 Vested Finance,India,https://vestedfinance.com/careers,Own Portal
 Vinculum,India,https://vinculumgroup.com/careers,Own Portal
-Vivo India,India,https://vivo.com/,Own Portal
-Vodafone Idea,India,https://myvi.in/careers,Own Portal
+Vivo India,India,https://www.vivo.com/in/careers,Custom
+Vodafone Idea,India,https://www.myvi.in/careers,Workday
 Voltas,India,https://voltas.com/,Own Portal
 Vue.ai,India,https://vue.ai/,Own Portal
 VVDN Technologies,India,https://vvdntech.com/careers,Own Portal
@@ -785,7 +785,7 @@ Vyapar,India,https://vyaparapp.in/careers,Own Portal
 Vymo,India,https://getvymo.com/,Own Portal
 Waaree,India,https://waaree.com/careers,Own Portal
 Wadhwani AI,India,https://wadhwaniai.org/careers,Own Portal
-Wakefit,India,https://wakefit.co/careers,Own Portal
+Wakefit,India,https://wakefit.co/careers,Custom
 WayCool,India,https://waycool.in/careers,Own Portal
 WazirX,India,https://wazirx.com/careers,Own Portal
 Web Werks,India,https://webwerks.in/careers,Own Portal
@@ -799,7 +799,7 @@ Wistron India,India,https://wistron.com/careers,Own Portal
 WorkIndia,India,https://workindia.in/careers,Own Portal
 Wynk Music,India,https://wynk.in/,Own Portal
 Xoriant,India,https://xoriant.com/,Own Portal
-XpressBees,India,https://xpressbees.com/,Own Portal
+XpressBees,India,https://xpressbees.com/careers,Custom
 Xtracover,India,https://xtracover.com/careers,Own Portal
 Yellow.ai,India,https://yellow.ai/careers,Own Portal
 Yotta Infrastructure,India,https://yotta.com/careers,Own Portal
@@ -809,17 +809,16 @@ ZebPay,India,https://zebpay.com/careers,Own Portal
 ZEE5,India,https://zee5.com/careers,Own Portal
 Zen Technologies,India,https://zentechnologies.com/careers,Own Portal
 Zerodha Tech,India,https://zerodha.tech/,Own Portal
-Zest Money,India,https://zestmoney.in/careers,Own Portal
 Zeta,India,https://zeta.tech/careers,Own Portal
 Zeus Learning,India,https://zeuslearning.com/careers,Own Portal
 Zimyo,India,https://zimyo.com/,Own Portal
 Zluri,India,https://zluri.com/careers,Own Portal
 Zoho Zia Labs,India,https://zoho.com/careers,Own Portal
 Zolo Stays,India,https://zolostays.com/careers,Own Portal
-Zopper,India,https://zopper.com/,Own Portal
+Zopper,India,https://zopper.com/careers,Custom
 Zostel,India,https://zostel.com/,Own Portal
 Zupee,India,https://zupee.com/careers,Own Portal
-Zypp Electric,India,https://zypp.app/careers,Own Portal
+Zypp Electric,India,https://zyppelectric.com/careers,Custom
 1Password,Canada,https://1password.com/careers,Ashby
 2K Games,USA,https://2k.com/careers,Workday
 8x8,USA,https://8x8.com/careers,Workday
@@ -911,7 +910,7 @@ BMW Group Tech,Germany,https://bmwgroup.com/careers,Own Portal
 BNP Paribas Technology,France,https://bnpparibas.com/careers,Own Portal
 Boeing,USA,https://boeing.com/careers,Workday
 Boomi,USA,https://boomi.com/careers,Workday
-Bosch Global Software,Germany,https://bosch.in/careers,Own Portal
+Bosch Global Software,Germany,https://www.bosch.in/careers,Workday
 Bose,USA,https://bose.com/,Workday
 Box,USA,https://box.com/careers,Workday
 Braze,USA,https://braze.com/careers,Greenhouse
@@ -1476,7 +1475,7 @@ Zoom,USA,https://zoom.us/careers,Workday
 Zoom Info,USA,https://zoominfo.com/careers,Greenhouse
 Zoox,USA,https://zoox.com/careers,Greenhouse
 ZS Associates,USA,https://zs.com/careers,Own Portal
-Zscaler,USA,https://zscaler.com/careers,Greenhouse
+Zscaler,USA,https://www.zscaler.com/careers,Workday
 Zuora,USA,https://zuora.com/careers,Workday
 Absolutdata,India,https://absolutdata.com/careers,Own Portal
 Crayon Data,India,https://crayondata.com/,Own Portal
@@ -1498,3 +1497,82 @@ Softserve,Ukraine,https://softserveinc.com/careers,Own Portal
 Intetics,USA,https://intetics.com/careers,Own Portal
 Course Hero,USA,https://www.coursehero.com/careers,Greenhouse
 Codecademy,USA,https://www.codecademy.com/careers,Own Portal
+Wealthy,India,https://wealthy.in/careers,Custom
+Wow! Momo,India,https://wowmomo.com/careers,Custom
+Yes Bank,India,https://www.yesbank.in/careers,Workday
+ZunRoof,India,https://zunroof.com/careers,Custom
+Zydus Lifesciences,India,https://www.zyduslife.com/careers,Custom
+Zyro,India,https://zyro.com/careers,Custom
+Zycus,India,https://www.zycus.com/careers,Custom
+Aditya Birla Capital,India,https://www.adityabirlacapital.com/careers,Workday
+Aditya Birla Fashion & Retail,India,https://www.abfrl.com/careers,Workday
+Aditya Birla Insurance Brokers,India,https://www.adityabirlainsurancebrokers.com/careers,Custom
+Air India,India,https://www.airindia.com/careers,Workday
+AirAsia India,India,https://www.airindiaexpress.in/careers,Workday
+Airtel,India,https://careers.airtel.com/,Workday
+Amul,India,https://amul.com/careers,Custom
+Anand Rathi Wealth,India,https://anandrathi.com/careers,Custom
+Apollo Hospitals,India,https://www.apollohospitals.com/careers,Custom
+Arvind Limited,India,https://www.arvind.com/careers,Workday
+Axis Bank,India,https://www.axisbank.com/careers,Workday
+Bajaj Auto,India,https://www.bajajauto.com/careers,Custom
+Bajaj Finserv,India,https://www.bajajfinserv.in/careers,Custom
+Balaji Telefilms,India,https://balajitelefilms.com/careers,Custom
+Bata India,India,https://www.bata.in/careers,Workday
+Berger Paints India,India,https://www.bergerpaints.com/careers,Custom
+Bharti AXA Life Insurance,India,https://www.bharti-axalife.com/careers,Custom
+Bharti Infratel (Indus Towers),India,https://www.industowers.com/careers,Workday
+Biocon,India,https://www.biocon.com/careers,Workday
+Birla Corporation,India,https://www.birlacorporation.com/careers,Custom
+Blue Dart Express,India,https://bluedart.com/careers,Custom
+Bombay Dyeing,India,https://bombaydyeing.com/careers,Custom
+Britannia Industries,India,https://britannia.co.in/careers,Custom
+Cadbury India (Mondelez),India,https://www.mondelezinternational.com/careers,Workday
+Cadila Pharmaceuticals,India,https://www.cadilapharma.com/careers,Custom
+CarTrade Tech,India,https://www.cartrade.com/careers,Custom
+CavinKare,India,https://www.cavinkare.com/careers,Custom
+Cipla,India,https://www.cipla.com/careers,Workday
+Clovia,India,https://clovia.com/careers,Custom
+Colgate-Palmolive India,India,https://jobs.colgate.com/,Workday
+CRISIL,India,https://www.crisil.com/en/home/careers.html,Workday
+Dabur India,India,https://www.dabur.com/careers,Custom
+Den Networks,India,https://www.dennetworks.com/careers,Custom
+Dhani Services,India,https://www.dhani.com/careers,Custom
+DLF Limited,India,https://www.dlf.in/careers,Workday
+Dr. Reddy's,India,https://careers.drreddys.com/,Workday
+DSP Mutual Fund,India,https://www.dspim.com/careers,Custom
+DTDC Express,India,https://www.dtdc.com/careers,Custom
+Eicher Motors,India,https://www.eicher.in/careers,Workday
+EID Parry,India,https://www.eidparry.com/careers,Custom
+EIH Limited (Oberoi Hotels),India,https://www.oberoihotels.com/careers,Custom
+Emami Limited,India,https://www.emamiltd.in/careers,Custom
+Escorts Kubota,India,https://www.escortsgroup.com/careers,Workday
+Edelweiss Group,India,https://www.edelweissfin.com/careers,Custom
+Emcure Pharma,India,https://www.emcure.com/careers,Custom
+Endurance Technologies,India,https://www.endurancegroup.com/careers,Custom
+Engineers India Limited (EIL),India,https://engineersindia.com/careers,Custom
+Eveready Industries,India,https://www.evereadyindia.com/careers,Custom
+Finolex Cables,India,https://www.finolex.com/careers,Custom
+Fortis Healthcare,India,https://www.fortishealthcare.com/careers,Custom
+Aarti Industries,India,https://www.aartiindustries.com/careers,Custom
+Abbott India,India,https://www.abbott.com/careers,Workday
+Adani Group,India,https://www.adani.com/careers,Workday
+Adani Ports,India,https://www.adaniports.com/careers,Workday
+Adani Power,India,https://www.adanipower.com/careers,Workday
+Adani Transmission,India,https://www.adanitransmission.com/careers,Workday
+Adani Wilmar,India,https://www.adaniwilmar.com/careers,Workday
+Adobe India,India,https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced,Workday
+Aegon Life Insurance,India,https://www.aegonlife.com/careers,Custom
+Ajanta Pharma,India,https://www.ajantapharma.com/careers,Custom
+AkzoNobel India,India,https://www.akzonobel.com/en/careers,Workday
+Alembic Pharmaceuticals,India,https://www.alembicpharmaceuticals.com/careers,Custom
+Allcargo Logistics,India,https://www.allcargologistics.com/careers,Custom
+Amara Raja Batteries,India,https://www.amararaja.com/careers,Custom
+Ambuja Cements,India,https://www.ambujacement.com/careers,Workday
+Lupin Pharmaceuticals,India,https://www.lupin.com/careers,Workday
+Lux Industries,India,https://www.luxinnerwear.com/careers,Custom
+Mahindra & Mahindra,India,https://www.mahindra.com/careers,Workday
+Marico Limited,India,https://www.marico.com/careers,Workday
+Maruti Suzuki India,India,https://www.marutisuzuki.com/corporate/careers,Custom
+Max Healthcare,India,https://www.maxhealthcare.in/careers,Custom
+Muthoot Finance,India,https://www.muthootgroup.com/careers,Custom
