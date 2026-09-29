@@ -55,6 +55,7 @@ import re
 import csv
 import time
 import argparse
+import threading
 import requests
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urlsplit, urlunsplit
@@ -68,6 +69,50 @@ except ImportError:
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 REQUEST_TIMEOUT = 10
 MAX_PLATFORM_JOBS = 500  # Prevent one unusually large board from dominating a scan.
+
+# ---------------------------------------------------------------------
+# Probe-failure tracking.
+#
+# BUG THIS FIXES: every try_* probe used to return (None, None) for BOTH
+# "this company is definitely not on this platform" (a clean 404) AND
+# "I couldn't tell" (timeout, 403 bot-block, 429 rate limit, 5xx, an HTML
+# challenge page served with a 200, DNS/network down). resolve_company_
+# platform() then treated "found nothing" as "this is a custom site" and
+# wrote that to platform_cache.json PERMANENTLY. One bad moment on the
+# network therefore demoted a real Greenhouse/Lever/Workday company to the
+# HTML scraper forever - which finds nothing on JS-rendered career pages,
+# so Job Search and Job Watcher both returned zero results while the jobs
+# were plainly visible in a browser.
+#
+# Now the probes record every *inconclusive* outcome here (thread-local:
+# each search / watcher worker thread runs its own probes sequentially),
+# and callers only treat a miss as a real "not found" when nothing
+# inconclusive happened along the way.
+# ---------------------------------------------------------------------
+_CLEAN_MISS_STATUSES = {400, 404, 410, 422}  # "no such board" - a real, cacheable answer
+_probe_state = threading.local()
+
+
+def _reset_probe_errors():
+    _probe_state.inconclusive = 0
+
+
+def _note_inconclusive():
+    _probe_state.inconclusive = getattr(_probe_state, "inconclusive", 0) + 1
+
+
+def _probe_was_inconclusive():
+    return getattr(_probe_state, "inconclusive", 0) > 0
+
+
+def _status_ok(resp):
+    """True for HTTP 200. Any other status that is not a clean 'no such
+    board' answer (403 bot-block, 429, 5xx, ...) is recorded as inconclusive."""
+    if resp.status_code == 200:
+        return True
+    if resp.status_code not in _CLEAN_MISS_STATUSES:
+        _note_inconclusive()
+    return False
 
 
 # =====================================================================
@@ -268,8 +313,10 @@ _BUILTIN_COMPANIES = [
 # list if companies.csv isn't present (e.g. a fresh checkout without it).
 # =====================================================================
 
-from companies_source import load_companies_from_csv  # noqa: E402
-from platform_cache import get_cached_platform  # noqa: E402
+from companies_source import load_companies_from_csv, normalize_platform  # noqa: E402
+from platform_cache import (  # noqa: E402
+    get_cached_platform, NEGATIVE_TTL_SECONDS, negative_entry_timestamp,
+)
 
 
 def _merge_cached_credentials(companies):
@@ -297,6 +344,7 @@ def _merge_cached_credentials(companies):
             c["_workday_guess_failed"] = True
             c["platform"] = "custom"
             c["_custom_confirmed"] = True
+            c["_negative_at"] = negative_entry_timestamp(cached)
             continue
         c["platform"] = cached.get("platform", c["platform"])
         c["token"] = cached.get("token", c.get("token"))
@@ -307,6 +355,7 @@ def _merge_cached_credentials(companies):
         c["confirmed"] = True
         if cached.get("platform") == "custom":
             c["_custom_confirmed"] = True
+            c["_negative_at"] = negative_entry_timestamp(cached)
     return companies
 
 
@@ -526,13 +575,14 @@ def try_greenhouse(token, region=None):
     url = f"https://{host}/v1/boards/{token}/jobs?content=true"
     try:
         resp = _bounded_request(requests.get, url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        if resp.status_code == 200:
+        if _status_ok(resp):
             payload = _json_payload(resp)
             jobs = payload.get("jobs") if isinstance(payload, dict) else None
             if isinstance(jobs, list):
                 return jobs, ("greenhouse" if region is None else "greenhouse-eu")
+            _note_inconclusive()  # 200 but not the JSON we expect (e.g. bot-challenge page)
     except requests.RequestException:
-        pass
+        _note_inconclusive()
     return None, None
 
 
@@ -540,12 +590,13 @@ def try_lever(token):
     url = f"https://api.lever.co/v0/postings/{token}?mode=json"
     try:
         resp = _bounded_request(requests.get, url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        if resp.status_code == 200:
+        if _status_ok(resp):
             data = _json_payload(resp)
             if isinstance(data, list):
                 return data, "lever"
+            _note_inconclusive()
     except requests.RequestException:
-        pass
+        _note_inconclusive()
     return None, None
 
 
@@ -562,11 +613,12 @@ def try_smartrecruiters(token):
                 requests.get, url, headers=HEADERS, timeout=REQUEST_TIMEOUT,
                 params={"limit": limit, "offset": offset},
             )
-            if resp.status_code != 200:
+            if not _status_ok(resp):
                 return (None, None) if not postings else (postings, "smartrecruiters")
             payload = _json_payload(resp)
             page = payload.get("content") if isinstance(payload, dict) else None
             if not isinstance(page, list):
+                _note_inconclusive()
                 return None, None
             postings.extend(page)
             if len(page) < limit:
@@ -576,6 +628,7 @@ def try_smartrecruiters(token):
     except requests.RequestException:
         if postings:
             return postings, "smartrecruiters"
+        _note_inconclusive()
     return None, None
 
 
@@ -584,13 +637,14 @@ def try_ashby(job_board_name):
     url = f"https://api.ashbyhq.com/posting-api/job-board/{job_board_name}"
     try:
         resp = _bounded_request(requests.get, url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        if resp.status_code == 200:
+        if _status_ok(resp):
             payload = _json_payload(resp)
             jobs = payload.get("jobs") if isinstance(payload, dict) else None
             if isinstance(jobs, list):
                 return jobs, "ashby"
+            _note_inconclusive()
     except requests.RequestException:
-        pass
+        _note_inconclusive()
     return None, None
 
 
@@ -633,20 +687,26 @@ def try_workday(tenant, wd_host, site):
                 json={"appliedFacets": {}, "limit": limit, "offset": offset, "searchText": ""},
                 timeout=REQUEST_TIMEOUT,
             )
-            if resp.status_code != 200:
+            if not _status_ok(resp):
                 return (None, None) if not postings else (postings, "workday")
             payload = _json_payload(resp)
             page = payload.get("jobPostings") if isinstance(payload, dict) else None
             if not isinstance(page, list):
+                _note_inconclusive()
                 return None, None
             postings.extend(page)
             if len(page) < limit:
                 break
             offset += len(page)
         return postings, "workday"
-    except requests.RequestException:
+    except requests.RequestException as e:
         if postings:
             return postings, "workday"
+        # A wrong tenant/host guess fails DNS resolution (ConnectionError) -
+        # that is a normal "not here" answer while guessing. Timeouts are not.
+        is_timeout = isinstance(e, requests.exceptions.Timeout)
+        if is_timeout or not isinstance(e, requests.exceptions.ConnectionError):
+            _note_inconclusive()
     return None, None
 
 
@@ -669,6 +729,7 @@ def guess_workday(company_name, tenant_hint=None, verbose=True, max_seconds=45):
         for host in WORKDAY_HOSTS:
             for site in WORKDAY_SITE_GUESSES:
                 if time.monotonic() - start > max_seconds:
+                    _note_inconclusive()  # ran out of time before trying every combo
                     if verbose:
                         print(f"  Gave up after {tried} attempts ({max_seconds}s budget used).")
                     return None
@@ -730,7 +791,10 @@ def discover_platform_from_url(url):
             requests.get, url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True
         )
     except requests.RequestException:
+        _note_inconclusive()
         return None
+    if resp.status_code not in _CLEAN_MISS_STATUSES and resp.status_code >= 400:
+        _note_inconclusive()  # 403 / 429 / 5xx: we never saw the real page
 
     haystack = resp.url + "\n" + (resp.text if resp.text else "")
 
@@ -819,19 +883,50 @@ def _guess_platform_via_public_api(company):
     return None
 
 
+def _negative_expired(company):
+    """True when a remembered 'no known ATS' verdict is older than the TTL."""
+    ts = company.get("_negative_at")
+    return ts is not None and (time.time() - ts) > NEGATIVE_TTL_SECONDS
+
+
+def _forget_negative(company):
+    """Drop an expired 'this is a custom site' verdict and go back to the
+    CSV's original platform hint so discovery can run again."""
+    company.pop("_custom_confirmed", None)
+    company.pop("_workday_guess_failed", None)
+    company.pop("_negative_at", None)
+    raw_hint = company.get("platform_hint_raw")
+    if raw_hint is not None:
+        company["platform"] = normalize_platform(raw_hint)
+
+
 def resolve_company_platform(company, try_workday_guess=False):
     """Make sure `company` has real credentials (token / tenant+host+site)
     for its platform, discovering and caching them if missing. Mutates
-    and returns `company`. Safe to call repeatedly - it's a no-op once a
-    company already has credentials, once we've confirmed it really is a
-    custom/in-house site with nothing to discover, or once a full
-    Workday guess has already been attempted and failed.
+    and returns `company`. Safe to call repeatedly.
+
+    CACHING RULES (this is the fix for "search/watcher suddenly returns
+    nothing"):
+      * A POSITIVE result (we found the real token/tenant) is cached
+        permanently.
+      * A NEGATIVE result ("no known ATS, treat as custom site") is cached
+        ONLY when every probe gave a definitive answer (a clean 404 etc).
+        If any probe was inconclusive - timeout, 403 bot-block, 429, 5xx,
+        HTML challenge page, network down, Workday guess ran out of time -
+        NOTHING is cached, the company keeps its CSV hint, and it is simply
+        retried on the next search / scan. company["_lookup_unreliable"] is
+        set so the search layer can say "couldn't check" instead of a
+        misleading "no match".
+      * Even a definitive negative expires after NEGATIVE_TTL_SECONDS
+        (default 24h, env PLATFORM_CACHE_NEGATIVE_TTL_HOURS) so a company
+        that later moves onto Greenhouse/Lever/etc. is picked up again.
 
     Set try_workday_guess=True to fall back to the slower brute-force
     guess_workday() when direct discovery fails and the hint says
     Workday - only worth it for a single on-demand search, not a bulk
     scan of hundreds of companies.
     """
+    company["_lookup_unreliable"] = False
     platform = company.get("platform")
     has_creds = (
         (platform == "greenhouse" and company.get("token"))
@@ -840,12 +935,20 @@ def resolve_company_platform(company, try_workday_guess=False):
         or (platform == "ashby" and company.get("token"))
         or (platform == "workday" and company.get("wd_host"))
     )
-    if (
-        has_creds
-        or (platform == "custom" and company.get("_custom_confirmed"))
-        or (platform == "workday" and company.get("_workday_guess_failed"))
-    ):
+    if has_creds:
         return company
+
+    negative_verdict = (
+        (platform == "custom" and company.get("_custom_confirmed"))
+        or (platform == "workday" and company.get("_workday_guess_failed"))
+    )
+    if negative_verdict:
+        if not _negative_expired(company):
+            return company
+        _forget_negative(company)          # stale verdict - probe again
+        platform = company.get("platform")
+
+    _reset_probe_errors()
 
     # Even when the CSV hint says "custom" (Own Portal / Taleo / unknown),
     # it's cheap to check once whether the page actually embeds a known
@@ -853,13 +956,9 @@ def resolve_company_platform(company, try_workday_guess=False):
     # - a much better result than the generic HTML scraper if so.
     found = discover_platform_from_url(company.get("careers_url"))
 
-    # HTML sniffing found nothing - before giving up (or, for a Workday
-    # hint, before paying the expensive brute-force cost), try the cheap
-    # direct-slug guess against every ATS with a public JSON API. This is
-    # what makes a company resolve correctly even when its careers page
-    # is a JS-rendered SPA (nothing useful in the raw HTML) or its CSV
-    # platform hint is wrong/stale - both real, common cases, not just
-    # one company's edge case.
+    # HTML sniffing found nothing - try the cheap direct-slug guess against
+    # every ATS with a public JSON API. Handles JS-rendered career pages
+    # and wrong/stale CSV hints.
     if found is None and platform != "workday":
         found = _guess_platform_via_public_api(company)
 
@@ -877,28 +976,28 @@ def resolve_company_platform(company, try_workday_guess=False):
         company.update(found)
         company["confirmed"] = True
         set_cached_platform(company["name"], found)
-    elif platform == "custom":
-        # Confirmed (for now) that there's genuinely no known ATS to find -
-        # cache that so we don't re-probe this company's page on every
-        # single search; fetch_custom_site_jobs will still scrape it fresh
-        # each time since listings themselves change.
+        return company
+
+    # ---- nothing found. Was that a real "no", or did we just fail to look? ----
+    if _probe_was_inconclusive():
+        # Do NOT cache and do NOT mutate the company: leave it exactly as
+        # loaded so the next search/scan re-probes from scratch.
+        company["_lookup_unreliable"] = True
+        return company
+
+    now = time.time()
+    if platform == "custom":
         company["_custom_confirmed"] = True
+        company["_negative_at"] = now
         set_cached_platform(company["name"], {"platform": "custom"})
     elif platform == "workday" and attempted_full_guess:
-        # We paid the full brute-force cost and still found nothing - cache
-        # that too, so the next run doesn't redo ~200 failing requests for
-        # a company whose Workday tenant genuinely can't be guessed this
-        # way. Delete platform_cache.json (or fix the CSV row) to retry.
         company["_workday_guess_failed"] = True
+        company["_negative_at"] = now
         set_cached_platform(company["name"], {"platform": "workday", "unresolved": True})
     elif platform != "workday":
-        # Non-Workday hint (including "custom"/Own Portal/Taleo): we tried
-        # both URL sniffing AND the direct API slug guess and genuinely
-        # found nothing. Cache that as custom so future searches/scans go
-        # straight to the career-page scraper instead of repeating this
-        # whole chain every time.
         company["platform"] = "custom"
         company["_custom_confirmed"] = True
+        company["_negative_at"] = now
         set_cached_platform(company["name"], {"platform": "custom"})
 
     return company
@@ -932,7 +1031,10 @@ def fetch_custom_site_jobs(url, keyword=None, location=None, max_pages=5):
     try:
         resp = _bounded_request(requests.get, url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
-    except requests.RequestException:
+    except requests.RequestException as e:
+        status = getattr(getattr(e, "response", None), "status_code", None)
+        if status not in _CLEAN_MISS_STATUSES:
+            _note_inconclusive()
         return []
 
     responses = [(resp.text, resp.url or url)]

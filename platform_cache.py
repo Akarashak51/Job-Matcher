@@ -25,12 +25,19 @@ URLs) - it will just get rebuilt lazily as companies are searched again.
 import json
 import os
 import threading
+import time
 from datetime import datetime, timezone
 
 CACHE_PATH = os.environ.get(
     "PLATFORM_CACHE_PATH",
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "platform_cache.json"),
 )
+
+# "Negative" entries (platform == "custom", or {"unresolved": True}) mean "we
+# probed and found no known ATS". That verdict can go stale (company moves to
+# Greenhouse/Lever, or the probe was wrong), so it expires; positive entries
+# (real token/tenant) never do.
+NEGATIVE_TTL_SECONDS = float(os.environ.get("PLATFORM_CACHE_NEGATIVE_TTL_HOURS", "24")) * 3600
 
 _lock = threading.Lock()
 _cache = None  # lazy-loaded dict, held in memory once loaded
@@ -58,12 +65,29 @@ def _save():
     os.replace(tmp_path, CACHE_PATH)  # atomic on POSIX - avoids a half-written file
 
 
+def _is_negative(entry):
+    return bool(entry) and (entry.get("platform") == "custom" or entry.get("unresolved"))
+
+
+def negative_entry_timestamp(entry):
+    """Epoch seconds when a cache entry was written (falls back to 'now'
+    if the timestamp is missing/unparseable, so the TTL starts fresh)."""
+    try:
+        return datetime.fromisoformat(entry["discovered_at"]).timestamp()
+    except (KeyError, ValueError, TypeError):
+        return time.time()
+
+
 def get_cached_platform(company_name):
     """Return the cached {platform, token/tenant/wd_host/site, ...} dict
-    for a company, or None if we've never successfully resolved it."""
+    for a company, or None if we've never resolved it - or if the only
+    thing we have is an expired negative ("custom") verdict."""
     with _lock:
         cache = _load()
-        return cache.get(company_name.strip().lower())
+        entry = cache.get(company_name.strip().lower())
+        if _is_negative(entry) and (time.time() - negative_entry_timestamp(entry)) > NEGATIVE_TTL_SECONDS:
+            return None
+        return entry
 
 
 def set_cached_platform(company_name, data):

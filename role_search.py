@@ -43,7 +43,41 @@ from hulk_job_search import (
     company_domain,
     resolve_company_platform,
     fetch_custom_site_jobs,
+    _reset_probe_errors,
+    _probe_was_inconclusive,
 )
+
+
+class LookupFailedNote(str):
+    """A note string meaning "we could NOT check this company" (timeout,
+    bot-block, rate limit, network down) - as opposed to a genuine
+    "checked, nothing matched". It is still a plain str for JSON/UI
+    purposes; callers use isinstance(note, LookupFailedNote) to tell the
+    two apart, so a failed lookup is never reported as "NO MATCH"."""
+
+
+def is_lookup_failure(note):
+    return isinstance(note, LookupFailedNote)
+
+
+def _lookup_failed_note(company):
+    url = company.get("careers_url") or "their careers page"
+    return LookupFailedNote(
+        f"Couldn't reach {company['name']}'s job board just now (timeout, the site "
+        f"blocked the request, or a network error). This is NOT a confirmed \"no match\" - "
+        f"nothing was cached, so it will be re-checked automatically next time. "
+        f"You can check directly: {url}"
+    )
+
+
+def _finalize(result, company, api_failed):
+    """If a search came back empty AND something along the way was
+    inconclusive, replace the misleading 'no match / can't extract' note
+    with an explicit lookup-failed one. Real matches are never touched."""
+    kept, used, total, note = result
+    if not kept and (api_failed or _probe_was_inconclusive()):
+        return [], used, total, _lookup_failed_note(company)
+    return result
 
 
 # ---------------------------------------------------------------------
@@ -364,14 +398,16 @@ def _search_known_company_impl(company, role_query, max_experience, days, includ
 
     # Cheap, cached: fills in token/tenant/wd_host/site if this company was
     # only loaded from the CSV with a platform *hint* and no credentials
-    # yet. allow_workday_guess=True (the default, used for a single
-    # dashboard search) also allows the slower brute-force Workday guess
-    # as a last resort - worth it once, since the result gets cached to
-    # disk and every future search/Job Watcher scan for this company
-    # reuses it for free. Job Watcher's bulk scan passes False so a
-    # never-before-searched Workday company doesn't stall the whole scan.
+    # yet. allow_workday_guess=True (single dashboard search) also allows the
+    # slower brute-force Workday guess. Job Watcher's bulk scan passes False.
+    #
+    # If discovery was INCONCLUSIVE (timeout / 403 / 429 / network), the
+    # company is left unresolved and NOT cached (see resolve_company_platform)
+    # and company["_lookup_unreliable"] is True.
     resolve_company_platform(company, try_workday_guess=allow_workday_guess)
     platform = company.get("platform")
+    api_failed = bool(company.get("_lookup_unreliable"))
+    _reset_probe_errors()  # from here on, only track failures of THIS search's calls
 
     if platform == "greenhouse" and company.get("token"):
         region = "eu" if company.get("gh_region") == "eu" else None
@@ -384,6 +420,7 @@ def _search_known_company_impl(company, role_query, max_experience, days, includ
                                 exclude_pattern, max_experience, days)
             note = None if kept else _no_match_note(used, len(jobs), role_query, max_experience)
             return kept, used, len(jobs), note
+        api_failed = True  # confirmed board didn't answer
 
     elif platform == "lever" and company.get("token"):
         jobs, used = try_lever(company["token"])
@@ -392,6 +429,7 @@ def _search_known_company_impl(company, role_query, max_experience, days, includ
                                 exclude_pattern, max_experience, days)
             note = None if kept else _no_match_note(used, len(jobs), role_query, max_experience)
             return kept, used, len(jobs), note
+        api_failed = True
 
     elif platform == "smartrecruiters" and company.get("token"):
         jobs, used = try_smartrecruiters(company["token"])
@@ -400,6 +438,7 @@ def _search_known_company_impl(company, role_query, max_experience, days, includ
                                 exclude_pattern, max_experience, days, extra=(company["token"],))
             note = None if kept else _no_match_note(used, len(jobs), role_query, max_experience)
             return kept, used, len(jobs), note
+        api_failed = True
 
     elif platform == "workday":
         tenant, wd_host, site = company.get("tenant"), company.get("wd_host"), company.get("site")
@@ -409,9 +448,12 @@ def _search_known_company_impl(company, role_query, max_experience, days, includ
                                 exclude_pattern, max_experience, days, extra=(tenant, wd_host, site))
             note = None if kept else _no_match_note(used, len(jobs), role_query, max_experience)
             return kept, used, len(jobs), note
+        if tenant and wd_host and site:
+            api_failed = True  # had real credentials and it still didn't answer
 
     elif platform == "custom":
-        return _search_custom(company, role_pattern, exclude_pattern, role_query)
+        return _finalize(_search_custom(company, role_pattern, exclude_pattern, role_query),
+                         company, api_failed)
 
     # confirmed hint failed to respond (network/API issue) - try ashby as a
     # secondary guess before giving up.
@@ -428,13 +470,10 @@ def _search_known_company_impl(company, role_query, max_experience, days, includ
     # may have been wrong or the API may be down - try scraping their
     # careers page directly rather than giving up with nothing.
     if company.get("careers_url"):
-        return _search_custom(company, role_pattern, exclude_pattern, role_query)
+        return _finalize(_search_custom(company, role_pattern, exclude_pattern, role_query),
+                         company, api_failed)
 
-    return [], None, 0, (
-        "Couldn't reach this company's job board right now (it may be temporarily "
-        "down, or its API endpoint changed). Try again shortly, or check: "
-        f"{company.get('careers_url', 'their careers page')}"
-    )
+    return [], None, 0, _lookup_failed_note(company)
 
 
 # ---------------------------------------------------------------------
@@ -446,6 +485,7 @@ def _search_unknown_company_impl(name, role_query, max_experience, days, include
     role_pattern = build_role_pattern(role_query)
     exclude_pattern = build_exclude_pattern(role_query, include_senior)
     variants = slug_variants(name)[:2]  # bound worst-case latency
+    _reset_probe_errors()
 
     attempts = [
         ("greenhouse", lambda s: try_greenhouse(s, region=None)),
@@ -469,6 +509,14 @@ def _search_unknown_company_impl(name, role_query, max_experience, days, include
                     f"Found this company on {used} ({len(jobs)} open role(s)), but "
                     f"none matched \"{role_query}\" with your experience filter."
                 )
+
+    if _probe_was_inconclusive():
+        # Every guess either 404'd OR failed to answer - we can't claim
+        # "unsupported" when part of the answer was a timeout/block.
+        return [], None, 0, LookupFailedNote(
+            f"Couldn't reach the job-board APIs while looking up \"{name}\" (timeout, block, "
+            f"or network error), so we can't tell whether it's supported. Please try again shortly."
+        )
 
     return [], None, 0, (
         "We don't have this company configured, and couldn't auto-detect it on "
@@ -583,7 +631,8 @@ def search_all_known_companies(role_query, max_experience, days, include_senior,
                 allow_workday_guess=False, apply_ai=False,
             )
         except Exception as e:  # a single company's failure shouldn't sink the scan
-            jobs, platform_used, total_found, note = [], None, 0, f"error while scanning: {e}"
+            jobs, platform_used, total_found = [], None, 0
+            note = LookupFailedNote(f"error while scanning: {e}")
         return {
             "company": company["name"],
             "careers_url": company.get("careers_url", ""),
@@ -592,6 +641,7 @@ def search_all_known_companies(role_query, max_experience, days, include_senior,
             "total_open_roles_seen": total_found,
             "match_count": len(jobs),
             "note": note,
+            "lookup_failed": is_lookup_failure(note),
             "jobs": jobs,
         }
 
@@ -603,6 +653,7 @@ def search_all_known_companies(role_query, max_experience, days, include_senior,
 
     results.sort(key=lambda r: (-r["match_count"], r["company"].lower()))
     matched = [r for r in results if r["match_count"] > 0]
+    unreachable = [r["company"] for r in results if r["lookup_failed"]]
 
     # AI layer, applied ONCE per cycle over the already-filtered "matched"
     # shortlist (typically a handful of companies, not 300+) rather than
@@ -627,6 +678,8 @@ def search_all_known_companies(role_query, max_experience, days, include_senior,
         "companies_scanned": len(scannable),
         "companies_skipped": skipped,
         "companies_with_matches": len(matched),
+        "companies_unreachable": len(unreachable),
+        "unreachable_names": unreachable[:50],
         "total_matches": sum(r["match_count"] for r in results),
         "matched": matched,
         "results": results,

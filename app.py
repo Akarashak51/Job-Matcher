@@ -33,6 +33,7 @@ from role_search import (
     search_known_company,
     search_unknown_company,
     search_all_known_companies,
+    is_lookup_failure,
     company_identity,
     company_domain,
 )
@@ -250,6 +251,7 @@ def search(
         "total_open_roles_seen": total_found,
         "match_count": len(jobs),
         "note": note,
+        "lookup_failed": is_lookup_failure(note),
         "jobs": jobs,
         "company_careers_url": identity["careers_url"],
         "company_logo_domain": identity["logo_domain"],
@@ -1149,6 +1151,9 @@ async function runSingleSearch() {
     if (data.match_count > 0) {
       statusEl.textContent = 'MATCH: ' + data.match_count + ' role(s) found' +
         (data.platform_used ? ' via ' + data.platform_used : '') + '. (' + elapsed + 's)';
+    } else if (data.lookup_failed) {
+      // Not a real "no match": the job board could not be reached/read.
+      statusEl.textContent = 'COULD NOT CHECK ' + company + ' - job board unreachable, try again. (' + elapsed + 's)';
     } else {
       statusEl.textContent = 'NO MATCH for "' + role + '" at ' + company +
         (data.platform_used ? ' (checked via ' + data.platform_used + ')' : '') + '. (' + elapsed + 's)';
@@ -1261,14 +1266,20 @@ async function runWatcherScan() {
 
     if (!watcherActive) return; // stopped while the request was in flight
 
+    const unreachable = data.companies_unreachable || 0;
     if (data.total_matches > 0) {
       statusText.textContent = 'MATCH: ' + data.total_matches + ' role(s) found across ' +
         data.companies_with_matches + ' compan' + (data.companies_with_matches === 1 ? 'y' : 'ies') + '.';
+    } else if (unreachable > data.companies_scanned / 2) {
+      // Most boards didn't answer - this is a connectivity/blocking problem, not "no jobs".
+      statusText.textContent = 'SCAN INCOMPLETE: ' + unreachable + ' of ' + data.companies_scanned +
+        ' job boards could not be reached. Will retry next cycle.';
     } else {
       statusText.textContent = 'NO MATCH for "' + role + '" in any company this scan.';
     }
     statusEl.textContent = 'Scanned ' + data.companies_scanned + ' compan' +
       (data.companies_scanned === 1 ? 'y' : 'ies') +
+      (unreachable ? ' (' + unreachable + ' could not be reached)' : '') +
       (data.companies_skipped.length ? ' (' + data.companies_skipped.length + ' skipped - no live job-board API)' : '') +
       ' in ' + elapsed + 's. Watching every ' + minutes + ' min.';
 
