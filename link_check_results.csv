@@ -1,0 +1,1578 @@
+company_name,original_url,final_url,status_code,note
+1mg (Tata Digital),https://www.1mg.com/careers,https://www.1mg.com/careers,404,NOT FOUND - URL likely wrong/outdated
+99acres,https://www.99acres.com/careers,https://www.99acres.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Accenture India,https://www.accenture.com/in-en/careers,https://www.accenture.com/in-en/careers,200,OK
+Acko Insurance,https://acko.com/careers,https://www.acko.com/careers/,200,OK
+Activision Blizzard,https://careers.activisionblizzard.com,https://careers.activisionblizzard.com/,200,OK
+Adobe,https://adobe.wd5.myworkdayjobs.com,https://adobe.wd5.myworkdayjobs.com/,406,Unexpected status 406
+Aerospike,https://www.aerospike.com/careers,https://aerospike.com/careers/,200,OK
+Agoda,https://careers.agoda.com,https://careersatagoda.com,403,Blocked by bot-protection (site likely fine for humans)
+Airbnb,https://careers.airbnb.com,https://careers.airbnb.com/,200,OK
+Altran (Capgemini Engineering),https://www.capgemini-engineering.com/,https://www.capgemini-engineering.com/,200,OK
+Amazon,https://www.amazon.jobs/en/locations/india,https://www.amazon.jobs/en/locations/india,404,NOT FOUND - URL likely wrong/outdated
+Apna,https://apna.co/careers,https://careers.apna.co,200,OK
+Apple,https://www.apple.com/careers,https://www.apple.com/careers/us/,200,OK
+Arista Networks,https://www.arista.com/en/careers,https://www.arista.com/en/careers,406,Unexpected status 406
+ARM,https://careers.arm.com,https://careers.arm.com/,200,OK
+Ather Energy,https://atherenergy.com/careers,https://atherenergy.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Atlassian,https://www.atlassian.com/company/careers,https://www.atlassian.com/company/careers,200,OK
+Atos,https://atos.net/en/careers,https://atos.net/en/join-us,200,OK
+Automattic,https://automattic.com/work-with-us,https://automattic.com/work-with-us/,200,OK
+Bain & Company Tech,https://www.bain.com/careers,https://www.bain.com/careers,200,OK
+BCG Digital Ventures,https://www.bcgdv.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.bcgdv.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='www.bcgdv.com', port=443): Failed to resolve 'www.bcgdv.com' ([Errno 11001] getaddrinfo failed)""))"
+BeatO,https://www.beatoapp.com/,https://www.beatoapp.com/,200,OK
+BigBasket,https://www.bigbasket.com/careers,https://www.bigbasket.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Biosense,https://www.biosense.in/careers,https://www.biosense.in/careers,200,OK
+BlackBuck,https://www.blackbuck.com/careers,https://www.blackbuck.com/careers,502,Server error - retry later
+Blinkit,https://blinkit.com/careers,https://blinkit.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Boat,https://www.boat-lifestyle.com/,https://www.boat-lifestyle.com/,200,OK
+Booking.com,https://careers.booking.com,https://careers.booking.com/,200,OK
+Bosch,https://www.bosch-career.com,,ERROR,"SSL error: HTTPSConnectionPool(host='www.bosch-career.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.bosch-career.com'. (_ssl.c:1082)"")))"
+Bounce,https://www.bounce.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.bounce.in', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='www.bounce.in', port=443): Failed to resolve 'www.bounce.in' ([Errno 11002] getaddrinfo failed)""))"
+Bounce Infinity,https://www.bounceinfinity.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='www.bounceinfinity.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.bounceinfinity.com'. (_ssl.c:1082)"")))"
+Broadcom,https://www.broadcom.com/company/careers,https://www.broadcom.com/company/careers,200,OK
+BrowserStack,https://www.browserstack.com/careers,https://www.browserstack.com/careers,200,OK
+Byju’s,https://byjus.com/careers,https://byjus.com/careers-at-byjus/,200,OK
+Capgemini,https://www.capgemini.com/in-en/careers,https://www.capgemini.com/in-en/careers/,200,OK
+CarDekho,https://careers.cardekho.com/,https://careers.cardekho.com/,200,OK
+Cars24,https://www.cars24.com/careers,https://www.cars24.com/careers/,200,OK
+CGI,https://www.cgi.com/en/careers,https://www.cgi.com/en/careers,200,OK
+Check Point Software,https://www.checkpoint.com/careers,https://www.checkpoint.com/careers/,200,OK
+Cisco,https://jobs.cisco.com,https://careers.cisco.com/global/en,200,OK
+Classplus,https://classplusapp.com/careers,https://classplusapp.com/careers,200,OK
+ClearTax,https://cleartax.in/careers,https://cleartax.in/s/404error,404,NOT FOUND - URL likely wrong/outdated
+Cleartrip,https://www.cleartrip.com/,https://www.cleartrip.com/,200,OK
+CleverTap,https://www.clevertap.com/careers,https://clevertap.com/careers/,200,OK
+Cloudera,https://www.cloudera.com/careers,https://www.cloudera.com/careers.html,200,OK
+Coding Ninjas,https://www.codingninjas.com/careers,https://www.codingninjas.com/careers,200,OK
+Cognizant,https://careers.cognizant.com/in/en,https://careers.cognizant.com/india-en/,200,OK
+Coinbase,https://www.coinbase.com/careers,https://www.coinbase.com/en-in/careers,200,OK
+Confluent,https://www.confluent.io/careers,https://careers.confluent.io/,429,Unexpected status 429
+Continental AG,https://www.continental.com/en/career,https://www.continental.com/en/career/,200,OK
+Couchbase,https://www.couchbase.com/careers,https://www.couchbase.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+CRED,https://careers.cred.club,https://careers.cred.club/,200,OK
+CureBay,https://www.curebay.com/careers,https://www.curebay.com/careers,200,OK
+CureFit,https://www.cult.fit/careers,https://careers.cult.fit/cult/,200,OK
+CureSkin,https://www.cureskin.com/,https://cureskin.com/,200,OK
+DailyHunt,https://www.dailyhunt.com/,https://m.dailyhunt.in/,200,OK
+Darwinbox,https://darwinbox.com/careers,https://darwinbox.com/careers,200,OK
+Databricks,https://databricks.com/company/careers,https://www.databricks.com/company/careers,200,OK
+Datastax,https://www.datastax.com/careers,https://www.ibm.com/products/datastax,200,OK
+Delhivery,https://www.delhivery.com/careers,https://www.delhivery.com/careers,200,OK
+Dell Technologies,https://jobs.dell.com,https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers,200,OK
+Deloitte Digital,https://www2.deloitte.com/global/en/careers,https://www.deloitte.com/global/en/careers.html,200,OK
+Digit Insurance,https://www.godigit.com/careers,https://www.godigit.com/careers,200,OK
+Dozee,https://www.dozee.health/,https://www.dozeehealth.ai/,200,OK
+Dream11,https://www.dreamsports.group/careers,https://www.dreamsports.group/lifeatdreamsports,200,OK
+Droom,https://droom.in/,https://droom.in/,200,OK
+Dropbox,https://jobs.dropbox.com,https://www.dropbox.jobs/en/,200,OK
+Dun & Bradstreet,https://www.dnb.com/careers,https://www.dnb.com/en-us/about/careers.html,200,OK
+DXC Technology,https://careers.dxc.com,https://careers.dxc.com/,200,OK
+EasyMyTrip,https://www.easemytrip.com/,https://www.easemytrip.com/,200,OK
+Elastic,https://www.elastic.co/about/careers,https://www.elastic.co/careers,200,OK
+Electronic Arts (EA),https://www.ea.com/careers,https://www.ea.com/careers,200,OK
+Endava,https://careers.endava.com,https://www.endava.com/careers,200,OK
+EPAM Systems,https://careers.epam-corp.com,,ERROR,"Connection error: HTTPSConnectionPool(host='careers.epam-corp.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='careers.epam-corp.com', port=443): Failed to resolve 'careers.epam-corp.com' ([Errno 11001] getaddrinfo failed)""))"
+Epic Games,https://www.epicgames.com/site/en-US/careers,https://www.epicgames.com/site/en-US/careers,403,Blocked by bot-protection (site likely fine for humans)
+Ericsson,https://www.ericsson.com/en/careers,https://www.ericsson.com/en/careers,403,Blocked by bot-protection (site likely fine for humans)
+Eruditus,https://eruditus.com/,https://eruditus.com/,200,OK
+EXL Service,https://www.exlservice.com/careers,https://www.exlservice.com/careers,200,OK
+Expedia India,https://lifeatexpedia.com,,ERROR,"Connection error: HTTPSConnectionPool(host='lifeatexpedia.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(""HTTPSConnection(host='lifeatexpedia.com', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+EY Technology,https://www.ey.com/en_gl/careers,https://www.ey.com/en_gl/careers,200,OK
+FarEye,https://fareye.com/careers,https://fareye.com/about/careers,200,OK
+Fi Money,https://fi.money/careers,https://fi.money/careers,200,OK
+Fire-Boltt,https://www.fireboltt.com/,https://www.fireboltt.com/,200,OK
+Flipkart,https://www.flipkartcareers.com,https://www.flipkartcareers.com/,200,OK
+Fortinet,https://www.fortinet.com/corporate/careers,https://www.fortinet.com/corporate/careers,200,OK
+Forus Health,https://www.forushealth.com/careers,https://forushealth.com/careers/,200,OK
+Fractal Analytics,https://fractal.ai/careers,https://fractal.wd1.myworkdayjobs.com/Careers,200,OK
+Freshworks,https://www.freshworks.com/company/careers,https://www.freshworks.com/company/careers/,200,OK
+Fujitsu,https://www.fujitsu.com/global/about/careers,https://global.fujitsu/en-global/about,200,OK
+Furlenco,https://www.furlenco.com/,https://www.furlenco.com/,200,OK
+Gartner,https://jobs.gartner.com,https://jobs.gartner.com/,200,OK
+GE Digital,https://jobs.gecareers.com,,ERROR,"Connection error: HTTPSConnectionPool(host='jobs.gecareers.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='jobs.gecareers.com', port=443): Failed to resolve 'jobs.gecareers.com' ([Errno 11001] getaddrinfo failed)""))"
+Genpact,https://www.genpact.com/careers,https://www.genpact.com/careers,200,OK
+GitHub,https://github.com/about/careers,https://www.github.careers/careers-home,200,OK
+GitLab,https://about.gitlab.com/jobs,https://about.gitlab.com/jobs/,200,OK
+Globant,https://www.globant.com/careers,https://www.globant.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Goibibo,https://www.goibibo.com/careers,,ERROR,Timed out
+Google,https://careers.google.com,https://www.google.com/about/careers/applications/,200,OK
+Groww,https://groww.in/careers,https://groww.in/careers,200,OK
+Happiest Minds,https://www.happiestminds.com/careers,https://www.happiestminds.com,200,OK
+Hasura,https://hasura.io/careers,https://promptql.io/careers,200,OK
+HCLTech,https://www.hcltech.com/careers,https://www.hcltech.com/blogs,200,OK
+HealthifyMe,https://www.healthifyme.com/careers,https://www.healthifyme.com/careers/,200,OK
+HealthPlix,https://www.healthplix.com/,https://www.healthplix.com/,200,OK
+Hitachi Vantara,https://careers.hitachi.com,https://careers.hitachi.com/,200,OK
+Honeywell,https://careers.honeywell.com,https://careers.honeywell.com/en/sites/Honeywell,200,OK
+Housing.com,https://housing.com/careers,https://housing.com/careers,406,Unexpected status 406
+HP Inc.,https://jobs.hp.com,https://jobs.hp.com/,200,OK
+HPE,https://careers.hpe.com,https://careers.hpe.com/us/en,200,OK
+Huawei,https://career.huawei.com,https://career.huawei.com/cn,200,OK
+IBM,https://www.ibm.com/careers,https://www.ibm.com/careers,200,OK
+Incedo,https://www.incedoinc.com/careers,https://www.incedoinc.com/careers/,200,OK
+INDmoney,https://indmoney.com/careers,https://indmoney.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Infosys,https://careers.infosys.com,https://careers.infosys.com/,403,Blocked by bot-protection (site likely fine for humans)
+Infra.Market,https://www.infra.market/careers,https://infra.market/careers/,200,OK
+InMobi,https://www.inmobi.com/careers,https://www.inmobi.com/company/careers,200,OK
+Innovaccer,https://innovaccer.com/careers,https://innovaccer.com/careers,200,OK
+Intel,https://jobs.intel.com,https://corpredirect.intel.com/Redirector/404Redirector.aspx?404;https://jobs.intel.com/,403,Blocked by bot-protection (site likely fine for humans)
+Intuit,https://careers.intuit.com,https://www.intuit.com/careers/,200,OK
+Ixigo,https://www.ixigo.com/careers,https://careers.ixigo.com/,200,OK
+Jabong,https://www.jabong.com/careers,https://www.myntra.com/careers,200,OK
+Juniper Networks,https://www.juniper.net/us/en/company/careers,https://careers.hpe.com/juniper,200,OK
+Jupiter Money,https://jupiter.money/careers,https://jupiter.money/careers/,200,OK
+Kayak,https://www.kayak.com/careers,https://www.kayak.com/careers,200,OK
+Khatabook,https://khatabook.com/careers,https://khatabook.com/hiring/,200,OK
+Koo App,https://www.kooapp.com/,https://www.kooapp.com/,404,NOT FOUND - URL likely wrong/outdated
+KPMG Technology,https://home.kpmg/xx/en/home/careers.html,https://kpmg.com/xx/en/careers.html,200,OK
+Kutumb,https://kutumb.app/careers,https://kutumb.app/careers,200,OK
+LambdaTest,https://www.lambdatest.com/careers,https://www.testmuai.com/career/,200,OK
+LG CNS,https://www.lgcns.com/,https://www.lgcns.com/en,200,OK
+LinkedIn,https://careers.linkedin.com,https://careers.linkedin.com/,200,OK
+Livspace,https://www.livspace.com/careers,https://www.livspace.com/in/careers,200,OK
+Locus.sh,https://locus.sh/careers,https://locus.sh/careers/,200,OK
+LTIMindtree,https://www.ltimindtree.com/careers,https://www.ltm.com/careers,200,OK
+Luxoft,https://career.luxoft.com,https://career.luxoft.com/,200,OK
+Lyft,https://www.lyft.com/careers,https://www.lyft.com/careers,200,OK
+MagicBricks,https://www.magicbricks.com/careers,https://www.magicbricks.com/careers/,200,OK
+Mahindra Comviva,https://www.mahindracomviva.com/careers,https://www.mahindracomviva.com/careers,200,OK
+Mahindra Electric,https://www.mahindraelectric.com/careers,https://mahindralastmilemobility.com/,200,OK
+MakeMyTrip,https://careers.makemytrip.com,https://careers.makemytrip.com/,200,OK
+Mamaearth,https://mamaearth.in/,https://mamaearth.in/,200,OK
+Mastek,https://www.mastek.com/careers,https://www.mastek.com/careers/,200,OK
+McKinsey Digital,https://www.mckinsey.com/careers,,ERROR,Timed out
+MedCords,https://www.medcords.com/,https://www.medcords.com/,200,OK
+MedGenome,https://www.medgenome.com/careers,https://diagnostics.medgenome.com/,200,OK
+Medibuddy,https://www.medibuddy.in/careers,https://www.medibuddy.in/careers,502,Server error - retry later
+Meesho,https://careers.meesho.com,https://careers.meesho.com/,403,Blocked by bot-protection (site likely fine for humans)
+Meta,https://www.metacareers.com,https://www.metacareers.com/,400,Unexpected status 400
+MFine,https://www.mfine.co/,https://www.mfine.co/,200,OK
+Micron Technology,https://micron.com/careers,https://www.micron.com/about/careers,200,OK
+Microsoft,https://careers.microsoft.com,https://careers.microsoft.com/v2/global/en/home.html,200,OK
+MindTickle,https://www.mindtickle.com/careers,https://jobs.lever.co/mindtickle,200,OK
+MoEngage,https://www.moengage.com/careers,https://www.moengage.com/careers/,200,OK
+MongoDB,https://www.mongodb.com/careers,https://www.mongodb.com/company/careers,200,OK
+Mphasis,https://www.mphasis.com/careers,https://www.mphasis.com/careers,404,NOT FOUND - URL likely wrong/outdated
+MPL,https://mplgaming.com/,https://www.mplgaming.com:443/,200,OK
+Mu Sigma,https://www.mu-sigma.com/careers,https://www.mu-sigma.com/career/,200,OK
+Myntra,https://careers.myntra.com,https://careers.myntra.com/,200,OK
+Navi,https://navi.com/careers,https://navi.com/careers,200,OK
+Nazara Technologies,https://www.nazara.com/careers,https://www.nazara.com/careers,200,OK
+NEC Corporation,https://www.nec.com/en/global/careers,https://www.nec.com/en/global/careers,403,Blocked by bot-protection (site likely fine for humans)
+Netflix,https://jobs.netflix.com,https://jobs.netflix.com/,200,OK
+Niantic,https://nianticlabs.com/jobs,https://careers.scopely.com/us/en,200,OK
+NielsenIQ,https://nielseniq.com/global/en/careers,https://nielseniq.com/global/en/careers/,200,OK
+Niki.ai,https://niki.ai/,https://www.atom.com/name/Niki.AI,403,Blocked by bot-protection (site likely fine for humans)
+Niramai,https://www.niramai.com/careers,https://niramai.com/careers/,200,OK
+NoBroker,https://www.nobroker.in/careers,https://www.nobroker.in/careers,200,OK
+Noise,https://www.gonoise.com/,https://www.gonoise.com/,200,OK
+Nokia,https://www.nokia.com/about-us/careers,https://www.nokia.com/careers/,200,OK
+NTT Data,https://careers.nttdata.com,https://careers.nttdata.com/global/en,200,OK
+NVIDIA,https://nvidia.wd5.myworkdayjobs.com,https://nvidia.wd5.myworkdayjobs.com/,406,Unexpected status 406
+Nykaa,https://www.nykaa.com/careers,https://www.nykaa.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+OfBusiness,https://www.ofbusiness.com/careers,https://www.ofbusiness.com/careers,410,Unexpected status 410
+OkCredit,https://okcredit.in/careers,https://okcredit.in/,200,OK
+Okta,https://www.okta.com/company/careers,https://www.okta.com/company/careers/,200,OK
+Ola,https://www.olacabs.com/careers,https://www.olacabs.com/careers,200,OK
+Ola Electric,https://olaelectric.com/careers,https://www.olaelectric.com:443,200,OK
+Onsurity,https://www.onsurity.com/careers,https://www.onsurity.com/careers,200,OK
+Open Financial,https://open.money/careers,https://open.money/company/careers,200,OK
+Oracle,https://careers.oracle.com,https://careers.oracle.com/en/sites/jobsearch,200,OK
+Oxyzo,https://www.oxyzo.in/careers,https://www.oxyzo.in/careers,200,OK
+OYO Rooms,https://www.oyorooms.com/careers,https://www.oyorooms.com/,200,OK
+Palantir,https://www.palantir.com/careers,https://www.palantir.com/careers,200,OK
+Palo Alto Networks,https://jobs.paloaltonetworks.com,https://jobs.paloaltonetworks.com/en,200,OK
+Panasonic,https://www.panasonic.com/global/corporate/jobs,https://www.panasonic.com/global/corporate/jobs,403,Blocked by bot-protection (site likely fine for humans)
+PayPal,https://www.paypal.com/careers,https://careers.pypl.com/home/,200,OK
+Paytm,https://paytm.com/careers,https://paytm.com/careers,200,OK
+PayU,https://corporate.payu.com/careers,https://corporate.payu.com/careers/,200,OK
+Pepperfry,https://www.pepperfry.com/careers,https://www.pepperfry.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Phable,https://www.phablecare.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.phablecare.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='www.phablecare.com', port=443): Failed to resolve 'www.phablecare.com' ([Errno 11002] getaddrinfo failed)""))"
+Pharmarack,https://www.pharmarack.com/careers,https://www.pharmarack.com/careers,200,OK
+PharmEasy,https://pharmeasy.in/careers,https://pharmeasy.in/careers/,200,OK
+Philips,https://www.careers.philips.com,https://www.careers.philips.com/in/en,200,OK
+PhonePe,https://www.phonepe.com/careers,https://www.phonepe.com/careers/,200,OK
+Pinterest,https://www.pinterestcareers.com,https://www.pinterestcareers.com/,200,OK
+Plaid,https://plaid.com/careers,https://plaid.com/careers/,200,OK
+Plum Insurance,https://www.plumhq.com/careers,https://www.plumhq.com/careers,200,OK
+PolicyBazaar,https://www.policybazaar.com/careers,https://www.policybazaar.com/careers/,200,OK
+Porter,https://porter.in/careers,https://porter.in/careers,200,OK
+Postman,https://www.postman.com/careers,https://www.postman.com/company/careers/,200,OK
+Practo,https://www.practo.com/careers,https://practo.app.param.ai/jobs/,200,OK
+Pristyn Care,https://www.pristyncare.com/,https://www.pristyncare.com/,200,OK
+Purplle,https://www.purplle.com/careers,https://www.purplle.com/careers,200,OK
+PwC Digital,https://www.pwc.com/careers,https://www.pwc.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Qualcomm,https://www.qualcomm.com/company/careers,https://www.qualcomm.com/company/careers,200,OK
+Quikr,https://www.quikr.com/,https://www.quikr.com/,200,OK
+Qure.ai,https://qure.ai/,https://www.qure.ai/,200,OK
+Ramco Systems,https://www.ramco.com/careers,https://www.ramco.com/careers,200,OK
+Rapido,https://rapido.bike/,https://rapido.bike/Home,200,OK
+Razorpay,https://razorpay.com/careers,https://razorpay.com/careers/,200,OK
+RazorThink,https://www.razorthink.com/,https://www.razorthink.com/,200,OK
+RedBus,https://www.redbus.in/careers,,ERROR,Timed out
+Redis Labs,https://redis.com/company/careers,https://redis.io/company/careers/,200,OK
+Relevel,https://relevel.com/careers,https://relevel.com/careers,530,Server error - retry later
+Remidio,https://www.remidio.com/,https://www.remidio.com/,200,OK
+ReNew Power,https://renewpower.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='renewpower.in', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='renewpower.in', port=443) at 0x1641f36fc50>, 'Connection to renewpower.in timed out. (connect timeout=10)'))"
+Rentomojo,https://www.rentomojo.com/,https://www.rentomojo.com/,200,OK
+Revolut,https://www.revolut.com/careers,https://www.revolut.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Robinhood,https://careers.robinhood.com,https://careers.robinhood.com/,200,OK
+Roblox,https://corp.roblox.com/careers,https://careers.roblox.com/,200,OK
+Rockstar Games,https://www.rockstargames.com/careers,https://www.rockstargames.com/careers,200,OK
+Salesforce,https://www.salesforce.com/company/careers,https://www.salesforce.com/company/careers,403,Blocked by bot-protection (site likely fine for humans)
+Samsung R&D,https://www.samsung.com/in/aboutsamsung/careers,https://www.samsung.com/in/about-us/careers/,200,OK
+SAP,https://jobs.sap.com,https://jobs.sap.com/en/,200,OK
+Scaler,https://www.scaler.com/careers,https://www.scaler.com/careers,200,OK
+Seagate Technology,https://jobs.seagate.com,https://www.seagate.com/in/en/careers/,200,OK
+ServiceNow,https://careers.servicenow.com,https://careers.servicenow.com/,200,OK
+Shadowfax,https://shadowfax.in/careers,https://shadowfax.in/careers,200,OK
+ShareChat,https://careers.sharechat.com,,ERROR,"Connection error: HTTPSConnectionPool(host='careers.sharechat.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='careers.sharechat.com', port=443): Failed to resolve 'careers.sharechat.com' ([Errno 11001] getaddrinfo failed)""))"
+ShopClues,https://www.shopclues.com/careers,https://www.shopclues.com:443/career.html?sef_rewrite=1,200,OK
+Shopify,https://www.shopify.com/careers,https://www.shopify.com/careers,200,OK
+Siemens,https://jobs.siemens.com,https://jobs.siemens.com/en_US/externaljobs,200,OK
+Siemens Healthineers,https://jobs.siemens-healthineers.com,https://careers.siemens-healthineers.com/global/en,200,OK
+SigTuple,https://www.sigtuple.com/,https://sigtuple.com/,200,OK
+Simplilearn,https://www.simplilearn.com/careers,https://www.simplilearn.com/careers,200,OK
+Skyscanner,https://www.skyscanner.net/jobs,https://www.skyscanner.net/jobs,200,OK
+Slack,https://slack.com/careers,https://slack.com/intl/en-in/careers,200,OK
+Slice,https://www.sliceit.com/careers,https://slice.bank.in/careers,200,OK
+Smallcase,https://www.smallcase.com/,https://www.smallcase.com/,200,OK
+Snapdeal,https://www.snapdeal.com/,https://www.snapdeal.com/,200,OK
+Snowflake,https://careers.snowflake.com,https://careers.snowflake.com/us/en,200,OK
+Snowplow Analytics,https://snowplow.io/careers,https://snowplow.io/careers,200,OK
+Sopra Steria,https://www.soprasteria.com/en/careers,https://careers.soprasteria.com/,200,OK
+SoundCloud,https://soundcloud.com/jobs,https://soundcloud.com/company/careers,200,OK
+SpaceX,https://www.spacex.com/careers,https://www.spacex.com/careers,200,OK
+Spinny,https://www.spinny.com/careers,https://www.spinny.com/careers/,200,OK
+Splunk,https://www.splunk.com/,https://www.splunk.com/,200,OK
+Spotify,https://www.spotifyjobs.com,https://www.lifeatspotify.com/,200,OK
+Square (Block Inc.),https://block.xyz/careers,https://block.xyz/careers/jobs,200,OK
+Square Enix,https://www.square-enix.com/,https://www.square-enix.com/,200,OK
+Square Yards,https://www.squareyards.com/,https://www.squareyards.com/,200,OK
+Stripe,https://stripe.com/jobs,https://stripe.com/in/careers,200,OK
+Subex,https://www.subex.com/careers,https://www.subex.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Sutherland,https://www.sutherlandglobal.com/careers,https://jobs.sutherlandglobal.com/,403,Blocked by bot-protection (site likely fine for humans)
+Swasth Digital Health,https://swasth.org/,https://www.swasth.org/,200,OK
+Swiggy,https://careers.swiggy.com,https://careers.swiggy.com/,200,OK
+Tata Digital,https://www.tatadigital.com/careers,https://www.tataneu.com/careers,200,OK
+Tata Elxsi,https://www.tataelxsi.com/careers,https://www.tataelxsi.com/careers,200,OK
+TCS,https://www.tcs.com/careers,https://www.tcs.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Teachmint,https://teachmint.com/careers,https://teachmint.keka.com/careers/,200,OK
+Tech Mahindra,https://careers.techmahindra.com,https://careers.techmahindra.com/,200,OK
+Tesla,https://www.tesla.com/careers,https://www.tesla.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Texas Instruments,https://careers.ti.com,https://careers.ti.com/en/sites/CX,200,OK
+ThoughtSpot,https://www.thoughtspot.com/careers,https://www.thoughtspot.com/careers,200,OK
+ThoughtWorks,https://www.thoughtworks.com/careers,https://www.thoughtworks.com/careers,200,OK
+Tiger Analytics,https://www.tigeranalytics.com/careers,https://www.tigeranalytics.com/about-us/current-openings/,200,OK
+Toppr,https://www.toppr.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='www.toppr.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+Tracxn,https://tracxn.com/,https://tracxn.com/,200,OK
+Tricog,https://www.tricog.com/careers,https://tricog.com/careers/,200,OK
+TripAdvisor,https://tripadvisor.wd1.myworkdayjobs.com,https://tripadvisor.wd1.myworkdayjobs.com/,406,Unexpected status 406
+Trivago,https://company.trivago.com/careers,https://careers.trivago.com/,200,OK
+Turtlemint,https://www.turtlemint.com/,https://www.turtlemint.com/,200,OK
+Twilio,https://www.twilio.com/company/jobs,https://jobs.twilio.com/careers,200,OK
+Twitter (X),https://careers.twitter.com,https://x.ai/careers,200,OK
+Uber,https://www.uber.com/careers,https://www.uber.com/careers,406,Unexpected status 406
+Ubisoft,https://www.ubisoft.com/jobs,https://www.ubisoft.com/en-us,200,OK
+Udaan,https://careers.udaan.com,,ERROR,"Connection error: HTTPSConnectionPool(host='careers.udaan.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='careers.udaan.com', port=443) at 0x164202c82d0>, 'Connection to careers.udaan.com timed out. (connect timeout=10)'))"
+Unacademy,https://unacademy.com/careers,https://unacademy.com/careers,200,OK
+Uni Cards,https://www.uni.cards/,https://www.uni.cards/,200,OK
+Unity Technologies,https://unity.com/careers,https://unity.com/careers,200,OK
+UpGrad,https://www.upgrad.com/careers,https://www.upgrad.com/careers/,200,OK
+Upstox,https://upstox.com/careers,https://upstox.com/careers/,200,OK
+Urban Company,https://www.urbancompany.com/,,ERROR,Timed out
+Valeo,https://www.valeo.com/en/careers,https://www.valeo.com/en/careers/,200,OK
+Valve Corporation,https://www.valvesoftware.com/jobs,https://www.valvesoftware.com/en/,200,OK
+Vedantu,https://www.vedantu.com/careers,https://courses.vedantu.com/career-page/,200,OK
+VMware,https://careers.vmware.com,,ERROR,"Connection error: HTTPSConnectionPool(host='careers.vmware.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='careers.vmware.com', port=443) at 0x1641f36df90>, 'Connection to careers.vmware.com timed out. (connect timeout=10)'))"
+Vogo,https://vogo.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='vogo.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'vogo.in'. (_ssl.c:1082)"")))"
+Western Digital,https://jobs.westerndigital.com,https://www.westerndigital.com/careers,200,OK
+WhiteHat Jr,https://www.whitehatjr.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.whitehatjr.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='www.whitehatjr.com', port=443): Failed to resolve 'www.whitehatjr.com' ([Errno 11001] getaddrinfo failed)""))"
+Wingify,https://wingify.com/careers,https://wingify.com/company/careers/,200,OK
+Wipro,https://careers.wipro.com/,https://careers.wipro.com/,200,OK
+Wise (TransferWise),https://www.wise.jobs,https://wise.jobs/,200,OK
+WNS Global Services,https://www.wns.com/careers,https://www.wns.com/about-us/careers,200,OK
+Workday,https://workday.wd5.myworkdayjobs.com,https://workday.wd5.myworkdayjobs.com/,406,Unexpected status 406
+Yatra,https://www.yatra.com/careers,,ERROR,Timed out
+Yulu,https://www.yulu.bike/careers,https://www.yulu.bike/careers,200,OK
+Zapier,https://zapier.com/jobs,https://zapier.com/jobs,200,OK
+Zensar Technologies,https://www.zensar.com/careers,https://www.zensar.com/careers,200,OK
+Zepto,https://www.zepto.com/careers,https://www.zepto.com/careers,202,Unexpected status 202
+Zerodha,https://zerodha.com/careers,https://careers.zerodha.com,200,OK
+Zetwerk,https://www.zetwerk.com/careers,https://www.zetwerk.com/careers/,200,OK
+Zoho,https://careers.zohocorp.com,https://careers.zohocorp.com/jobs/Careers,200,OK
+Zomato,https://www.zomato.com/careers,https://www.eternal.com/careers/,200,OK
+Zoomcar,https://www.zoomcar.com/careers,https://www.zoomcar.com/careers,200,OK
+Zynga,https://www.zynga.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.zynga.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.zynga.com', port=443) at 0x164202ca210>, 'Connection to www.zynga.com timed out. (connect timeout=10)'))"
+100ms,https://100ms.live/,https://www.100ms.live/,200,OK
+3i Infotech,https://www.3i-infotech.com/careers,https://www.3i-infotech.com/careers/,200,OK
+5paisa,https://5paisa.com/careers,https://www.5paisa.com/careers,200,OK
+Abhibus,https://abhibus.com/careers,https://www.abhibus.com/careers/,200,OK
+Adani Green,https://adanigreenenergy.com/careers,https://www.adanigreenenergy.com/,200,OK
+Adda247,https://adda247.com/,https://www.adda247.com/,200,OK
+Addverb,https://addverb.com/careers,https://careers.addverb.com/,200,OK
+Aeron Systems,https://aeronsystems.com/careers,https://www.aeronsystems.com/careers/,200,OK
+Affle,https://affle.com/,https://affle.com/,200,OK
+Agilisium,https://agilisium.com/careers,https://www.agilisium.com/people-and-careers,200,OK
+Agnikul Cosmos,https://agnikul.in/careers,https://agnikul.in/careers/,200,OK
+AgroStar,https://agrostar.in/,https://corporate.agrostar.in/,200,OK
+Airtel Digital,https://airtel.in/careers,https://careers.airtel.com,200,OK
+Ajio,https://careers.ril.com/,https://careers.ril.com/,200,OK
+Allsec Technologies,https://allsectech.com/careers,https://www.alldigitech.com/career/,200,OK
+Almabetter,https://almabetter.com/,https://almabetter.com/,200,OK
+Amber Enterprises,https://ambergroupindia.com/careers,https://www.ambergroupindia.com/careers/,200,OK
+Angel One,https://angelone.in/careers,https://www.angelone.in/careers,200,OK
+Anthem Software,https://anthemsoftware.com/careers,https://anthemsoftware.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Apollo 24/7,https://apollo247.com/,https://www.apollo247.com/,200,OK
+Appsecure,https://appsecure.security/,https://www.appsecure.security/,200,OK
+Asian Paints Tech,https://www.asianpaints.com/careers,https://www.asianpaints.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Aspire Systems,https://aspiresys.com/careers,https://www.aspiresys.com:443/careers,200,OK
+Astra Microwave,https://astramwp.com/careers,https://astramwp.com/careers,307,Redirected
+Ati Motors,https://atimotors.com/careers,https://www.atirobotics.ai/company/careers/,200,OK
+Atlan,https://atlan.com/careers,https://atlan.com/careers/,200,OK
+Attero Recycling,https://attero.in/,https://www.attero.in/,200,OK
+AU Small Finance Bank Tech,https://aubank.in/careers,https://www.au.bank.in/careers,200,OK
+Aurionpro,https://aurionpro.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='aurionpro.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Autoninja,https://autoninja.com/,https://forsale.godaddy.com/forsale/AUTONINJA.COM?utm_source=TDFS&utm_medium=sn_affiliate_click&utm_campaign=TDFS_GoDaddy_DLS&traffic_type=TDFS&traffic_id=GoDaddy_DLS,403,Blocked by bot-protection (site likely fine for humans)
+Aye Finance,https://ayefin.com/careers,https://ayefin.com/careers,200,OK
+Bahwan CyberTek,https://bahwancybertek.com/careers,https://www.bahwancybertek.com/careers,200,OK
+Bajaj Capital,https://bajajcapital.com/careers,https://bajajcapital.com/careers,200,OK
+Bajaj Electricals,https://bajajelectricals.com/careers,https://www.bajajelectricals.com/pages/careers,200,OK
+Bajaj Finserv Health,https://bajajfinservhealth.in/,https://www.bajajfinservhealth.in/,200,OK
+Bandhan Bank Tech,https://bandhanbank.com/careers,https://bandhan.bank.in/careers,200,OK
+Bank of Baroda Tech,https://www.bankofbaroda.in/careers,https://bankofbaroda.bank.in/career,200,OK
+Bank of India Tech,https://bankofindia.co.in/careers,https://bankofindia.co.in/careers,403,Blocked by bot-protection (site likely fine for humans)
+BankBazaar,https://www.bankbazaar.com/careers.html,https://www.bankbazaar.com/careers.html,200,OK
+Bellatrix Aerospace,https://bellatrix.space/careers,https://bellatrix.space/careers,523,Server error - retry later
+Betterhome,https://betterhomes.com/careers,https://betterhomes.com/careers,200,OK
+Bewakoof,https://bewakoof.com/careers,https://bewakoof.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Bharat Electronics,https://bel-india.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='bel-india.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Bharat FIH,https://bharatfih.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='bharatfih.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'bharatfih.com'. (_ssl.c:1082)"")))"
+BharatAgri,https://bharatagri.co/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='bharatagri.co', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='bharatagri.co', port=443): Failed to resolve 'bharatagri.co' ([Errno 11001] getaddrinfo failed)""))"
+BharatPe,https://bharatpe.com/careers,https://bharatpe.com/careers,200,OK
+Bhuvan ISRO,https://isro.gov.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='isro.gov.in', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='isro.gov.in', port=443): Failed to resolve 'isro.gov.in' ([Errno 11001] getaddrinfo failed)""))"
+Biconomy,https://biconomy.io/careers,https://www.biconomy.io/careers,200,OK
+Big Bang Boom Solutions,https://bbbsolutions.com/careers,https://bbbsolutions.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+BigRock,https://bigrock.in/careers,https://www.bigrock.in/careers,403,Blocked by bot-protection (site likely fine for humans)
+Bijak,https://bijak.in/careers,https://bijak.keka.com/careers,200,OK
+BikeDekho,https://bikedekho.com/,https://www.bikedekho.com:443/,200,OK
+Bikewale,https://bikewale.com/,https://www.bikewale.com/,200,OK
+Bima Pehchan,https://bimapehchan.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='bimapehchan.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='bimapehchan.com', port=443): Failed to resolve 'bimapehchan.com' ([Errno 11001] getaddrinfo failed)""))"
+Bira91,https://bira91.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='bira91.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='bira91.com', port=443) at 0x164202c82d0>, 'Connection to bira91.com timed out. (connect timeout=10)'))"
+Birlasoft,https://birlasoft.com/careers,https://www.birlasoft.com/careers,200,OK
+Blue Star,https://www.bluestarindia.com/careers,https://www.bluestarindia.com/careers,200,OK
+Bluepi,https://bluepi.in/careers,https://www.bluepiit.com/careers,200,OK
+BlueStone,https://bluestone.com/,https://www.bluestone.com/,200,OK
+Blupine,https://blupineenergy.com/,https://www.blupineenergy.com/,200,OK
+Board Infinity,https://boardinfinity.com/,https://www.boardinfinity.com/,200,OK
+Bombay Shaving Company,https://bombayshavingcompany.com/careers,https://www.bombayshavingcompany.com/,200,OK
+Box8,https://box8.in/careers,https://box8.in/careers,200,OK
+BPCL Digital,https://bharatpetroleum.in/careers,https://www.bharatpetroleum.in/errorpage,200,OK
+Browntape,https://browntape.com/,https://www.ginesys.in/products/e-commerce-oms,200,OK
+Bugworks,https://bugworks.com/careers,https://bugworks.com/careers,500,Server error - retry later
+Bureau,https://bureau.id/,https://bureau.id/,200,OK
+Busy Infotech,https://busy.in/careers,https://busy.in/,200,OK
+BYJU'S Tynker,https://tynker.com/careers,https://www.tynker.com/about/career,200,OK
+Calsoft,https://calsoftinc.com/careers,https://www.calsoftinc.com/career,200,OK
+Cambridge Technology Enterprises,https://cambridgetechnology.com/careers,https://novanta.com/precision-manufacturing/,200,OK
+Canara Bank Tech,https://canarabank.com/,https://www.canarabank.bank.in:443/,200,OK
+Capillary Technologies,https://capillarytech.com/careers,https://capillarytech.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Capital Float,https://capitalfloat.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='capitalfloat.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='capitalfloat.com', port=443): Failed to resolve 'capitalfloat.com' ([Errno 11001] getaddrinfo failed)""))"
+CaratLane,https://caratlane.com/careers,https://www.caratlane.com:443/our-story?page=work-with-us,200,OK
+Cashfree Payments,https://cashfree.com/careers,https://www.cashfree.com:443/careers,200,OK
+CDAC,https://cdac.in/careers,https://cdac.in/careers,200,OK
+Chargebee,https://chargebee.com/careers,https://www.chargebee.com:443/careers,200,OK
+Cigniti Technologies,https://cigniti.com/,https://www.cigniti.com/,200,OK
+CitiusTech,https://citiustech.com/careers,https://www.citiustech.com/careers,200,OK
+Clickpost,https://clickpost.ai/careers,https://www.clickpost.ai/careers,200,OK
+Clix Capital,https://clix.capital/careers,https://www.clix.capital/careers/,200,OK
+Cloudphysician,https://cloudphysician.net/careers,https://www.cloudphysician.ai/,200,OK
+Club Mahindra,https://clubmahindra.com/careers,https://www.clubmahindra.com/careers,200,OK
+Coal India,https://coalindia.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='coalindia.in', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='coalindia.in', port=443): Failed to resolve 'coalindia.in' ([Errno 11001] getaddrinfo failed)""))"
+CodeChef,https://codechef.com/careers,https://www.codechef.com/careers,200,OK
+Codingal,https://codingal.com/careers,https://app.dover.com/jobs/codingal,200,OK
+Coforge,https://coforge.com/careers,https://careers.coforge.com/coforge/,200,OK
+CoinDCX,https://coindcx.com/careers,https://coindcx.com/careers,200,OK
+CoinSwitch,https://coinswitch.co/,https://coinswitch.co/,200,OK
+CoLive,https://colive.com/careers,https://www.colive.com/careers/,200,OK
+CometChat,https://cometchat.com/,https://www.cometchat.com/,200,OK
+Comviva,https://www.comviva.com/careers,https://www.comviva.com/careers/,200,OK
+ConfirmTkt,https://confirmtkt.com/careers,https://www.confirmtkt.com/error-404.html,200,OK
+CoRover,https://corover.ai/careers,https://corover.ai/company/careers,200,OK
+Country Delight,https://countrydelight.in/careers,https://countrydelight.in/careers,200,OK
+Course5 Intelligence,https://course5i.com/careers,https://www.c5i.ai/careers,307,Redirected
+Coverfox,https://coverfox.com/careers,https://www.coverfox.com/careers/,200,OK
+CredAvenue,https://credavenue.com/,https://www.go-yubi.com,200,OK
+CRIF High Mark,https://crifhighmark.com/,https://www.crifhighmark.com/,200,OK
+Crio.do,https://crio.do/careers,https://www.crio.do/404.html,200,OK
+Crompton,https://www.crompton.co.in/careers,https://www.crompton.co.in/pages/careers,200,OK
+Cropin,https://cropin.com/careers,https://www.cropin.com/career/,200,OK
+CSB Bank Tech,https://csb.co.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='csb.co.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'csb.co.in'. (_ssl.c:1082)"")))"
+CtrlS Datacenters,https://ctrls.com/careers,https://www.ctrls.com/careers,200,OK
+Cuemath,https://cuemath.com/,https://www.cuemath.com/en-in/,200,OK
+Cybage Software,https://cybage.com/careers,https://www.cybage.com/careers/open-positions,200,OK
+Cyient,https://www.cyient.com/careers,https://www.cyient.com/careers,200,OK
+Cyient DLM,https://cyientdlm.com/careers,https://www.cyientdlm.com/careers,200,OK
+CynLr,https://cynlr.com/careers,https://www.cynlr.com/careers,200,OK
+Cyware,https://cyware.com/careers,https://www.cyware.com/careers,200,OK
+Daikin India,https://daikinindia.com/careers,https://daikinindia.com/daikin-careers,200,OK
+Damco Solutions,https://damcogroup.com/careers,https://www.damcogroup.com/careers,200,OK
+Data Patterns,https://datapatternsindia.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='datapatternsindia.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'datapatternsindia.com'. (_ssl.c:1082)"")))"
+Datamatics,https://www.datamatics.com/careers,https://www.datamatics.com/careers,404,NOT FOUND - URL likely wrong/outdated
+DealShare,https://dealshare.in/,https://www.dealshare.in:443/,200,OK
+Decentro,https://decentro.tech/careers,https://decentro.tech/careers,200,OK
+DeHaat,https://agrevolution.in/careers,https://agrevolution.in/careers,200,OK
+Design Cafe,https://designcafe.com/careers,https://www.designcafe.com/careers/,200,OK
+Dhan,https://dhan.co/,https://dhan.co/,200,OK
+Dhruva Interactive,https://dhruva.com/careers,https://www.rockstargames.com/careers/offices/rockstar-india,200,OK
+Dhruva Space,https://dhruvaspace.com/careers,https://www.dhruvaspace.com/careers,200,OK
+Digantara,https://digantara.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='digantara.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='digantara.com', port=443) at 0x164202cae90>, 'Connection to digantara.com timed out. (connect timeout=10)'))"
+Digio,https://digio.in/,https://www.digio.in,200,OK
+Dineout,https://dineout.co.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='dineout.co.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+Directi,https://directi.com/,https://www.directi.com:443/,200,OK
+Dixon Technologies,https://dixoninfo.com/careers,https://dixoninfo.com/careers,200,OK
+Doubtnut,https://doubtnut.com/careers,https://allen.in/dn,200,OK
+Drivezy,https://drivezy.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='drivezy.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='drivezy.com', port=443): Failed to resolve 'drivezy.com' ([Errno 11002] getaddrinfo failed)""))"
+E2E Networks,https://e2enetworks.com/careers,https://www.e2enetworks.com/careers,200,OK
+EazyDiner,https://eazydiner.com/,https://www.eazydiner.com:443/,200,OK
+eClerx,https://eclerx.com/careers,https://eclerx.com/careers/,403,Blocked by bot-protection (site likely fine for humans)
+Ecom Express,https://ecomexpress.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='ecomexpress.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+Edureka,https://edureka.co/careers,https://www.edureka.co:443/careers,200,OK
+Eidiko Systems,https://eidiko.com/careers,https://eidiko.com/careers/,200,OK
+Eka Care,https://eka.care/,https://www.eka.care:443/,200,OK
+Ekart,https://ekartlogistics.com/careers,https://ekartlogistics.com/careers,200,OK
+Embibe,https://embibe.com/,https://www.embibe.com/,200,OK
+Equifax India,https://equifax.co.in/careers,https://www.equifax.co.in,200,OK
+Equitas Tech,https://equitasbank.com/,https://equitas.bank.in/,200,OK
+Eros Now,https://erosnow.com/careers,https://erosnow.com/careers,200,OK
+ET Money,https://etmoney.com/,https://www.etmoney.com/,200,OK
+Euler Motors,https://eulermotors.com/careers,https://www.eulermotors.com/careers/,403,Blocked by bot-protection (site likely fine for humans)
+Evalueserve,https://evalueserve.com/careers,https://www.evalueserve.com/careers/,200,OK
+Even Healthcare,https://even.in/,https://even.in/,200,OK
+Exide Energy,https://www.exideindustries.com/careers,https://www.exideindustries.com/error.aspx,200,OK
+Exotel,https://exotel.com/careers,https://exotel.com/about-us/careers/,200,OK
+Experian India,https://experian.in/careers,https://www.experian.in/careers,200,OK
+Extramarks,https://extramarks.com/careers,https://www.extramarks.com/careers,200,OK
+Ezetap,https://ezetap.com/,https://razorpay.com/pos/,200,OK
+FabHotels,https://fabhotels.com/careers,https://www.fabhotels.com/careers,200,OK
+Fampay,https://fampay.in/careers,https://www.famapp.in:443/careers/,200,OK
+Fasal,https://fasal.co/,https://www.fasal.co/,200,OK
+Fasttrack Carsome,https://carsome.com/careers,https://carsome.my/,403,Blocked by bot-protection (site likely fine for humans)
+Federal Bank Tech,https://www.federalbank.co.in/careers,"https://validate.perfdrive.com/?ssa=770c500f-cfe1-4d0d-9a76-c4e7ac37571b&ssb=54910241735&ssc=https%3A%2F%2Fwww.federalbank.co.in%2Fcareers&ssi=b7dbb4a4-e42i-4fe2-893c-bb9de2dfef61&ssk=botmanager_support@radware.com&ssm=37418042444893878105680969994587&ssn=1803292b0b34ae7928d8152e508bd51d48611c462ca6-6ea0-47a6-80991f&sso=d2a2755f-845cbd861f162ecbffed5b40e619ab5b6d07565ab2aab1c1&ssp=88482863781790795902179076966539283&ssq=81041235152979878565551529908171046009075&ssr=MTUyLjU5LjE4NS4xMDg=&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/124.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImZlZGVyYWwuYmFuay5pbiIsIl9fdXptZiI6IjdmOTAwMDFjNDYyY2E2LTZlYTAtNDdhNi04NTVmLTg0NWNiZDg2MWYxNjEtMTc5MDc1MTUyOTk5MDAtMDAwOTRjMzZiMjhjZTQ2MGRiODEwIiwidXpteCI6IjdmYzAwMGU4ZDZlMGYxLTVkNjAtNDYzYi1hNmE5LTExMjU0ODUwYTI4NjEtMTc5MDc1MTUyOTk5MDAtMDA3M2NmYjQ0MWJhNWRjNWZkZDEwIn0=",200,OK
+Finbox,https://finbox.in/careers,https://www.finbox.in/careers,200,OK
+Fino Payments Bank,https://finobank.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='finobank.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1082)')))"
+FirstCry,https://www.firstcry.com/careers,https://www.firstcry.com/careers,200,OK
+Firstsource,https://firstsource.com/careers,https://www.firstsource.com/careers,200,OK
+Flexmoney,https://flexmoney.in/careers,https://www.flexmoney.in/careers,200,OK
+Foundit,https://foundit.in/careers,https://www.foundit.in/careers,200,OK
+Freecharge,https://freecharge.in/careers,https://www.freecharge.in/careers/,200,OK
+Freo,https://freo.money/careers,https://freo.money/careers/,200,OK
+FreshToHome,https://freshtohome.com/,https://www.freshtohome.com/,200,OK
+Fyers,https://fyers.in/,https://fyers.in/,200,OK
+Gaana,https://gaana.com/,https://gaana.com/,200,OK
+GAIL,https://gailonline.com/careers,https://www.gailonline.com/careers/,403,Blocked by bot-protection (site likely fine for humans)
+Games24x7,https://games24x7.com/,https://www.games24x7.com/,200,OK
+Gameskraft,https://gameskraft.com/careers,https://gameskraft.com/careers,200,OK
+Garuda Aerospace,https://garudaaerospace.com/,,ERROR,"Connection error: HTTPConnectionPool(host='www.garudaerospace.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPConnection(host='www.garudaerospace.com', port=80): Failed to resolve 'www.garudaerospace.com' ([Errno 11001] getaddrinfo failed)""))"
+GeeksforGeeks,https://geeksforgeeks.org/careers,https://geeksforgeeks.zohorecruit.in/careers,200,OK
+Geekster,https://geekster.in/,https://www.geekster.in/,200,OK
+Genrobotics,https://genrobotics.com/careers,https://genrobotics.com/careers,200,OK
+Giottus,https://giottus.com/,https://www.giottus.com:443/,200,OK
+Giva,https://giva.co/,https://www.giva.co/,200,OK
+GoDaddy India,https://godaddy.com/careers,https://www.godaddy.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+GoMechanic,https://gomechanic.in/careers,https://gomechanic.in/careers,403,Blocked by bot-protection (site likely fine for humans)
+Grab a Grub,https://grabagrub.com/careers,https://www.hugedomains.com/domain_profile.cfm?d=grabagrub.com,200,OK
+Gramener,https://gramener.com/careers,https://gramener.com/careers/,200,OK
+Gramophone,https://gramophone.in/,https://gramophone.in/?lang=en,200,OK
+Graviton Research Capital,https://graviton.co.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='graviton.co.in', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='graviton.co.in', port=443) at 0x164202cad50>, 'Connection to graviton.co.in timed out. (connect timeout=10)'))"
+Great Learning,https://mygreatlearning.com/careers,https://www.mygreatlearning.com:443/careers,200,OK
+greytHR,https://greythr.com/careers,https://greytip.greythr.com/hire/jobs/,200,OK
+GrowthSchool,https://growthschool.io/,https://growthschool.io/in,200,OK
+Gupshup,https://gupshup.io/careers,https://www.gupshup.ai:443/careers,200,OK
+HackerEarth,https://hackerearth.com/careers,https://www.hackerearth.com:443/careers,200,OK
+Haptik,https://haptik.ai/careers,https://www.haptik.ai/careers,200,OK
+Havells Tech,https://havells.com/careers,https://havells.com/careers,406,Unexpected status 406
+Head Digital Works,https://headdigitalworks.com/careers,https://headdigitalworks.com/careers,200,OK
+Healthians,https://healthians.com/careers,https://www.healthians.com/404-error,200,OK
+Hexaware Technologies,https://hexaware.com/careers,https://jobs.hexaware.com/,200,OK
+HFCL,https://hfcl.com/careers,https://www.hfcl.com/company/careers,200,OK
+Hindalco Tech,https://hindalco.com/careers,https://www.hindalco.com/work-with-us/life-at-hindalco#contactus,200,OK
+Hinduja Global Solutions,https://teamhgs.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='teamhgs.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='teamhgs.com', port=443): Failed to resolve 'teamhgs.com' ([Errno 11001] getaddrinfo failed)""))"
+Hindustan Aeronautics,https://hal-india.co.in/careers,https://hal-india.co.in/careers,200,OK
+Hirect,https://hirect.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='hirect.in', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='hirect.in', port=443) at 0x164202c9e50>, 'Connection to hirect.in timed out. (connect timeout=10)'))"
+Hitachi Energy India,https://hitachienergy.com/careers,https://www.hitachienergy.com/careers,200,OK
+HomeLane,https://homelane.com/careers,https://www.homelane.com/careers,200,OK
+Hyperverge,https://hyperverge.co/careers,https://hyperverge.co/careers/,200,OK
+ideaForge,https://ideaforge.co.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='ideaforge.co.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ideaforge.co.in'. (_ssl.c:1082)"")))"
+Ideas2IT,https://ideas2it.com/careers,https://www.ideas2it.com/careers,200,OK
+IDfy,https://idfy.com/careers,https://www.idfy.com:443/careers/,200,OK
+iEnergizer,https://ienergizer.com/,https://www.ienergizer.com/,200,OK
+IIFL Finance Tech,https://iifl.com/careers,https://www.iifl.com/finance/career,200,OK
+Imarticus,https://imarticus.org/,https://imarticus.org/,200,OK
+Increff,https://increff.com/careers,https://www.increff.com/careers,200,OK
+IndiaMART,https://indiamart.com/,https://www.indiamart.com/,200,OK
+Indian Bank Tech,https://indianbank.in/careers,https://indianbank.in/careers,200,OK
+Indian Oil Tech,https://iocl.com/careers,https://iocl.com/careers,307,Redirected
+Ineda Systems,https://inedasystems.com/careers,https://inedasystems.com/careers/,200,OK
+Info Edge,https://infoedge.in/,https://www.infoedge.in:443/,200,OK
+Innefu Labs,https://innefu.com/careers,https://innefu.com/careers/,200,OK
+Innoviti,https://innoviti.com/careers,,ERROR,"Connection error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+Instadapp,https://instadapp.io/,https://instadapp.io/,200,OK
+Instahyre,https://instahyre.com/,https://www.instahyre.com/,200,OK
+Instamojo,https://instamojo.com/careers,https://recruiterflow.com/instamojo/jobs,200,OK
+InsuranceDekho,https://insurancedekho.com/careers,https://www.insurancedekho.com:443/,200,OK
+Intellect Design Arena,https://intellectdesign.com/careers,https://www.intellectdesign.com/careers/,200,OK
+Intellipaat,https://intellipaat.com/,https://intellipaat.com/,200,OK
+Internshala,https://internshala.com/careers,https://internshala.com/careers/,200,OK
+IRCTC,https://irctc.co.in/careers,,ERROR,Timed out
+ITC Infotech,https://itcinfotech.com/,https://www.itcinfotech.com/,200,OK
+Ittiam Systems,https://ittiam.com/careers,https://www.ittiam.com/careers/,200,OK
+Jar App,https://myjar.app/careers,https://www.myjar.app/careers,200,OK
+Jigsaw Academy,https://jigsawacademy.com/careers,https://jigsawacademy.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+JioCinema,https://jiocinema.com/careers,https://www.jiocinema.com/,200,OK
+JioMart,https://jiomart.com/careers,https://www.jiomart.com/,200,OK
+JioSaavn,https://jiosaavn.com/careers,https://www.jiosaavn.com/,200,OK
+Jiraaf,https://jiraaf.com/,https://www.jiraaf.com:443/,200,OK
+JSW Digital,https://jsw.in/careers,https://www.jsw.in/careers/,200,OK
+Jumbotail,https://jumbotail.com/careers,https://jumbotail.com/careers/,200,OK
+Junglee Games,https://jungleegames.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='jungleegames.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='jungleegames.com', port=443) at 0x1641f36f750>, 'Connection to jungleegames.com timed out. (connect timeout=10)'))"
+Juspay,https://juspay.in/careers,https://juspay.io/careers,200,OK
+Just Dial,https://justdial.com/careers,https://www.justdial.com/,200,OK
+K7 Computing,https://k7computing.com/careers,https://www.k7computing.com/careers,200,OK
+Kapture CX,https://kapture.cx/careers,https://www.kapture.cx/careers/,200,OK
+Karbonn,https://karbonnmobiles.com/,https://karbonn.in,200,OK
+Karur Vysya Tech,https://kvb.co.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='kvb.co.in', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='kvb.co.in', port=443): Failed to resolve 'kvb.co.in' ([Errno 11001] getaddrinfo failed)""))"
+Kaynes Technology,https://kaynestechnology.co.in/,https://kaynestechnology.co.in/,200,OK
+Keka,https://keka.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='keka.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Kellton Tech,https://kellton.com/careers,https://www.kellton.com/life-at-kellton,200,OK
+Kisan Network,https://kisannetwork.com/,https://kisannetwork.com/,200,OK
+Kissflow,https://kissflow.com/careers,https://careers.kissflow.com/,200,OK
+Kissht,https://kissht.com/,https://www.kissht.com/,200,OK
+Kiwi Credit,https://gokiwi.in/,https://gokiwi.in/,200,OK
+Knowlarity,https://knowlarity.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='knowlarity.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+KPIT Technologies,https://kpit.com/careers,https://www.kpit.com/careers-overview/,200,OK
+Kratikal,https://kratikal.com/careers,https://kratikal.zohorecruit.com/jobs/Careers,200,OK
+KreditBee,https://kreditbee.in/careers,https://www.kreditbee.in/careers,200,OK
+Krishify,https://krishify.com/,https://krishify.com/,200,OK
+Krutrim,https://olakrutrim.com/careers,https://www.olakrutrim.com/,200,OK
+Ksolves,https://ksolves.com/careers,https://www.ksolves.com/careers,200,OK
+Kuku FM,https://kukufm.com/careers,https://kuku.app/careers/,200,OK
+Kuvera,https://kuvera.in/careers,https://kuvera.in/careers,200,OK
+L&T Technology Services,https://ltts.com/careers,https://www.ltts.com:443/careers,200,OK
+Larsen Infotech Legacy,https://lntinfotech.com/careers,https://www.ltm.com/careers,200,OK
+LatentView Analytics,https://latentview.com/,https://www.latentview.com/,200,OK
+Lava International,https://lavamobiles.com/,https://lavamobiles.com/,200,OK
+LazyPay,https://lazypay.in/,https://lazypay.in/,200,OK
+LEAD School,https://leadschool.in/careers,https://leadschool.in/careers/,403,Blocked by bot-protection (site likely fine for humans)
+Leadsquared,https://leadsquared.com/careers,https://www.leadsquared.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Leena AI,https://leena.ai/careers,https://leena.ai/careers,200,OK
+Lendingkart,https://lendingkart.com/careers,https://www.lendingkart.com/careers/,200,OK
+Lenskart,https://lenskart.com/careers,https://lenskart.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Lentra,https://lentra.ai/careers,https://lentra.ai/careers,200,OK
+Leverage Edu,https://leverageedu.com/,https://leverageedu.com/,200,OK
+LG Electronics India,https://lg.com/,https://www.lg.com/in/,200,OK
+Licious,https://licious.in/careers,https://www.licious.in:443/careers,200,OK
+Lila Games,https://lilagames.com/careers,https://lilagames.com/careers/,200,OK
+Loadshare Networks,https://loadshare.net/careers,https://loadshare.net/careers,200,OK
+Log9 Materials,https://log9materials.com/,https://log9materials.com/,200,OK
+Lohum,https://lohum.com/careers,https://lohum.com/careers,200,OK
+Loop Health,https://loophealth.com/careers,https://www.loophealth.com/careers,200,OK
+M2P Fintech,https://m2pfintech.com/careers,https://careers.m2pfintech.com,200,OK
+Mad Street Den,https://madstreetden.com/careers,https://madstreetden.com/careers/,200,OK
+Magicpin,https://magicpin.in/careers,https://magicpin.in/careers,200,OK
+Mahindra Finance Tech,https://www.mahindrafinance.com/careers,https://www.mahindrafinance.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Mahindra Last Mile,https://mahindralastmilemobility.com/,https://mahindralastmilemobility.com/,200,OK
+Mahindra Susten,https://mahindrasusten.com/careers,https://www.mahindrasusten.com/,200,OK
+Mamaearth Honasa,https://honasa.in/,https://honasa.in/,200,OK
+MapmyIndia,https://mapmyindia.com/careers,https://mapmyindia.com/careers/,200,OK
+Masai School,https://masaischool.com/careers,https://www.masaischool.com/careers,200,OK
+Matter Motor Works,https://matter.in/careers,https://www.matter.in/careers,200,OK
+Media.net,https://media.net/careers,https://careers.media.net/,200,OK
+Mercedes-Benz R&D India,https://mercedes-benz.com/careers,https://mercedes-benz.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Meritnation,https://meritnation.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='meritnation.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='meritnation.com', port=443): Failed to resolve 'meritnation.com' ([Errno 11002] getaddrinfo failed)""))"
+Meru Cabs,https://merucabs.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='merucabs.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+Mettl,https://mettl.com/careers,https://mettl.com/careers/,200,OK
+Micromax,https://micromaxinfo.com/,https://micromaxinfo.com/,200,OK
+MilesWeb,https://milesweb.com/careers,https://www.milesweb.in/careers,200,OK
+Milkbasket,https://milkbasket.com/,https://milkbasket.com/,200,OK
+Mindgrove Technologies,https://mindgrovetech.in/careers,https://mindgrovetech.zohorecruit.in/jobs/Careers,200,OK
+Mobikwik,https://mobikwik.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='mobikwik.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+MoneyView,https://moneyview.in/careers,https://moneyview.in/careers,200,OK
+Moonfrog Labs,https://moonfroglabs.com/careers,https://moonfroglabs.com/careers/,200,OK
+Moschip Technologies,https://moschip.com/careers,https://moschip.com/careers/,200,OK
+Mswipe,https://mswipe.com/careers,https://www.mswipe.com:443/careers,200,OK
+Mudrex,https://mudrex.com/careers,https://mudrex.com/,200,OK
+Muthoot Fincorp Tech,https://muthootfincorp.com/careers,https://muthootfincorp.com/careers,200,OK
+MX Player,https://mxplayer.in/,https://www.mxplayer.in:443/,200,OK
+Namma Yatri,https://nammayatri.in/,https://nammayatri.in/,200,OK
+Naukri,https://naukri.com/,https://www.naukri.com/,200,OK
+Nestaway,https://nestaway.com/careers,https://www.nestaway.com/careers,200,OK
+Netcore Cloud,https://netcorecloud.com/careers,https://netcore.ai/careers,200,OK
+Netmeds,https://netmeds.com/,https://www.netmeds.com/,200,OK
+Netweb Technologies,https://netwebindia.com/careers,https://www.netwebindia.com/,200,OK
+Newgen Software,https://newgensoft.com/careers,https://newgensoft.com,200,OK
+NewSpace Research,https://newspaceresearch.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='newspaceresearch.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='newspaceresearch.com', port=443) at 0x164202ca350>, 'Connection to newspaceresearch.com timed out. (connect timeout=10)'))"
+Newton School,https://newtonschool.co/careers,https://careers.newtonschool.co/newtonschool/,200,OK
+Neysa,https://neysa.ai/careers,https://neysa.ai/careers/,200,OK
+NIC India,https://nic.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='nic.in', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='nic.in', port=443): Failed to resolve 'nic.in' ([Errno 11001] getaddrinfo failed)""))"
+Nihilent,https://nihilent.com/careers,https://www.nihilent.com/careers/,200,OK
+Ninjacart,https://ninjacart.com/careers,https://ninjacart.com/careers/,200,OK
+Nitor Infotech,https://nitorinfotech.com/careers,https://nitorinfotech.com/careers/,200,OK
+Niyo,https://goniyo.com/careers,https://goniyo.com/,200,OK
+Nodwin Gaming,https://nodwingaming.com/careers,https://nodwingaming.com/careers/,200,OK
+NPCI,https://npci.org.in/careers,https://npci.org.in/careers,403,Blocked by bot-protection (site likely fine for humans)
+NTPC Digital,https://ntpc.co.in/careers,"https://validate.perfdrive.com/?ssa=bd30fa70-2be6-4c90-88ba-fc4090273ef7&ssb=43257286536&ssc=https%3A%2F%2Fntpc.co.in%2Fcareers&ssi=7e28ab5d-cs5n-4838-ad02-3de5ba8935e4&ssk=botmanager_support@radware.com&ssm=22719229149936173100064796905598&ssn=f5c234765006de6d14fa5f8655b0d96f2cd87e336230-0225-4531-999ee8&sso=08e35df8-5a6f4c8eb7f6b068af8fb482b3d57fb996e72ce6646e26c3&ssp=53774052121790710116179076222548056&ssq=11434955159391802036351593266482758986732&ssr=MTUyLjU5LjE4NS4xMDg=&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/124.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6Im50cGMuY28uaW4iLCJ1em14IjoiN2ZjMDAwYTNmYWNhYmQtZGRhZC00MTNmLWIyMDctMmYwNWQ4MjdlMzQxMS0xNzkwNzUxNTkzMDkwMC0wMDc5MGZkN2I3NTBhOWY3OWIyMTAiLCJfX3V6bWYiOiI3ZjkwMDA3ZTMzNjIzMC0wMjI1LTQ1MzEtOWRmOC01YTZmNGM4ZWI3ZjYxLTE3OTA3NTE1OTMwOTAwLTAwNWUwNDQ4NWVhYWMxZjk2ODMxMCJ9",200,OK
+Nucleus Software,https://nucleussoftware.com/careers,https://www.nucleussoftware.com/careers/,200,OK
+Observe.AI,https://observe.ai/careers,https://www.observe.ai/careers,200,OK
+Octro,https://octro.com/careers,https://www.octro.com/careers,500,Server error - retry later
+Okinawa Autotech,https://okinawascooters.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='okinawascooters.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+Ola Maps,https://olamaps.io/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='olamaps.io', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='olamaps.io', port=443): Failed to resolve 'olamaps.io' ([Errno 11001] getaddrinfo failed)""))"
+ONDC,https://ondc.org/careers,https://ondc.org/careers,404,NOT FOUND - URL likely wrong/outdated
+OneCard,https://getonecard.app/careers,https://getonecard.app/careers,403,Blocked by bot-protection (site likely fine for humans)
+Onecard FPL Technologies,https://fplabs.tech/careers,https://fplabs.tech/careers,307,Redirected
+ONGC Digital,https://ongc.co.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='ongc.co.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ongc.co.in'. (_ssl.c:1082)"")))"
+Oppo India,https://oppo.com/careers,https://www.oppo.com/careers/,403,Blocked by bot-protection (site likely fine for humans)
+Orange Health,https://orangehealth.in/careers,https://www.orangehealth.in/careers,200,OK
+Otipy,https://otipy.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='otipy.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='otipy.com', port=443) at 0x1641f36df90>, 'Connection to otipy.com timed out. (connect timeout=10)'))"
+Ozonetel,https://ozonetel.com/careers,https://ozonetel.com/careers/,200,OK
+Padget Electronics,https://padget.in/,https://padget.in/,404,NOT FOUND - URL likely wrong/outdated
+Paisabazaar,https://paisabazaar.com/careers,https://www.paisabazaar.com/careers,200,OK
+Palmonas,https://palmonas.com/,https://palmonas.com/,200,OK
+Paras Defence,https://parasdefence.com/,https://parasdefence.com/,200,OK
+Park+,https://parkplus.io/careers,https://parkplus.io/careers,200,OK
+Pay1,https://pay1.in/careers,https://pay1.in/,200,OK
+Paytm Money,https://paytmmoney.com/,https://www.paytmmoney.com/,200,OK
+Pcloudy,https://pcloudy.com/,https://www.pcloudy.com/,200,OK
+Pegatron India,https://pegatroncorp.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='pegatroncorp.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='pegatroncorp.com', port=443): Failed to resolve 'pegatroncorp.com' ([Errno 11001] getaddrinfo failed)""))"
+Peoplestrong,https://peoplestrong.com/,https://www.peoplestrong.com/,200,OK
+Perfios,https://perfios.com/careers,https://perfios.ai/careers/,200,OK
+Persistent Systems,https://persistent.com/careers,"https://validate.perfdrive.com/?ssa=8f941fa0-6279-455b-a549-eeebc39de49c&ssb=05422247092&ssc=https%3A%2F%2Fpersistent.com%2Fcareers&ssi=d5992ac3-d452-4a6d-b42f-4516ca0c02a8&ssk=botmanager_support@radware.com&ssm=79892918443968166106585613788376&ssn=b430ff7e3c263fcb66e9ea0cb76d8bf8841032c143ba-849f-4965-9b4157&sso=e876b3d9-4367fa3ef7fce021b910b2f42245373cf43e2282f6777c4a&ssp=14498871341790720118179078153772216&ssq=72083295160047559635751600978275194965146&ssr=MTUyLjU5LjE4NS4xMDg=&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/124.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzMmMxNDNiYS04NDlmLTQ5NjUtOTNkOS00MzY3ZmEzZWY3ZmMxLTE3OTA3NTE2MDA4NDQwLTAwNThmMmZmMDlkM2MxYTg5Y2IxMCJ9",200,OK
+Pesto Tech,https://pesto.tech/,https://pesto.tech/,200,OK
+PhysicsWallah,https://pw.live/,https://www.pw.live/,200,OK
+Pickrr,https://pickrr.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='pickrr.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='pickrr.com', port=443) at 0x164202cac10>, 'Connection to pickrr.com timed out. (connect timeout=10)'))"
+Pidilite Tech,https://pidilite.com/careers,https://www.pidilite.com/careers/working-with-us,200,OK
+Pine Labs,https://pinelabs.com/careers,https://www.pinelabs.com/careers,200,OK
+Pitstop,https://pitstop.co.in/careers,https://daaz.com/lander/?name=pitstop.co.in,200,OK
+Plotline,https://plotline.so/careers,https://www.plotline.so/careers,200,OK
+Pocket HRMS,https://pockethrms.com/careers,https://ess.pockethrms.com/RecruitmentCareerPortalV2/CareerPortalV2/MainCareerPageV2?schemaName=tym4xOwiuAVjyHbaa5i9dg==&companyId=RA9QEp7FvLLHBNbV21Hbog==,200,OK
+Polycab,https://polycab.com/,https://polycab.com/,200,OK
+Polygon Labs,https://polygon.technology/careers,https://polygon.technology/careers,200,OK
+Power Grid,https://powergrid.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='powergrid.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'powergrid.in'. (_ssl.c:1082)"")))"
+Pramati Technologies,https://pramati.com/,https://pramati.com/,200,OK
+Pratilipi,https://pratilipi.com/careers,https://www.pratilipi.com/careers?redirect=ecs&host=pratilipi.com,200,OK
+Premier Energies,https://premierenergies.com/careers,https://premierenergies.com/careers,200,OK
+Punjab National Bank Tech,https://pnbindia.in/careers,,ERROR,Timed out
+Pyramid IT,https://pyramidci.com/careers,https://pyramidci.com/careers/,200,OK
+Quess Corp,https://quesscorp.com/careers,https://www.quesscorp.com,200,OK
+Quick Heal,https://quickheal.com/,https://www.quickheal.co.in/,200,OK
+Quinnox,https://quinnox.com/careers,https://www.quinnox.com/career/,200,OK
+Qyrus,https://qyrus.com/careers,https://www.qyrus.com/careers/,200,OK
+R Systems,https://rsystems.com/,https://www.rsystems.com/,200,OK
+Raphe mPhibr,https://raphe.com/careers,https://www.raphe.com/careers,200,OK
+RateGain,https://rategain.com/careers,https://rategain.com/careers/,200,OK
+RBL Bank Tech,https://rblbank.com/careers,https://www.rbl.bank.in:443/careers,200,OK
+Realme,https://realme.com/,https://www.realme.com/in/,200,OK
+Rebel Foods,https://rebelfoods.com/careers,,ERROR,"Connection error: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+Recykal,https://recykal.com/,https://www.recykal.com/,200,OK
+Redcliffe Labs,https://redcliffelabs.com/,https://redcliffelabs.com/,200,OK
+Reliance Jio,https://jio.com/careers,https://www.jio.com/page-not-found.html,200,OK
+Reliance Retail Digital,https://relianceretail.com/,https://relianceretail.com/,200,OK
+RenewBuy,https://renewbuy.com/careers,https://www.renewbuy.com/careers,502,Server error - retry later
+Rentickle,https://rentickle.com/careers,https://www.rentickle.com/careers,200,OK
+Revolt Motors,https://revoltmotors.in/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='revoltmotors.in', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='revoltmotors.in', port=443): Failed to resolve 'revoltmotors.in' ([Errno 11001] getaddrinfo failed)""))"
+Revv,https://revv.co.in/,https://www.revv.co.in,200,OK
+Rezo.ai,https://rezo.ai/careers,https://www.rezo.ai/careers,200,OK
+River Mobility,https://rideriver.com/careers,https://www.rideriver.com/careers,200,OK
+Rocketlane,https://rocketlane.com/,https://www.rocketlane.com/,200,OK
+Route Mobile,https://routemobile.com/careers,https://jobs.proximus.com/be/en/proximus-global,200,OK
+Router Protocol,https://routerprotocol.com/careers,https://www.routerprotocol.com/careers,200,OK
+Rupeek,https://rupeek.com/careers,https://rupeek.com/careers,200,OK
+Sagility,https://sagilityhealth.com/careers,https://career.sagilityhealth.com/us/en/usa-career,200,OK
+Sahi,https://sahi.com/,https://www.sahi.com:443/,200,OK
+Saksoft,https://saksoft.com/careers,https://saksoft.com/careers,307,Redirected
+Sankalp Semiconductor,https://sankalpsemi.com/careers,https://sankalpsemi.com/careers,200,OK
+Sarvam AI,https://sarvam.ai/careers,https://www.sarvam.ai/careers,200,OK
+Sasken Technologies,https://sasken.com/careers,https://careers.sasken.com/tb/saskenjobs/,200,OK
+SatSure,https://satsure.co/careers,https://www.satsure.co/careers/,200,OK
+Scapia,https://scapia.cards/,https://www.scapia.cards,200,OK
+Scripbox,https://scripbox.com/,https://scripbox.com/,200,OK
+Scrut Automation,https://scrut.io/careers,https://www.scrut.io/company/careers,200,OK
+Seclore,https://seclore.com/careers,https://seclore.com/careers,307,Redirected
+Sensibull,https://sensibull.com/,https://sensibull.com/,200,OK
+Sequretek,https://sequretek.com/,https://www.sequretek.com,200,OK
+Setu,https://setu.co/careers,https://setu.co/careers,200,OK
+Shine.com,https://shine.com/,https://www.shine.com/,200,OK
+Shiprocket,https://shiprocket.in/,https://www.shiprocket.in:443/,200,OK
+Shipway,https://shipway.in/,https://experience.shipway.com,200,OK
+Sify Technologies,https://sifytechnology.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='sifytechnology.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='sifytechnology.com', port=443) at 0x164202c9810>, 'Connection to sifytechnology.com timed out. (connect timeout=10)'))"
+Sigmoid,https://sigmoid.com/careers,https://www.sigmoid.com/careers/,200,OK
+Signzy,https://signzy.com/careers,https://www.signzy.com/careers,200,OK
+Simpl,https://getsimpl.com/,https://getsimpl.com/,200,OK
+Skillenza,https://skillenza.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='skillenza.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='skillenza.com', port=443): Failed to resolve 'skillenza.com' ([Errno 11002] getaddrinfo failed)""))"
+Skit.ai,https://skit.ai/careers,https://skit.ai/careers,200,OK
+Skyroot Aerospace,https://skyroot.in/careers,https://www.skyroot.in/careers,200,OK
+Sleepy Owl,https://sleepyowl.co/,https://sleepyowl.co/,200,OK
+Snitch,https://snitch.co.in/,https://www.snitch.co.in/,200,OK
+Sona Comstar,https://sonacomstar.com/,https://sonacomstar.com/,200,OK
+Sonata Software,https://sonata-software.com/careers,https://www.sonata-software.com//careers,200,OK
+Sony India,https://sony.co.in/careers,https://www.sony.co.in:443/careers,403,Blocked by bot-protection (site likely fine for humans)
+SonyLIV,https://sonyliv.com/,,ERROR,Timed out
+Springworks,https://springworks.in/careers,https://jobs.goodfit.so/jobs/springworks,200,OK
+Sprinto,https://sprinto.com/careers,https://sprinto.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Squareboat,https://squareboat.com/careers,https://www.squareboat.com/careers,200,OK
+Stable Money,https://stablemoney.in/,https://stablemoney.in/,200,OK
+Stanza Living,https://stanzaliving.com/careers,https://www.stanzaliving.com:443/careers,200,OK
+Stashfin,https://stashfin.com/careers,https://www.stashfin.com/careers,200,OK
+Steel Authority,https://sail.co.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='sail.co.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Sterlite Technologies,https://stl.tech/,https://stl.tech/,200,OK
+Streak,https://streak.tech/careers,https://www.streak.tech,200,OK
+Sugar Cosmetics,https://sugarcosmetics.com/careers,https://www.sugarcosmetics.com/,200,OK
+Sumhr,https://sumhr.com/careers,https://sumhr.com,200,OK
+Sunbird ED,https://sunbird.org/,https://sunbird.org/,200,OK
+SuperGaming,https://supergaming.com/,https://www.supergaming.com/,200,OK
+Suyash Technologies,https://suyash.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='suyash.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)')))"
+Suzlon,https://suzlon.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='suzlon.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='suzlon.com', port=443) at 0x164202c9950>, 'Connection to suzlon.com timed out. (connect timeout=10)'))"
+Syrma SGS,https://syrmasgs.com/careers,https://syrmasgs.com/careers,307,Redirected
+Tally Solutions,https://tallysolutions.com/careers,https://tallysolutions.com/careers/,200,OK
+Tanla Platforms,https://tanla.com/careers,https://tanla.com/careers,200,OK
+Tata AutoComp,https://tataautocomp.com/careers,https://www.tataautocomp.com/careers/,200,OK
+Tata CLiQ,https://tatacliq.com/careers,https://www.tatacliq.com/careers,200,OK
+Tata Communications,https://tatacommunications.com/,https://www.tatacommunications.com/,200,OK
+Tata Electronics,https://tataelectronics.com/careers,https://www.tataelectronics.com/work-with-us,200,OK
+Tata Power Digital,https://tatapower.com/careers,https://www.tatapower.com/error-pages/404,200,OK
+Tata Steel Digital,https://tatasteel.com/careers,https://www.tatasteel.com/,200,OK
+TCS iON,https://tcsion.com/,https://tcsion.com/,200,OK
+Tejas Networks,https://tejasnetworks.com/careers,https://www.tejasnetworks.com/careers/,200,OK
+Tessolve,https://tessolve.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='tessolve.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='tessolve.com', port=443): Failed to resolve 'tessolve.com' ([Errno 11001] getaddrinfo failed)""))"
+Testbook,https://testbook.com/careers,https://testbook.com/careers,200,OK
+The Souled Store,https://thesouledstore.com/careers,https://www.thesouledstore.com:443/careers,200,OK
+Thinkpalm,https://thinkpalm.com/careers,https://thinkpalm.com/company/careers/,200,OK
+Thomas Cook India,https://thomascook.in/,https://www.thomascook.in/,200,OK
+Tickertape,https://tickertape.in/,https://www.tickertape.in:443/,200,OK
+TimesJobs,https://timesjobs.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='timesjobs.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Tinkerhub,https://tinkerhub.org/careers,https://tinkerhub-foundation.notion.site/TinkerHub-Hiring-257bd5ba1a8680508962cbdef0b3395b,200,OK
+Tonbo Imaging,https://tonboimaging.com/careers,https://tonboimaging.com/defense/careers/,200,OK
+TransUnion CIBIL,https://transunioncibil.com/careers,https://transunioncibil.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Treebo,https://treebo.com/,https://www.treebo.com/,200,OK
+Trigent Software,https://trigent.com/careers,https://trigent.com/careers,307,Redirected
+Truemeds,https://truemeds.in/,https://www.truemeds.in/,200,OK
+Ultrahuman,https://ultrahuman.com/,https://www.ultrahuman.com/in/,200,OK
+Ultratech Tech,https://ultratechcement.com/,https://www.ultratechcement.com/,200,OK
+Ultraviolette,https://ultraviolette.com/careers,https://www.ultraviolette.com/careers,200,OK
+Uni Pay,https://uni.club/,https://www.uni.cards/,200,OK
+Unicommerce,https://unicommerce.com/careers,,ERROR,Timed out
+Union Bank Tech,https://www.unionbankofindia.co.in/english/careers.aspx,https://www.unionbankofindia.bank.in/en/home?aspxerrorpath=/english/careers.aspx,200,OK
+Uniphore,https://uniphore.com/careers,https://www.uniphore.com/careers/,200,OK
+Univest,https://univest.in/,https://univest.in/,200,OK
+Uno Minda,https://unominda.com/,https://unominda.com/,200,OK
+Unocoin,https://unocoin.com/,https://unocoin.com/in/,200,OK
+Unstop,https://unstop.com/careers,https://unstop.com/careers,200,OK
+Urban Ladder,https://urbanladder.com/careers,https://www.urbanladder.com:443/c/careers,200,OK
+Vahan,https://vahan.ai/careers,https://vahan.co/careers,200,OK
+Vamaship,https://vamaship.com/,https://www.vamaship.com,200,OK
+Vayana Network,https://vayana.com/careers,https://www.vayana.com/careers/,200,OK
+Vedanta Digital,https://vedantalimited.com/,https://vedantalimited.com/,200,OK
+Verloop,https://verloop.io/careers,https://verloop.io/careers,403,Blocked by bot-protection (site likely fine for humans)
+Vested Finance,https://vestedfinance.com/careers,https://vestedteam.notion.site,200,OK
+Vinculum,https://vinculumgroup.com/careers,https://www.vinculumgroup.com/career/,200,OK
+Vivo India,https://www.vivo.com/in/careers,https://www.vivo.com/in/careers,404,NOT FOUND - URL likely wrong/outdated
+Vodafone Idea,https://www.myvi.in/careers,https://www.myvi.in/careers,200,OK
+Voltas,https://voltas.com/,https://www.voltas.com/,200,OK
+Vue.ai,https://vue.ai/,https://vue.ai/,200,OK
+VVDN Technologies,https://vvdntech.com/careers,https://www.vvdntech.com/careers,200,OK
+Vyapar,https://vyaparapp.in/careers,https://vyaparapp.in/careers,200,OK
+Vymo,https://getvymo.com/,https://vymo.com/us/,200,OK
+Waaree,https://waaree.com/careers,https://www.waaree.com:443/careers/,200,OK
+Wadhwani AI,https://wadhwaniai.org/careers,https://www.wadhwaniai.org/careers/,200,OK
+Wakefit,https://wakefit.co/careers,https://www.wakefit.co/careers,403,Blocked by bot-protection (site likely fine for humans)
+WayCool,https://waycool.in/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='waycool.in', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)')))"
+WazirX,https://wazirx.com/careers,https://wazirx.com/careers,200,OK
+Web Werks,https://webwerks.in/careers,https://www.webwerks.in/careers,200,OK
+WebEngage,https://webengage.com/,https://webengage.com/,200,OK
+Whatfix,https://whatfix.com/careers,https://whatfix.com/careers,200,OK
+Wheebox,https://wheebox.com/careers,https://wheebox.com/error.jsp?type=404,200,OK
+Whirlpool India,https://whirlpoolindia.com/careers,https://whirlpoolindia.com/careers,200,OK
+Wint Wealth,https://wintwealth.com/,https://www.wintwealth.com,200,OK
+WinZO,https://winzogames.com/,https://play.google.com/store/apps/details?id=com.winzo.platform&hl=en_IN&utm_source=chatgpt.com,200,OK
+Wistron India,https://wistron.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='wistron.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='wistron.com', port=443): Failed to resolve 'wistron.com' ([Errno 11001] getaddrinfo failed)""))"
+WorkIndia,https://workindia.in/careers,https://www.workindia.in/,200,OK
+Wynk Music,https://wynk.in/,https://wynk.in/music,200,OK
+Xoriant,https://xoriant.com/,https://www.xoriant.com,200,OK
+XpressBees,https://xpressbees.com/careers,https://xpressbees.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Xtracover,https://xtracover.com/careers,https://www.xtracover.com/careers,200,OK
+Yellow.ai,https://yellow.ai/careers,https://yellow.ai/career/,200,OK
+Yotta Infrastructure,https://yotta.com/careers,https://yotta.com/careers/,200,OK
+Yubi,https://go-yubi.com/careers,https://go-yubi.com/careers,200,OK
+Zaggle,https://zaggle.in/careers,https://www.zaggle.in:443/careers,200,OK
+ZebPay,https://zebpay.com/careers,https://zebpay.com/careers,200,OK
+ZEE5,https://zee5.com/careers,https://www.zee5.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Zen Technologies,https://zentechnologies.com/careers,https://zentechnologies.zohorecruit.in/jobs/Careers,200,OK
+Zerodha Tech,https://zerodha.tech/,https://zerodha.tech/,200,OK
+Zeta,https://zeta.tech/careers,https://www.zeta.tech/in/,200,OK
+Zeus Learning,https://zeuslearning.com/careers,https://zeuslearning.com/careers,200,OK
+Zimyo,https://zimyo.com/,https://www.zimyo.com/,200,OK
+Zluri,https://zluri.com/careers,https://www.zluri.com/careers,200,OK
+Zoho Zia Labs,https://zoho.com/careers,https://www.zoho.com/careers/,200,OK
+Zolo Stays,https://zolostays.com/careers,https://zolostays.com/careers,200,OK
+Zopper,https://zopper.com/careers,https://www.zopper.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Zostel,https://zostel.com/,https://www.zostel.com:443/,200,OK
+Zupee,https://zupee.com/careers,https://www.zupee.com:443/,200,OK
+Zypp Electric,https://zyppelectric.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='zyppelectric.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='zyppelectric.com', port=443): Failed to resolve 'zyppelectric.com' ([Errno 11002] getaddrinfo failed)""))"
+1Password,https://1password.com/careers,https://1password.com/careers,200,OK
+2K Games,https://2k.com/careers,https://2k.com/careers/,200,OK
+8x8,https://8x8.com/careers,https://www.8x8.com/careers,200,OK
+A10 Networks,https://a10networks.com/careers,https://www.a10networks.com/company/careers/,200,OK
+ABB,https://abb.com/careers,https://careers.abb/global/en,200,OK
+Abnormal Security,https://abnormalsecurity.com/careers,https://abnormal.ai/careers,200,OK
+Acer,https://acer.com/careers,,ERROR,Timed out
+Achronix,https://achronix.com/careers,https://achronix.com/company/careers,200,OK
+Acquia,https://acquia.com/careers,https://www.acquia.com/careers,200,OK
+Acronis,https://acronis.com/careers,https://www.acronis.com/en/careers/,200,OK
+Adidas Technology,https://adidas-group.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='adidas-group.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'adidas-group.com'. (_ssl.c:1082)"")))"
+ADP,https://adp.com/careers,https://www.adp.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Adyen,https://adyen.com/careers,https://careers.adyen.com/,200,OK
+Affirm,https://affirm.com/careers,https://www.affirm.com/careers,200,OK
+Agora,https://agora.io/careers,https://www.agora.io/en/,200,OK
+Airbus,https://airbus.com/careers,https://www.airbus.com/careers,200,OK
+Airbyte,https://airbyte.com/careers,https://airbyte.com/company/careers,200,OK
+Airtable,https://airtable.com/careers,https://airtable.com/careers,200,OK
+Akamai,https://akamai.com/careers,https://www.akamai.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Alation,https://alation.com/careers,https://www.alation.com/careers/,200,OK
+Alchemy,https://alchemy.com/careers,https://www.alchemy.com/careers,200,OK
+Alibaba,https://alibaba.com/careers,https://error.alibaba.com/error404.htm,200,OK
+Alibaba Cloud,https://alibabacloud.com/careers,https://talent.alibaba.com/en/home,200,OK
+Allegro Microsystems,https://allegromicro.com/careers,https://www.allegromicro.com/en/careers,200,OK
+Alphawave,https://awaveip.com/careers,https://awaveip.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Altair,https://altair.com/careers,https://jobs.sw.siemens.com/,200,OK
+Alteryx,https://alteryx.com/careers,https://www.alteryx.com/about-us/careers,200,OK
+Amazon Web Services,https://aws.amazon.com/careers,https://aws.amazon.com/careers/,200,OK
+Ambarella,https://ambarella.com/careers,https://www.ambarella.com/login/?redirect_to=https%3A%2F%2Fwww.ambarella.com%2F%3Fpage_id%3D21,200,OK
+AMD,https://amd.com/careers,https://www.amd.com/en/corporate/careers.html?utm_campaign=careers&utm_medium=redirect&utm_source=301,200,OK
+Amdocs,https://amdocs.com/careers,https://www.amdocs.com/careers/home,200,OK
+American Express Technology,https://americanexpress.com/careers,https://www.americanexpress.com/en-us/careers/,200,OK
+Ampcus,https://ampcus.com/careers,https://ampcus.com/careers/,200,OK
+Ampere Computing,https://amperecomputing.com/careers,https://careers.amperecomputing.com/,403,Blocked by bot-protection (site likely fine for humans)
+Amplitude,https://amplitude.com/careers,https://amplitude.com/careers,200,OK
+Analog Devices,https://analog.com/careers,,ERROR,Timed out
+Anaplan,https://anaplan.com/careers,https://www.anaplan.com/careers/,200,OK
+Andela,https://andela.com/careers,https://www.andela.com/for-talent,200,OK
+Anduril,https://anduril.com/careers,https://www.anduril.com:443/careers,200,OK
+Ansys,https://ansys.com/careers,https://ansys.synopsys.com/careers,200,OK
+Anthropic,https://anthropic.com/careers,https://www.anthropic.com/careers,200,OK
+Anyscale,https://anyscale.com/careers,https://www.anyscale.com/careers,200,OK
+Apexon,https://apexon.com/careers,https://apexon.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Apollo GraphQL,https://apollographql.com/careers,https://www.apollographql.com/careers,200,OK
+Apollo.io,https://apollo.io/careers,https://www.apollo.io/careers,200,OK
+AppDynamics,https://appdynamics.com/careers,https://www.splunk.com/en_us/appdynamics-joins-splunk.html?301=appdynamics,200,OK
+Appian,https://appian.com/careers,https://careers.appian.com,200,OK
+Applied Materials,https://appliedmaterials.com/careers,https://www.appliedmaterials.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Applitools,https://applitools.com/careers,https://applitools.com/company/careers/,200,OK
+Aptiv,https://aptiv.com/careers,https://www.aptiv.com/en/jobs,200,OK
+Aqua Security,https://aquasec.com/careers,https://www.aquasec.com/careers/,200,OK
+Arctic Wolf,https://arcticwolf.com/careers,https://arcticwolf.com/company/careers/,200,OK
+Asana,https://asana.com/careers,https://asana.com/jobs,200,OK
+Ascendion,https://ascendion.com/careers,https://ascendion.com/who-we-are/careers/,200,OK
+Astronomer,https://astronomer.io/careers,https://www.astronomer.io/careers/,200,OK
+Asus,https://asus.com/,https://www.asus.com/,200,OK
+AT&T,https://att.com/careers,https://about.att.com/sites/careers,403,Blocked by bot-protection (site likely fine for humans)
+Aurora Innovation,https://aurora.tech/careers,https://aurora.tech/careers,200,OK
+Auth0,https://auth0.com/careers,https://www.okta.com/company/careers/,200,OK
+Autodesk,https://autodesk.com/careers,https://www.autodesk.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Automation Anywhere,https://automationanywhere.com/,https://www.automationanywhere.com/,200,OK
+Avalara,https://avalara.com/careers,https://careers.avalara.com/careers-home/,200,OK
+Avast,https://avast.com/careers,https://www.gendigital.com/us/en/life-gen/,200,OK
+Avaya,https://avaya.com/careers,https://www.avaya.com/en/about-avaya/careers/,200,OK
+Axtria,https://axtria.com/careers,https://www.axtria.com/axtria-careers/,200,OK
+BAE Systems,https://baesystems.com/careers,https://www.baesystems.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Baidu,https://baidu.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='baidu.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='baidu.com', port=443) at 0x164202cac10>, 'Connection to baidu.com timed out. (connect timeout=10)'))"
+Bandai Namco,https://bandainamcoent.co.jp/careers,https://www.bandainamcoent.co.jp/careers,403,Blocked by bot-protection (site likely fine for humans)
+Bandwidth,https://bandwidth.com/careers,https://www.bandwidth.com:443/careers,403,Blocked by bot-protection (site likely fine for humans)
+Bank of America Technology,https://bankofamerica.com/careers,https://careers.bankofamerica.com/en-us,200,OK
+Barclays Technology,https://barclays.com/careers,https://home.barclays/careers/,200,OK
+Bentley Systems,https://bentley.com/careers,https://www.bentley.com/company/careers/,200,OK
+Best Buy Tech,https://bestbuy.com/careers,,ERROR,Timed out
+Bethesda,https://bethesda.net/,https://bethesda.net/en-US,200,OK
+BigCommerce,https://bigcommerce.com/careers,https://www.bigcommerce.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+BigID,https://bigid.com/,https://bigid.com/,200,OK
+Bill.com,https://bill.com/careers,https://www.bill.com:443/careers,200,OK
+Binance,https://binance.com/careers,https://www.binance.com/careers,202,Unexpected status 202
+Bishop Fox,https://bishopfox.com/careers,https://bishopfox.com/careers,200,OK
+Bitdefender,https://bitdefender.com/careers,https://www.bitdefender.com/ro-ro/company/careers,200,OK
+Bitrix24,https://bitrix24.com/,https://www.bitrix24.in/?redirect_from=www.bitrix24.com%2F,200,OK
+Bitwarden,https://bitwarden.com/careers,https://bitwarden.com/careers/,200,OK
+Blackboard Anthology,https://anthology.com/careers,https://www.blackboard.com/company/careers,200,OK
+BlackRock Technology,https://blackrock.com/careers,https://careers.blackrock.com,200,OK
+Blizzard Entertainment,https://blizzard.com/careers,https://careers.blizzard.com/global/en,200,OK
+Bloomberg,https://bloomberg.com/careers,https://www.bloomberg.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Blue Origin,https://blueorigin.com/careers,https://www.blueorigin.com/careers,200,OK
+BMW Group Tech,https://bmwgroup.com/careers,,ERROR,Timed out
+BNP Paribas Technology,https://bnpparibas.com/careers,https://bnpparibas.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Boeing,https://boeing.com/careers,https://jobs.boeing.com,200,OK
+Boomi,https://boomi.com/careers,https://boomi.com/company/careers/,200,OK
+Bosch Global Software,https://www.bosch.in/careers,https://www.bosch.in/careers/,200,OK
+Bose,https://bose.com/,https://www.bose.com/home,200,OK
+Box,https://box.com/careers,https://www.box.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Braze,https://braze.com/careers,https://www.braze.com/company/careers,200,OK
+Brex,https://brex.com/careers,https://www.brex.com/careers,200,OK
+Brillio,https://brillio.com/careers,https://www.brillio.com/careers/,200,OK
+Broadridge,https://broadridge.com/careers,https://broadridge.wd5.myworkdayjobs.com/Careers,200,OK
+BT Group,https://bt.com/careers,https://jobs.bt.com/,200,OK
+Bugcrowd,https://bugcrowd.com/careers,https://www.bugcrowd.com/about/careers/,200,OK
+Bumble,https://bumble.com/careers,,ERROR,Request failed: Exceeded 30 redirects.
+ByteDance,https://bytedance.com/careers,https://www.bytedance.com/careers,200,OK
+Cadence Design Systems,https://cadence.com/,https://www.cadence.com/en_US/home.html,200,OK
+Cambium Networks,https://cambiumnetworks.com/careers,https://www.cambiumnetworks.com/about-cambium/careers/,200,OK
+Camunda,https://camunda.com/careers,https://camunda.com/careers/,200,OK
+Canon,https://canon.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='canon.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='canon.com', port=443) at 0x1641f36dbd0>, 'Connection to canon.com timed out. (connect timeout=10)'))"
+Canonical,https://canonical.com/careers,https://canonical.com/careers,200,OK
+Canva,https://canva.com/careers,https://www.lifeatcanva.com/en/,200,OK
+Capcom,https://capcom.co.jp/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='capcom.co.jp', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='capcom.co.jp', port=443) at 0x1641f36f750>, 'Connection to capcom.co.jp timed out. (connect timeout=10)'))"
+Capital One Technology,https://capitalone.com/,https://www.capitalone.com/,200,OK
+Cerebras,https://cerebras.net/careers,https://www.cerebras.ai/join-us,200,OK
+Ceridian Dayforce,https://dayforce.com/,https://www.dayforce.com/,200,OK
+CEVA,https://ceva-ip.com/,https://www.ceva-ip.com/,200,OK
+Chainguard,https://chainguard.dev/careers,https://www.chainguard.dev/careers,200,OK
+Chainlink Labs,https://chainlinklabs.com/careers,https://chainlinklabs.com/careers,200,OK
+Character.AI,https://character.ai/careers,https://character.ai/careers,200,OK
+Charles Schwab Technology,https://schwab.com/,https://www.schwab.com/,200,OK
+Charter Communications,https://charter.com/careers,https://www.spectrum.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Checkout.com,https://checkout.com/careers,https://www.checkout.com/careers,200,OK
+Chegg,https://chegg.com/careers,https://www.chegg.com:443/careers,403,Blocked by bot-protection (site likely fine for humans)
+Chime,https://chime.com/careers,https://chime.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Chronosphere,https://chronosphere.io/careers,https://chronosphere.io/careers/,200,OK
+Ciena,https://ciena.com/careers,https://ciena.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Circle,https://circle.com/careers,https://careers.circle.com/us/en,200,OK
+CircleCI,https://circleci.com/careers,https://circleci.com/careers/,200,OK
+Citadel Securities,https://citadelsecurities.com/careers,https://citadelsecurities.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Citi Technology,https://citi.com/careers,https://jobs.citi.com,200,OK
+Clari,https://clari.com/careers,https://www.salesloft.com/company/careers,200,OK
+ClickHouse,https://clickhouse.com/careers,https://clickhouse.com/company/careers,200,OK
+ClickUp,https://clickup.com/careers,https://clickup.com/careers,200,OK
+Cloudbees,https://cloudbees.com/careers,https://www.cloudbees.com/careers,200,OK
+Cloudflare,https://cloudflare.com/careers,https://www.cloudflare.com/careers/,200,OK
+Coalfire,https://coalfire.com/careers,https://coalfire.com/about/careers,200,OK
+Cockroach Labs,https://cockroachlabs.com/careers,https://www.cockroachlabs.com/careers/,200,OK
+Coda,https://coda.io/careers,https://superhuman.com/company/careers,200,OK
+Cognex,https://cognex.com/,https://www.cognex.com/en,200,OK
+Cohere,https://cohere.com/careers,https://cohere.com/careers,200,OK
+Cohesity,https://cohesity.com/careers,https://www.cohesity.com/careers/,200,OK
+Collibra,https://collibra.com/careers,https://www.collibra.com///company/careers,200,OK
+Collins Aerospace,https://collinsaerospace.com/careers,https://careers.rtx.com/global/en/collins-aerospace,200,OK
+Comcast,https://comcast.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='comcast.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='comcast.com', port=443) at 0x164202c8f50>, 'Connection to comcast.com timed out. (connect timeout=10)'))"
+Commercetools,https://commercetools.com/careers,https://commercetools.com/careers,200,OK
+Commvault,https://commvault.com/careers,https://www.commvault.com/careers,200,OK
+Concentrix,https://concentrix.com/careers,https://www.concentrix.com,200,OK
+Conduent,https://conduent.com/careers,https://careers.conduent.com/us/en,200,OK
+Consensys,https://consensys.io/,https://consensys.io/,200,OK
+Contentful,https://contentful.com/careers,https://www.contentful.com/careers/,200,OK
+Copado,https://copado.com/careers,https://www.copado.com/careers,200,OK
+Coralogix,https://coralogix.com/careers,https://coralogix.com/careers/,200,OK
+Corsair,https://corsair.com/careers,https://www.corsair.com/ww/en/s/careers,200,OK
+Costco IT,https://costco.com/careers,https://www.costco.com/,200,OK
+Coupa,https://coupa.com/careers,https://www.coupa.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Coupang,https://coupang.com/careers,https://www.coupang.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Coursera,https://coursera.org/careers,https://careers.coursera.com/homepage,200,OK
+Cribl,https://cribl.io/careers,https://cribl.io/careers/,200,OK
+CrowdStrike,https://crowdstrike.com/careers,https://www.crowdstrike.com/en-us/careers/,200,OK
+Cruise Automation,https://getcruise.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='getcruise.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+CyberAgent,https://cyberagent.co.jp/careers,,ERROR,"Connection error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+CyberArk,https://cyberark.com/careers,https://www.paloaltonetworks.com/idira,200,OK
+Cybereason,https://cybereason.com/careers,https://www.levelblue.com/company/careers,200,OK
+Dagster Labs,https://dagster.io/careers,https://www.prefect.io/careers,200,OK
+Daily.co,https://daily.co/careers,https://www.daily.co/company/careers/,200,OK
+Daimler Truck Innovation,https://daimlertruck.com/,https://www.daimlertruck.com/en,200,OK
+Danfoss,https://danfoss.com/,https://www.danfoss.com/en/,200,OK
+Darktrace,https://darktrace.com/careers,https://www.darktrace.com/careers,200,OK
+Dassault Systemes,https://3ds.com/careers,https://www.3ds.com/careers,200,OK
+Datadog,https://datadoghq.com/careers,https://careers.datadoghq.com,200,OK
+Datavail,https://datavail.com/careers,https://eifn.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/ExternalCareerSite,200,OK
+dbt Labs,https://getdbt.com/careers,https://www.getdbt.com/about-us/careers,200,OK
+DE Shaw,https://deshaw.com/careers,https://www.deshaw.com/careers,200,OK
+Deel,https://deel.com/careers,https://www.deel.com/careers/,200,OK
+Deliveroo,https://deliveroo.co.uk/careers,https://careers.deliveroo.co.uk,200,OK
+Delivery Hero,https://deliveryhero.com/careers,https://www.deliveryhero.com/,403,Blocked by bot-protection (site likely fine for humans)
+DeNA,https://dena.com/,https://dena.com/,200,OK
+Denso,https://denso.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='denso.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='denso.com', port=443): Failed to resolve 'denso.com' ([Errno 11001] getaddrinfo failed)""))"
+Deutsche Bank Technology,https://db.com/careers,https://careers.db.com/index?kid=careers.redirect-en.shortcut&language_id=1,200,OK
+Deutsche Telekom,https://telekom.com/,https://www.telekom.com/en,200,OK
+Digital Realty,https://digitalrealty.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='careers.digitalrealty.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+DigitalOcean,https://digitalocean.com/careers,https://www.digitalocean.com/careers,200,OK
+Discord,https://discord.com/careers,https://discord.com/careers,200,OK
+Discover Financial,https://discover.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='jobs.discover.com', port=443): Max retries exceeded with url: /?vcmpgn=discover_careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Docker,https://docker.com/careers,https://www.docker.com/careers/,200,OK
+Dolby,https://dolby.com/careers,https://www.dolby.com/careers,200,OK
+Domo,https://domo.com/careers,https://www.progress.com/company/careers,200,OK
+DoorDash,https://doordash.com/careers,https://careersatdoordash.com,403,Blocked by bot-protection (site likely fine for humans)
+Drata,https://drata.com/careers,https://drata.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Dremio,https://dremio.com/careers,https://www.dremio.com/careers/,200,OK
+Dropbox Sign,https://hellosign.com/,https://sign.dropbox.com/,200,OK
+Druva,https://druva.com/careers,https://www.druva.com/why-druva/explore/careers,200,OK
+Duck Creek,https://duckcreek.com/careers,https://www.duckcreek.com/careers/,200,OK
+Duolingo,https://duolingo.com/careers,https://careers.duolingo.com,200,OK
+Dynatrace,https://dynatrace.com/careers,https://www.dynatrace.com/careers/,200,OK
+Eaton,https://eaton.com/careers,,ERROR,Timed out
+eBay,https://ebay.com/,https://www.ebay.com/,403,Blocked by bot-protection (site likely fine for humans)
+edX,https://edx.org/careers,https://www.edx.org/careers,200,OK
+Efinix,https://efinixinc.com/careers,https://efinixinc.com/careers,307,Redirected
+Emerson,https://emerson.com/careers,https://www.emerson.com/en/corporate/careers,200,OK
+Endurance International,https://endurance.com/careers,https://www.newfold.com/,403,Blocked by bot-protection (site likely fine for humans)
+Env0,https://env0.com/careers,https://www.envzero.com/careers,200,OK
+Envestnet,https://envestnet.com/careers,https://careers.envestnet.com/,403,Blocked by bot-protection (site likely fine for humans)
+Epicor,https://epicor.com/careers,https://www.epicor.com/en/jobs/,200,OK
+Equinix,https://equinix.com/careers,https://careers.equinix.com/homepage?utm_source=dotcom,200,OK
+ESET,https://eset.com/,https://www.eset.com/us/,200,OK
+Etsy,https://etsy.com/careers,https://careers.etsy.com,200,OK
+Expel,https://expel.com/careers,https://expel.com/about/careers/,200,OK
+Expensify,https://expensify.com/,https://www.expensify.com/,200,OK
+Extreme Networks,https://extremenetworks.com/careers,https://www.extremenetworks.com/about-extreme-networks/career,200,OK
+F-Secure,https://f-secure.com/careers,https://company.f-secure.com/en/careers,200,OK
+F5,https://f5.com/careers,https://www.f5.com/company/careers,200,OK
+FactSet,https://factset.com/careers,https://www.factset.com/careers,200,OK
+Fastly,https://fastly.com/careers,https://www.fastly.com/about/careers,200,OK
+Fidelity Investments Technology,https://fidelity.com/careers,https://fidelity.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Figma,https://figma.com/careers,https://www.figma.com/careers/,200,OK
+Finastra,https://finastra.com/careers,https://www.finastra.com/careers/life-at-finastra,200,OK
+Firefly,https://firefly.ai/careers,https://www.firefly.ai/careers,200,OK
+FIS,https://fisglobal.com/careers,https://www.fisglobal.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Fiserv,https://fiserv.com/careers,https://careers.fiserv.com/us/en,200,OK
+Fitbit,https://fitbit.com/careers,https://www.google.com:443/about/careers/applications/jobs/results/?company=Fitbit,200,OK
+Five9,https://five9.com/,https://www.five9.com/,200,OK
+Fiverr,https://fiverr.com/careers,https://www.fiverr.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Fivetran,https://fivetran.com/careers,https://www.fivetran.com/careers,200,OK
+Ford Global Tech,https://ford.com/careers,https://www.ford.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+ForgeRock,https://forgerock.com/careers,https://www.pingidentity.com/en.html?utm_source=forgerock.com&utm_medium=referral&utm_campaign=fr-blanket-redirect,200,OK
+Foxconn,https://foxconn.com/careers,https://www.foxconn.com/zh-tw,200,OK
+Freelancer,https://freelancer.com/careers,https://www.freelancer.com/careers,200,OK
+Freshbooks,https://freshbooks.com/careers,https://www.freshbooks.com/careers,200,OK
+Gainsight,https://gainsight.com/careers,https://gainsight.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Garmin,https://garmin.com/careers,https://WWW.garmin.com/en-IN/careers/,200,OK
+GE Aerospace,https://geaerospace.com/careers,https://www.geaerospace.com/company/careers,200,OK
+Gearset,https://gearset.com/careers,https://gearset.com/careers/,200,OK
+General Dynamics,https://gd.com/careers,https://www.gd.com/careers,200,OK
+General Motors Tech,https://gm.com/careers,https://search-careers.gm.com/en/,200,OK
+Genesys,https://genesys.com/careers,https://www.genesys.com/company/careers,200,OK
+Gigamon,https://gigamon.com/careers,https://www.gigamon.com/company/careers.html,200,OK
+GlobalLogic,https://globallogic.com/careers,https://www.globallogic.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Glu Mobile,https://glu.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='glu.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='glu.com', port=443): Failed to resolve 'glu.com' ([Errno 11001] getaddrinfo failed)""))"
+Goldman Sachs Engineering,https://goldmansachs.com/careers,https://www.goldmansachs.com/careers,200,OK
+Gong,https://gong.io/careers,https://www.gong.io:443/careers,200,OK
+GoPro,https://gopro.com/careers,https://gopro.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+GoTo,https://gotocompany.com/careers,https://www.gotocompany.com/careers,200,OK
+Grab,https://grab.careers/,https://www.grab.careers/en/,200,OK
+Grafana Labs,https://grafana.com/careers,https://grafana.com/careers/,200,OK
+Graphcore,https://graphcore.ai/careers,https://www.graphcore.ai/careers,200,OK
+Groq,https://groq.com/careers,https://groq.com/,200,OK
+Grubhub,https://grubhub.com/careers,https://www.grubhub.com/about/careers,200,OK
+Guidewire,https://guidewire.com/careers,https://www.guidewire.com/about/careers,200,OK
+Gusto,https://gusto.com/careers,https://gusto.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+H&M Tech,https://hm.com/careers,https://hm.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+HackerOne,https://hackerone.com/careers,https://www.hackerone.com/careers,200,OK
+HackerRank,https://hackerrank.com/careers,https://www.hackerrank.com:443/careers,200,OK
+Harbinger Group,https://harbinger-systems.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='harbinger-systems.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+Harman,https://harman.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='www.harman.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Harness,https://harness.io/careers,https://www.harness.io/company/careers,200,OK
+HashiCorp,https://hashicorp.com/careers,https://www.hashicorp.com/en/careers,200,OK
+HeadSpin,https://headspin.io/careers,https://www.headspin.io/careers,200,OK
+Heap,https://heap.io/careers,https://www.heap.io/careers,200,OK
+Hexagon,https://hexagon.com/careers,https://hexagon.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Highspot,https://highspot.com/careers,https://www.seismic.com/careers/,200,OK
+Hinge,https://hinge.co/careers,https://hinge.co/careers,200,OK
+Home Depot Technology,https://homedepot.com/careers,https://careers.homedepot.com/job-search-results/,200,OK
+Honda R&D,https://honda.com/careers,https://www.honda.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Honeycomb,https://honeycomb.io/careers,https://www.honeycomb.io/careers,200,OK
+Hostinger,https://hostinger.com/,https://www.hostinger.com/,200,OK
+HSBC Technology,https://hsbc.com/careers,https://www.hsbc.com/careers,200,OK
+HubSpot,https://hubspot.com/careers,https://www.hubspot.com/careers,200,OK
+Hudson River Trading,https://hudsonrivertrading.com/careers,https://hudsonrivertrading.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Hugging Face,https://huggingface.co/careers,https://apply.workable.com/huggingface,200,OK
+Huntress,https://huntress.com/careers,https://www.huntress.com/company/careers,200,OK
+Hyundai Motor Tech,https://hyundai.com/,https://www.hyundai.com/in/en,200,OK
+Icertis,https://icertis.com/careers,https://www.icertis.com/careers,301,Redirected
+IKEA Digital,https://ikea.com/,https://www.ikea.com/,200,OK
+Illumio,https://illumio.com/careers,https://www.illumio.com/company/careers,200,OK
+Imagination Technologies,https://imaginationtech.com/careers,https://www.imaginationtech.com/careers/,200,OK
+IMC Trading,https://imc.com/careers,https://www.imc.com:443/in/,200,OK
+Immuta,https://immuta.com/careers,https://www.immuta.com/careers,200,OK
+Imply,https://imply.io/careers,https://imply.io/careers/,200,OK
+Infineon,https://infineon.com/careers,https://www.infineon.com,200,OK
+Infinera,https://infinera.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='infinera.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'infinera.com'. (_ssl.c:1082)"")))"
+Infoblox,https://infoblox.com/careers,https://www.infoblox.com/company/careers/,200,OK
+Infogain,https://infogain.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='infogain.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='infogain.com', port=443): Failed to resolve 'infogain.com' ([Errno 11001] getaddrinfo failed)""))"
+Infor,https://infor.com/careers,https://www.infor.com/about/careers,200,OK
+Informatica,https://informatica.com/careers,https://www.informatica.com,200,OK
+Innodata,https://innodata.com/careers,https://innodatacareers.com/,200,OK
+Instacart,https://instacart.com/careers,https://www.instacart.careers/,200,OK
+Instructure,https://instructure.com/careers,https://www.instructure.com/about/careers,200,OK
+Intercom,https://intercom.com/careers,https://fin.ai/careers,200,OK
+Isovalent,https://isovalent.com/careers,https://isovalent.com/careers/,200,OK
+Jack Henry,https://jackhenry.com/careers,https://careers.jackhenry.com/,200,OK
+Jama Software,https://jamasoftware.com/careers,https://www.jamasoftware.com/company/careers/,200,OK
+Jane Street,https://janestreet.com/,https://www.janestreet.com:443/,200,OK
+JetBrains,https://jetbrains.com/careers,https://www.jetbrains.com/careers/,200,OK
+JFrog,https://jfrog.com/careers,https://jfrog.com/careers,202,Unexpected status 202
+Johnson Controls,https://jci.com/careers,https://www.johnsoncontrols.com,200,OK
+JPMorgan Chase Technology,https://jpmorganchase.com/careers,https://www.jpmorganchase.com/careers,200,OK
+Just Eat Takeaway,https://justeattakeaway.com/,https://justeattakeaway.com/,200,OK
+Kabam,https://kabam.com/careers,https://kabam.com/careers/,200,OK
+Kahoot,https://kahoot.com/,https://kahoot.com/,200,OK
+Kakao,https://kakaocorp.com/,https://www.kakaocorp.com/page/,200,OK
+Kape Technologies,https://kape.com/careers,https://www.kape.com,200,OK
+Kasten Veeam,https://kasten.io/,https://www.veeam.com/products/cloud/kubernetes-data-protection.html,200,OK
+Katalon,https://katalon.com/careers,https://katalon.com/careers,200,OK
+Keysight,https://keysight.com/careers,https://www.keysight.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Khan Academy,https://khanacademy.org/careers,https://www.khanacademy.org/careers,200,OK
+Kia Digital,https://kia.com/,https://www.kia.com/in/home.html,200,OK
+King Digital,https://king.com/,https://www.king.com/,200,OK
+KLA,https://kla.com/careers,https://www.kla.com/careers,200,OK
+Klarna,https://klarna.com/careers,https://www.klarna.com/careers/,200,OK
+Konami,https://konami.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='konami.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'konami.com'. (_ssl.c:1082)"")))"
+Kong,https://konghq.com/careers,https://konghq.com/company/careers,200,OK
+Konica Minolta,https://konicaminolta.com/,https://www.konicaminolta.com/selector/index.html,200,OK
+Krafton,https://krafton.com/careers,https://www.krafton.com/careers/people/,200,OK
+Kraken,https://kraken.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.kraken.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.kraken.com', port=443) at 0x16421458cd0>, 'Connection to www.kraken.com timed out. (connect timeout=10)'))"
+Kroger Technology,https://thekrogerco.com/careers,https://www.krogerfamilycareers.com/en/sites/CX_2001,200,OK
+Lacework,https://lacework.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='lacework.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='lacework.com', port=443) at 0x1641f36dbd0>, 'Connection to lacework.com timed out. (connect timeout=10)'))"
+Lam Research,https://lamresearch.com/careers,https://www.lamresearch.com/careers/careers-overview/?utm_source=vanity&utm_campaign=lam_careers_vanity&utm_medium=vanity&utm_content=careers_vanity,200,OK
+LangChain,https://langchain.com/careers,https://www.langchain.com/careers,200,OK
+LastPass,https://lastpass.com/,https://www.lastpass.com/,200,OK
+Lattice Semiconductor,https://latticesemi.com/careers,https://www.latticesemi.com/careers,200,OK
+LaunchDarkly,https://launchdarkly.com/careers,https://launchdarkly.com/careers/,200,OK
+Lazada,https://lazada.com/careers,https://lazada.com/en/careers/,200,OK
+Lear Corporation,https://lear.com/careers,https://www.lear.com/careers,200,OK
+Ledger,https://ledger.com/,https://www.ledger.com/?hp_variant=g4.hero.b,200,OK
+LeetCode,https://leetcode.com/careers,https://leetcode.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Lenovo,https://lenovo.com/careers,https://www.lenovo.com/careers,503,Server error - retry later
+Lightstep,https://lightstep.com/,,ERROR,Timed out
+Line Corporation,https://linecorp.com/careers,https://www.linecorp.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Linear,https://linear.app/careers,https://linear.app/careers,200,OK
+Lockheed Martin,https://lockheedmartin.com/careers,https://www.lockheedmartin.com/en-us/careers/index.html,200,OK
+Loft Labs,https://loft.sh/careers,https://www.vcluster.com/careers,200,OK
+Logitech,https://logitech.com/careers,https://www.logitech.com/en-in/careers,200,OK
+Logz.io,https://logz.io/careers,https://logz.io/careers/,200,OK
+Lowe's Tech,https://lowes.com/careers,https://www.lowes.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Lucid Motors,https://lucidmotors.com/careers,https://lucidmotors.com/careers,200,OK
+Luminar,https://luminartech.com/,https://microvision.com/,200,OK
+Mabl,https://mabl.com/careers,https://job-boards.greenhouse.io/mabl,200,OK
+Magna,https://magna.com/careers,https://www.magna.com/careers,200,OK
+Mailchimp,https://mailchimp.com/careers,https://mailchimp.com/jobs/,200,OK
+Majesco,https://majesco.com/careers,https://www.majesco.com/careers,200,OK
+Mandiant,https://mandiant.com/careers,https://cloud.google.com/security/mandiant,200,OK
+Marelli,https://marelli.com/careers,https://marelli.com/404.html,200,OK
+Marqeta,https://marqeta.com/careers,https://www.marqeta.com/company/careers,200,OK
+Marvell,https://marvell.com/careers,https://www.marvell.com/,403,Blocked by bot-protection (site likely fine for humans)
+Mastech Digital,https://mastechdigital.com/careers,https://mastech.com,200,OK
+Mastercard,https://mastercard.com/careers,https://www.mastercard.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Match Group,https://mtch.com/careers,https://mtch.com/careers/,200,OK
+Materialize,https://materialize.com/careers,https://materialize.com/careers/,200,OK
+MathWorks,https://mathworks.com/careers,https://www.mathworks.com:443/careers,403,Blocked by bot-protection (site likely fine for humans)
+Maxar,https://maxar.com/careers,https://vantor.com/careers/,200,OK
+McAfee,https://mcafee.com/careers,https://www.mcafee.com:443/careers,403,Blocked by bot-protection (site likely fine for humans)
+MediaTek,https://mediatek.com/careers,https://www.mediatek.com/,200,OK
+Medium,https://medium.com/careers,https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e,403,Blocked by bot-protection (site likely fine for humans)
+Mendix,https://mendix.com/careers,https://www.mendix.com/careers/,200,OK
+Menlo Security,https://menlosecurity.com/careers,https://www.menlosecurity.com,200,OK
+Mercari,https://mercari.com/careers,https://www.mercari.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Microchip Technology,https://microchip.com/careers,https://www.microchip.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+MicroStrategy,https://microstrategy.com/careers,https://www.microstrategy.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Midjourney,https://midjourney.com/careers,https://midjourney.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+miHoYo,https://mihoyo.com/careers,https://www.mihoyo.com/careers,200,OK
+Mimecast,https://mimecast.com/,https://www.mimecast.com/,200,OK
+Mindbody,https://mindbodyonline.com/careers,https://www.mindbodyonline.com/,200,OK
+Mirantis,https://mirantis.com/careers,https://www.mirantis.com/careers/,200,OK
+Miro,https://miro.com/careers,https://miro.com/careers/,200,OK
+Mistral AI,https://mistral.ai/careers,https://mistral.ai/careers/,200,OK
+Mixpanel,https://mixpanel.com/careers,https://mixpanel.com/jobs/,200,OK
+Mobileum,https://mobileum.com/,https://www.mobileum.com/,200,OK
+Mobileye,https://mobileye.com/careers,https://careers.mobileye.com/,200,OK
+Monday.com,https://monday.com/careers,https://monday.com/careers,200,OK
+Monolithic Power,https://monolithicpower.com/careers,https://monolithicpower.com/careers,200,OK
+Monte Carlo Data,https://montecarlodata.com/careers,https://montecarlo.ai/careers-at-monte-carlo/,200,OK
+Moody's,https://moodys.com/careers,https://careers.moodys.com/en,200,OK
+Morgan Stanley Technology,https://morganstanley.com/careers,https://www.morganstanley.com/people,200,OK
+Morningstar,https://morningstar.com/careers,https://www.morningstar.com/careers,202,Unexpected status 202
+Motorola Mobility,https://motorola.com/careers,https://www.motorola.com/careers,500,Server error - retry later
+Motorola Solutions,https://motorolasolutions.com/careers,https://www.motorolasolutions.com/en_us/about/careers.html,200,OK
+MSCI,https://msci.com/careers,https://careers.msci.com/,200,OK
+MuleSoft,https://mulesoft.com/careers,https://www.salesforce.com/company/careers/?d=70130000000i80S,403,Blocked by bot-protection (site likely fine for humans)
+Nagarro,https://nagarro.com/careers,https://www.nagarro.com/en/careers,200,OK
+National Instruments,https://ni.com/careers,https://www.emerson.com/en/corporate/careers,200,OK
+Naver,https://navercorp.com/,https://navercorp.com/main,200,OK
+NCC Group,https://nccgroup.com/careers,https://nccgroup.pinpointhq.com/,200,OK
+Neo4j,https://neo4j.com/careers,https://neo4j.com/careers/,200,OK
+Ness Digital Engineering,https://ness.com/careers,https://www.ness.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+NetApp,https://netapp.com/careers,https://www.netapp.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+NetEase Games,https://neteasegames.com/careers,https://www.neteasegames.com,200,OK
+Netlify,https://netlify.com/careers,https://www.netlify.com/careers/,200,OK
+Netskope,https://netskope.com/careers,https://www.netskope.com/company/careers,200,OK
+NetSuite,https://netsuite.com/careers,https://netsuite.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+New Relic,https://newrelic.com/careers,https://newrelic.com/careers,200,OK
+Nexon,https://nexon.com/careers,https://www.nexon.com/main/en/error?aspxerrorpath=/careers,200,OK
+NICE,https://nice.com/careers,https://www.nice.com/careers,200,OK
+Nike Technology,https://nike.com/careers,https://careers.nike.com/,200,OK
+Nintendo,https://nintendo.co.jp/,https://www.nintendo.com/jp/index.html,200,OK
+Nissan Digital,https://nissan-global.com/,https://www.nissan-global.com/EN/,200,OK
+Nomura Technology,https://nomura.com/careers,https://www.nomura.com/careers/,200,OK
+NordSecurity,https://nordsec.com/careers,https://nordsecurity.com/careers/,200,OK
+Northern Trust Technology,https://northerntrust.com/careers,https://ntrs.wd1.myworkdayjobs.com/northerntrust,200,OK
+Northrop Grumman,https://northropgrumman.com/careers,https://www.northropgrumman.com/careers,200,OK
+NortonLifeLock Gen Digital,https://gendigital.com/careers,https://www.gendigital.com/us/en/life-gen/,200,OK
+Nothing Technology,https://nothing.tech/,https://nothing.tech/,200,OK
+Notion,https://notion.so/careers,https://www.notion.com/careers,200,OK
+Nutanix,https://nutanix.com/careers,https://careers.nutanix.com/en/,200,OK
+Nuvei,https://nuvei.com/careers,https://www.nuvei.com/careers,200,OK
+NXP Semiconductors,https://nxp.com/,https://www.nxp.com:443/,404,NOT FOUND - URL likely wrong/outdated
+Observe Inc,https://observeinc.com/careers,https://careers.snowflake.com/us/en,200,OK
+Octopus Deploy,https://octopus.com/careers,https://octopus.com/company/careers,200,OK
+Odoo,https://odoo.com/,https://www.odoo.com/,200,OK
+ON Semiconductor,https://onsemi.com/careers,https://www.onsemi.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+OnePlus,https://oneplus.com/careers,https://www.oneplus.com/in/careers,403,Blocked by bot-protection (site likely fine for humans)
+OneTrust,https://onetrust.com/careers,https://www.onetrust.com/careers/,200,OK
+OpenAI,https://openai.com/careers,https://openai.com/careers/,200,OK
+Optimizely,https://optimizely.com/careers,https://careers.optimizely.com,200,OK
+Optiver,https://optiver.com/careers,https://www.optiver.com/join-us/jobs/,200,OK
+Orange Business,https://orange-business.com/careers,https://www.orange-business.com/en,200,OK
+Orca Security,https://orca.security/careers,https://orca.security/about/careers/,200,OK
+Otto Group Tech,https://otto.de/,https://www.otto.de/,200,OK
+Ouster,https://ouster.com/careers,https://ouster.com/company/careers?cacheBuster=1790752002810,200,OK
+Outreach,https://outreach.io/careers,https://www.outreach.ai/company/working-at-outreach,200,OK
+OutSystems,https://outsystems.com/careers,https://www.outsystems.com/careers,200,OK
+Oyster HR,https://oysterhr.com/careers,https://www.oysterhr.com/careers,200,OK
+PagerDuty,https://pagerduty.com/careers,https://careers.pagerduty.com/,200,OK
+Papaya Global,https://papayaglobal.com/careers,https://www.papayaglobal.com/careers/,200,OK
+Paycom,https://paycom.com/careers,https://www.paycom.com/careers/,200,OK
+Paycor,https://paycor.com/careers,https://www.paycor.com/company/careers/,200,OK
+Paylocity,https://paylocity.com/careers,https://www.paylocity.com/careers/,200,OK
+Payoneer,https://payoneer.com/,https://www.payoneer.com/,200,OK
+Pega,https://pega.com/careers,https://www.pega.com/about/careers,200,OK
+Peloton,https://onepeloton.com/careers,https://careers.onepeloton.com/en/,200,OK
+Perforce,https://perforce.com/careers,https://www.perforce.com/careers,200,OK
+Perplexity,https://perplexity.ai/careers,https://www.perplexity.ai/careers,403,Blocked by bot-protection (site likely fine for humans)
+Photon Infotech,https://photon.com/careers,https://www.photon.com/careers,200,OK
+Pinecone,https://pinecone.io/careers,https://www.pinecone.io/careers/,200,OK
+Ping Identity,https://pingidentity.com/careers,https://www.pingidentity.com/en/company/careers.html,200,OK
+Pipedrive,https://pipedrive.com/,https://www.pipedrive.com/,200,OK
+Planet Labs,https://planet.com/careers,https://www.planet.com/company/careers/,200,OK
+PlanetScale,https://planetscale.com/careers,https://planetscale.com/careers,200,OK
+Platform9,https://platform9.com/careers,https://platform9.com/careers/,200,OK
+Playtika,https://playtika.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.playtika.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.playtika.com', port=443) at 0x16421459450>, 'Connection to www.playtika.com timed out. (connect timeout=10)'))"
+Pluralsight,https://pluralsight.com/careers,https://www.pluralsight.com:443/careers,200,OK
+Portworx,https://portworx.com/careers,https://www.everpuredata.com/company/careers.html,200,OK
+PostHog,https://posthog.com/careers,https://posthog.com/careers,200,OK
+Prefect,https://prefect.io/careers,https://www.prefect.io/careers,200,OK
+Prisma,https://prisma.io/careers,https://www.prisma.io/company/careers,200,OK
+Prolifics,https://prolifics.com/,https://prolifics.com/,200,OK
+Proofpoint,https://proofpoint.com/careers,https://www.proofpoint.com/us/company/careers,200,OK
+ProtonMail,https://proton.me/careers,https://proton.me/careers,200,OK
+Provar,https://provartesting.com/careers,https://provartesting.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+PTC,https://ptc.com/careers,https://www.ptc.com/en/careers,200,OK
+Pulumi,https://pulumi.com/careers,https://www.pulumi.com/careers/,200,OK
+Pure Storage,https://purestorage.com/careers,https://www.everpuredata.com/company/careers.html,200,OK
+Qlik,https://qlik.com/careers,https://www.qlik.com/us/company/careers,200,OK
+Qorvo,https://qorvo.com/careers,https://www.qorvo.com/about/careers,200,OK
+Qualys,https://qualys.com/careers,https://www.qualys.com/careers,200,OK
+Quora,https://quora.com/careers,https://www.quora.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Rackspace,https://rackspace.com/careers,https://rackspace.wd1.myworkdayjobs.com/External,200,OK
+Radware,https://radware.com/careers,https://www.radware.com/careers/,200,OK
+Rakuten,https://rakuten.com/careers,https://www.rakuten.com/careers,200,OK
+Rambus,https://rambus.com/careers,https://www.rambus.com/careers/,200,OK
+Ramp,https://ramp.com/careers,https://ramp.com/careers,200,OK
+Rancher SUSE,https://rancher.com/careers,https://www.suse.com/careers/,200,OK
+Rapid7,https://rapid7.com/careers,https://careers.rapid7.com/,200,OK
+Raytheon RTX,https://rtx.com/careers,https://careers.rtx.com/global/en,200,OK
+Razer,https://razer.com/,https://www.razer.com/,200,OK
+Recorded Future,https://recordedfuture.com/careers,https://www.recordedfuture.com/work-with-us,200,OK
+Red Canary,https://redcanary.com/careers,https://www.zscaler.com/careers,200,OK
+Red Hat,https://redhat.com/careers,https://www.redhat.com/en/jobs,200,OK
+Reddit,https://redditinc.com/careers,https://redditinc.com/careers,200,OK
+Redpanda,https://redpanda.com/careers,https://www.redpanda.com/careers,200,OK
+Relativity Space,https://relativityspace.com/careers,https://www.relativityspace.com/careers,200,OK
+Remitly,https://remitly.com/careers,https://careers.remitly.com/,200,OK
+Remote.com,https://remote.com/careers,https://remote.com/careers,200,OK
+Renault Nissan Tech,https://renaultgroup.com/,https://www.renaultgroup.com/,200,OK
+Renesas,https://renesas.com/careers,https://jobs.renesas.com,200,OK
+Replit,https://replit.com/careers,https://replit.com/careers,200,OK
+Retool,https://retool.com/careers,https://retool.com/careers,200,OK
+Ricoh,https://ricoh.com/,https://www.ricoh.com/,200,OK
+RingCentral,https://ringcentral.com/careers,https://www.ringcentral.com/company/careers/overview.html,200,OK
+Riot Games,https://riotgames.com/careers,https://www.riotgames.com/en/work-with-us,200,OK
+Rippling,https://rippling.com/careers,https://www.rippling.com/careers,200,OK
+Rivian,https://rivian.com/careers,https://careers.rivian.com/careers-home/,200,OK
+Rocket Lab,https://rocketlabusa.com/careers,https://rocketlabcorp.com/careers/,200,OK
+Rockwell Automation,https://rockwellautomation.com/careers,https://www.rockwellautomation.com/en-us/careers.html,200,OK
+Rohde & Schwarz,https://rohde-schwarz.com/,https://rohde-schwarz.com/in/home_48230.html,200,OK
+Rolls-Royce,https://rolls-royce.com/,https://www.rolls-royce.com/,200,OK
+Rovio,https://rovio.com/careers,https://www.rovio.com/careers/,200,OK
+Rubrik,https://rubrik.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='rubrik.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)')))"
+Ruckus Networks,https://commscope.com/careers,https://jobs.commscope.com:443/,200,OK
+RudderStack,https://rudderstack.com/careers,https://www.rudderstack.com/careers/,200,OK
+Runway,https://runwayml.com/careers,https://runway.com/careers,200,OK
+S&P Global,https://spglobal.com/careers,https://www.spglobal.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Safran,https://safran-group.com/careers,https://www.safran-group.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Sage Group,https://sage.com/careers,https://www.sage.com/en-gb/company/careers/,200,OK
+SailPoint,https://sailpoint.com/careers,https://www.sailpoint.com/company/careers,200,OK
+SambaNova,https://sambanova.ai/careers,https://sambanova.ai/company/careers,200,OK
+Sapiens,https://sapiens.com/careers,https://sapiens.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+SAS Institute,https://sas.com/careers,https://www.sas.com/en_us/careers.geo.html,200,OK
+Sauce Labs,https://saucelabs.com/careers,https://saucelabs.com/careers,200,OK
+Scale AI,https://scale.com/careers,https://scale.com/careers,200,OK
+Schneider Electric,https://se.com/careers,https://www.se.com/ww/en/about-us/careers/overview.jsp,403,Blocked by bot-protection (site likely fine for humans)
+Scopely,https://scopely.com/careers,https://careers.scopely.com/us/en,200,OK
+Sea Limited Shopee,https://sea.com/careers,https://www.sea.com/careers,200,OK
+Secureframe,https://secureframe.com/careers,https://secureframe.com/careers,200,OK
+Sega,https://sega.com/careers,https://www.sega.com/careers,200,OK
+Seismic,https://seismic.com/careers,https://www.seismic.com/careers/,200,OK
+Semtech,https://semtech.com/careers,https://www.semtech.com/careers,200,OK
+Sendbird,https://sendbird.com/careers,https://delight.ai/careers,200,OK
+SentinelOne,https://sentinelone.com/careers,https://www.sentinelone.com/careers/,200,OK
+Sentry,https://sentry.io/careers,https://sentry.io/careers/,200,OK
+Shein,https://shein.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='shein.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='shein.com', port=443) at 0x1641f36f610>, 'Connection to shein.com timed out. (connect timeout=10)'))"
+Shield AI,https://shield.ai/careers,https://shield.ai/careers/,200,OK
+Showpad,https://showpad.com/careers,https://www.showpad.com/careers,200,OK
+Siemens Energy,https://siemens-energy.com/,https://www.siemens-energy.com/global/en/home.html,200,OK
+SiFive,https://sifive.com/careers,https://www.sifive.com/careers,200,OK
+Signal,https://signal.org/careers,https://signal.org/workworkwork/,200,OK
+Silicon Labs,https://silabs.com/careers,https://www.silabs.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+SingleStore,https://singlestore.com/careers,https://www.singlestore.com/careers/,200,OK
+Singtel,https://singtel.com/,https://www.singtel.com/,200,OK
+Sitecore,https://sitecore.com/,https://www.sitecore.com/,200,OK
+Skillsoft,https://skillsoft.com/careers,https://www.skillsoft.com/about/careers,200,OK
+Skyworks,https://skyworksinc.com/careers,https://www.skyworksinc.com:443/careers,200,OK
+Smartsheet,https://smartsheet.com/careers,https://www.smartsheet.com/careers,200,OK
+Snap Inc,https://snap.com/,https://www.snap.com/,200,OK
+Snyk,https://snyk.io/careers,https://snyk.io/careers/,200,OK
+Societe Generale,https://societegenerale.com/,https://www.societegenerale.com/fr,200,OK
+SoFi,https://sofi.com/careers,https://sofi.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+SoftBank,https://softbank.jp/careers,https://www.softbank.jp/,200,OK
+Solo.io,https://solo.io/,https://www.solo.io/,200,OK
+Sonatype,https://sonatype.com/careers,https://www.sonatype.com/company/careers,200,OK
+Sonos,https://sonos.com/careers,https://sonos.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Sony,https://sony.com/careers,https://www.sony.com:443/careers,403,Blocked by bot-protection (site likely fine for humans)
+Sophos,https://sophos.com/careers,,ERROR,Timed out
+Sourcegraph,https://sourcegraph.com/careers,https://sourcegraph.com/jobs,200,OK
+Spacelift,https://spacelift.io/careers,https://spacelift.io/careers,200,OK
+Spire Global,https://spire.com/careers,https://spire.com/careers/,200,OK
+Split Software,https://split.io/careers,https://www.harness.io/company/careers?utm_campaign=fme&utm_source=split_io&utm_medium=redirect&utm_content=individual,200,OK
+Sprinklr,https://sprinklr.com/careers,https://www.sprinklr.com/careers/,200,OK
+Squarespace,https://squarespace.com/careers,https://www.squarespace.com/about/careers,200,OK
+SS&C Technologies,https://ssctech.com/,https://www.ssctech.com/,200,OK
+Stability AI,https://stability.ai/careers,https://stability.ai/careers,200,OK
+Standard Chartered GBS,https://sc.com/careers,https://www.sc.com/en/global-careers/,200,OK
+Starburst,https://starburst.io/careers,https://www.starburst.io/careers/,200,OK
+Startek,https://startek.com/careers,https://www.startek.com/careers,200,OK
+StarTree,https://startree.ai/careers,https://startree.ai/careers/,200,OK
+State Street Technology,https://statestreet.com/careers,https://careers.statestreet.com/global/en,200,OK
+Stellantis Tech,https://stellantis.com/careers,https://www.stellantis.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+STMicroelectronics,https://st.com/careers,,ERROR,Timed out
+Stoplight,https://stoplight.io/careers,https://smartbear.com/company/careers/,200,OK
+Strava,https://strava.com/careers,https://www.strava.com/careers,200,OK
+Substack,https://substack.com/careers,https://substack.com/jobs,200,OK
+Sumo Logic,https://sumologic.com/careers,https://www.sumologic.com/company/careers,200,OK
+Supabase,https://supabase.com/careers,https://supabase.com/careers,200,OK
+Supercell,https://supercell.com/careers,https://supercell.com/en/careers/,200,OK
+Surfshark,https://surfshark.com/,https://surfshark.com/,200,OK
+SUSE,https://suse.com/careers,https://www.suse.com/careers/,200,OK
+Swagger SmartBear,https://smartbear.com/careers,https://smartbear.com/company/careers/,200,OK
+Synaptics,https://synaptics.com/careers,https://www.synaptics.com/careers,200,OK
+Synechron,https://synechron.com/careers,https://www.synechron.com/careers,200,OK
+Synopsys,https://synopsys.com/careers,https://careers.synopsys.com,200,OK
+Sysdig,https://sysdig.com/careers,https://www.sysdig.com/careers,200,OK
+T-Mobile,https://t-mobile.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='t-mobile.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='t-mobile.com', port=443) at 0x164202c8550>, 'Connection to t-mobile.com timed out. (connect timeout=10)'))"
+Tableau,https://tableau.com/careers,https://www.tableau.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Tailscale,https://tailscale.com/careers,https://tailscale.com/careers,200,OK
+Take-Two Interactive,https://take2games.com/,https://www.take2games.com,200,OK
+Talend,https://talend.com/careers,https://www.qlik.com/us/company/careers,200,OK
+Target Tech,https://target.com/careers,https://corporate.target.com/careers,200,OK
+Telefonica Tech,https://telefonica.com/,https://www.telefonica.com/es/,200,OK
+Telegram,https://telegram.org/careers,https://telegram.org/careers,200,OK
+Teleperformance,https://teleperformance.com/careers,https://www.tp.com/en-us/careers/job-opportunities/,200,OK
+Telstra,https://telstra.com/careers,https://www.telstra.com.au/careers/in,200,OK
+Temenos,https://temenos.com/careers,https://www.temenos.com/about-us/careers/,200,OK
+Temporal,https://temporal.io/careers,https://temporal.io/careers,200,OK
+Tenable,https://tenable.com/careers,https://www.tenable.com/careers,200,OK
+Tencent,https://tencent.com/careers,,ERROR,Timed out
+Tenstorrent,https://tenstorrent.com/careers,https://tenstorrent.com/careers,200,OK
+Teradata,https://teradata.com/careers,,ERROR,"Connection error: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+Tetrate,https://tetrate.io/careers,https://careers.tetr8.io/,200,OK
+Thales,https://thalesgroup.com/careers,https://www.thalesgroup.com/careers,200,OK
+Thomson Reuters,https://thomsonreuters.com/careers,https://www.thomsonreuters.com/en/careers,200,OK
+TigerGraph,https://tigergraph.com/,https://www.tigergraph.com/,200,OK
+TikTok,https://tiktok.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='tiktok.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='tiktok.com', port=443) at 0x164202c8910>, 'Connection to tiktok.com timed out. (connect timeout=10)'))"
+Tinder,https://tinder.com/careers,https://www.gotinder.com/careers,200,OK
+Toast,https://toasttab.com/careers,https://pos.toasttab.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Tokopedia,https://tokopedia.com/careers,,ERROR,Timed out
+Toptal,https://toptal.com/careers,https://www.toptal.com/careers,200,OK
+Toshiba,https://global.toshiba/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='global.toshiba', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='global.toshiba', port=443): Failed to resolve 'global.toshiba' ([Errno 11001] getaddrinfo failed)""))"
+Tower Research Capital,https://tower-research.com/careers,https://tower-research.com/careers/,200,OK
+Toyota Connected,https://toyota.com/careers,https://careers.toyota.com/us/en/,200,OK
+Traveloka,https://traveloka.com/careers,https://careers.traveloka.com:443/,200,OK
+Tredence,https://tredence.com/careers,https://www.tredence.com/careers/greatest-of-ai,200,OK
+Trellix,https://trellix.com/careers,,ERROR,Timed out
+Trend Micro,https://trendmicro.com/careers,https://www.trendmicro.com/en_us/about/careers.html,200,OK
+Tricentis,https://tricentis.com/careers,https://www.tricentis.com/company/careers,200,OK
+Trimble,https://trimble.com/careers,https://www.trimble.com/en/careers,200,OK
+Trustwave,https://trustwave.com/careers,https://www.levelblue.com/company/careers,200,OK
+TSMC,https://tsmc.com/,https://www.tsmc.com/english,200,OK
+TTEC,https://ttec.com/careers,https://www.ttec.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Turing,https://turing.com/,https://www.turing.com/talent,200,OK
+Twingate,https://twingate.com/careers,https://www.twingate.com/careers,200,OK
+Twitch,https://twitch.tv/careers,https://www.twitch.tv/careers,200,OK
+Two Sigma,https://twosigma.com/careers,https://www.twosigma.com/careers/,200,OK
+Tyk,https://tyk.io/,https://tyk.io/,200,OK
+Ubiquiti,https://ui.com/careers,https://careers.ui.com,200,OK
+UBS Technology,https://ubs.com/careers,https://www.ubs.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Udemy,https://udemy.com/careers,https://udemy.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+UiPath,https://uipath.com/careers,https://www.uipath.com/careers,200,OK
+UKG,https://ukg.com/careers,https://www.ukg.com/company/careers,200,OK
+Unit4,https://unit4.com/careers,https://unit4.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Upwork,https://upwork.com/careers,https://upwork.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Vanguard Technology,https://vanguard.com/careers,https://www.vanguard.com/careers,200,OK
+Vanta,https://vanta.com/careers,https://www.vanta.com/company/careers,200,OK
+Varonis,https://varonis.com/careers,https://www.varonis.com/careers,200,OK
+Veeam,https://veeam.com/,https://www.veeam.com/,200,OK
+Vercel,https://vercel.com/careers,https://vercel.com/careers,200,OK
+Verint,https://verint.com/careers,https://www.verint.com/careers/,200,OK
+Verisk,https://verisk.com/careers,https://www.verisk.com/company/careers/,200,OK
+Veritas Technologies,https://veritas.com/careers,https://www.cohesity.com/careers/,200,OK
+Verizon,https://verizon.com/careers,https://mycareer.verizon.com/?CMP=DMC-CSVCS_ZZ_ZZ_Z_ZZ_N_Z00001,200,OK
+Vertex Inc,https://vertexinc.com/careers,https://www.vertexinc.com/company/careers,200,OK
+Vestas,https://vestas.com/careers,https://www.vestas.com/en/careers/life-at-vestas,200,OK
+Viavi Solutions,https://viavisolutions.com/careers,https://www.viavisolutions.com/en-us/corporate/careers,200,OK
+Vimeo,https://vimeo.com/careers,https://vimeo.com/careers,200,OK
+Virgin Galactic,https://virgingalactic.com/careers,https://virgingalactic.com/careers,530,Server error - retry later
+Virtusa,https://virtusa.com/careers,https://www.virtusa.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Visa,https://visa.com/careers,https://www.visa.co.in/careers.html,200,OK
+Visteon,https://visteon.com/careers,https://www.visteon.com:443/careers/join-us/default.aspx,429,Unexpected status 429
+Vodafone,https://vodafone.com/careers,https://careers.vodafone.com/,200,OK
+Volkswagen Digital,https://volkswagen.com/careers,https://www.volkswagen.co.in/en.html,200,OK
+Vonage,https://vonage.com/careers,https://www.vonage.com/careers/,200,OK
+Walmart Global Tech,https://walmart.com/careers,https://www.walmart.com/blocked?url=L2NhcmVlcnM=&uuid=b9920416-bc9d-11f1-8ce6-807dd7d54ea1&vid=&g=b,200,OK
+Wayfair,https://wayfair.com/careers,https://www.wayfair.com/careers,429,Unexpected status 429
+Waymo,https://waymo.com/careers,https://careers.withwaymo.com,202,Unexpected status 202
+Weaviate,https://weaviate.io/,https://weaviate.io/,200,OK
+Weights & Biases,https://wandb.ai/careers,https://wandb.ai/site/careers/,200,OK
+Wells Fargo Technology,https://wellsfargo.com/careers,https://www.wellsfargojobs.com?utm_medium=www-redirect&utm_source=careers,200,OK
+Western Union Technology,https://westernunion.com/careers,https://careers.westernunion.com,200,OK
+WhatsApp,https://whatsapp.com/careers,https://www.whatsapp.com/careers,400,Unexpected status 400
+Wix,https://wix.com/careers,https://careers.wix.com,200,OK
+Wiz,https://wiz.io/careers,https://www.wiz.io/careers,200,OK
+Wolfspeed,https://wolfspeed.com/careers,https://www.wolfspeed.com:443/careers/,200,OK
+WordPress VIP,https://wpvip.com/careers,https://automattic.com/work-with-us/,200,OK
+Workato,https://workato.com/careers,https://www.workato.com/careers,200,OK
+Xero,https://xero.com/careers,https://careers.xero.com,200,OK
+Xiaomi,https://xiaomi.com/careers,http://err.www.mi.com/04.html,200,OK
+Xperi,https://xperi.com/careers,https://xperi.com/careers/,200,OK
+Yokogawa,https://yokogawa.com/careers,https://www.yokogawa.com/careers,202,Unexpected status 202
+Yugabyte,https://yugabyte.com/careers,https://www.yugabyte.com/careers/,200,OK
+Zalando,https://zalando.com/careers,https://zalando.com/careers,200,OK
+Zebra Technologies,https://zebra.com/careers,https://www.zebra.com/us/en/about-zebra/careers.html,200,OK
+Zego,https://zegocloud.com/,https://www.zegocloud.com/,200,OK
+Zendesk,https://zendesk.com/careers,https://www.zendesk.com/in/company/careers/#georedirect,200,OK
+Zeotap,https://zeotap.com/careers,https://zeotap.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Zerotier,https://zerotier.com/,https://www.zerotier.com/,403,Blocked by bot-protection (site likely fine for humans)
+ZF Group,https://zf.com/careers,https://www.zf.com/mobile/en/careers/careers.html,200,OK
+Zoom,https://zoom.us/careers,https://explore.zoom.us/en/careers/,200,OK
+Zoom Info,https://zoominfo.com/careers,https://www.zoominfo.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Zoox,https://zoox.com/careers,https://zoox.com/careers,200,OK
+ZS Associates,https://zs.com/careers,https://www.zs.com/careers,200,OK
+Zscaler,https://www.zscaler.com/careers,https://www.zscaler.com/careers,200,OK
+Zuora,https://zuora.com/careers,https://zuora.com/careers,502,Server error - retry later
+Absolutdata,https://absolutdata.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='absolutdata.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='absolutdata.com', port=443) at 0x164202c9810>, 'Connection to absolutdata.com timed out. (connect timeout=10)'))"
+Crayon Data,https://crayondata.com/,https://crayondata.ai/,200,OK
+Manthan Systems,https://manthan.com/careers,https://manthan.com/careers,200,OK
+Indus Insights,https://indusinsights.com/,https://www.indusinsights.com/,200,OK
+DataWeave,https://dataweave.com/,https://dataweave.com/,200,OK
+Bridgei2i,https://bridgei2i.com/careers,https://www.accenture.com/en,200,OK
+Marlabs,https://marlabs.com/careers,https://www.marlabs.com/careers,200,OK
+Xebia,https://xebia.com/careers,https://xebia.com/careers/,200,OK
+Synerzip,https://synerzip.com/careers,,ERROR,"Connection error: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+Intellisense.io,https://intellisense.io/careers,https://intellisense.io/careers,403,Blocked by bot-protection (site likely fine for humans)
+Adroitent,https://adroitent.com/,https://adroitent.ai/,200,OK
+Josh Software,https://joshsoftware.com/,https://www.joshsoftware.com/,200,OK
+Simform,https://simform.com/careers,https://www.simform.com/careers,200,OK
+Daffodil Software,https://daffodilsw.com/careers,https://www.daffodilsw.com/career/,200,OK
+Iflexion,https://iflexion.com/,https://www.iflexion.com/,200,OK
+Grid Dynamics,https://griddynamics.com/careers,https://www.griddynamics.com:443/careers,200,OK
+Softserve,https://softserveinc.com/careers,https://career.softserveinc.com/en-us/careers,200,OK
+Intetics,https://intetics.com/careers,https://intetics.com/careers/global-vacancies/,200,OK
+Course Hero,https://www.coursehero.com/careers,https://www.coursehero.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Codecademy,https://www.codecademy.com/careers,https://www.codecademy.com/about/careers,200,OK
+Wealthy,https://wealthy.in/careers,https://www.wealthy.in/careers,200,OK
+Wow! Momo,https://wowmomo.com/careers,https://www.wowmomo.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Yes Bank,https://www.yesbank.in/careers,https://www.yes.bank.in/careers,404,NOT FOUND - URL likely wrong/outdated
+ZunRoof,https://zunroof.com/careers,https://www.zunsolar.com/careers,200,OK
+Zydus Lifesciences,https://www.zyduslife.com/careers,https://www.zyduslife.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Zyro,https://zyro.com/careers,,ERROR,Timed out
+Zycus,https://www.zycus.com/careers,https://www.zycus.com/company/careers,200,OK
+Aditya Birla Capital,https://www.adityabirlacapital.com/careers,https://www.adityabirlacapital.com/careers,200,OK
+Aditya Birla Fashion & Retail,https://www.abfrl.com/careers,https://www.abfrl.com/careers/,200,OK
+Aditya Birla Insurance Brokers,https://www.adityabirlainsurancebrokers.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.adityabirlainsurancebrokers.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='www.adityabirlainsurancebrokers.com', port=443): Failed to resolve 'www.adityabirlainsurancebrokers.com' ([Errno 11001] getaddrinfo failed)""))"
+Air India,https://www.airindia.com/careers,,ERROR,Timed out
+AirAsia India,https://www.airindiaexpress.in/careers,https://www.airindiaexpress.com/careers,200,OK
+Airtel,https://careers.airtel.com/,https://careers.airtel.com/,200,OK
+Amul,https://amul.com/careers,https://amul.com/careers,200,OK
+Anand Rathi Wealth,https://anandrathi.com/careers,https://anandrathi.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Apollo Hospitals,https://www.apollohospitals.com/careers,https://careers-myhr-apollo.peoplestrong.com/job/joblist,404,NOT FOUND - URL likely wrong/outdated
+Arvind Limited,https://www.arvind.com/careers,https://www.arvind.com/careers/overview,200,OK
+Axis Bank,https://www.axisbank.com/careers,https://www.axis.bank.in/careers,200,OK
+Bajaj Auto,https://www.bajajauto.com/careers,https://www.bajajauto.com/careers/why-us,200,OK
+Bajaj Finserv,https://www.bajajfinserv.in/careers,https://www.bajajfinserv.in/,200,OK
+Balaji Telefilms,https://balajitelefilms.com/careers,https://balajitelefilms.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Bata India,https://www.bata.in/careers,,ERROR,Timed out
+Berger Paints India,https://www.bergerpaints.com/careers,https://www.bergerpaints.com/career,200,OK
+Bharti AXA Life Insurance,https://www.bharti-axalife.com/careers,https://www.bhartiaxa.com/about-us/careers,200,OK
+Bharti Infratel (Indus Towers),https://www.industowers.com/careers,https://www.industowers.com/careers/,200,OK
+Biocon,https://www.biocon.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='www.biocon.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
+Birla Corporation,https://www.birlacorporation.com/careers,https://birlacorporation.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Blue Dart Express,https://bluedart.com/careers,https://www.bluedart.com/web/guest/home?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&_com_liferay_login_web_portlet_LoginPortlet_redirect=%2Fcareers,200,OK
+Bombay Dyeing,https://bombaydyeing.com/careers,https://bombaydyeing.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Britannia Industries,https://britannia.co.in/careers,https://www.britannia.co.in/careers,200,OK
+Cadbury India (Mondelez),https://www.mondelezinternational.com/careers,https://www.mondelezinternational.com/careers/index.html,200,OK
+Cadila Pharmaceuticals,https://www.cadilapharma.com/careers,https://www.cadilapharma.com/careers/life-at-cadila,200,OK
+CarTrade Tech,https://www.cartrade.com/careers,https://www.cartrade.com/careers/,404,NOT FOUND - URL likely wrong/outdated
+CavinKare,https://www.cavinkare.com/careers,https://cavinkare.com/careers/,200,OK
+Cipla,https://www.cipla.com/careers,https://www.cipla.com/careers,200,OK
+Clovia,https://clovia.com/careers,https://www.clovia.com/careers/,404,NOT FOUND - URL likely wrong/outdated
+Colgate-Palmolive India,https://jobs.colgate.com/,https://jobs.colgate.com/,200,OK
+CRISIL,https://www.crisil.com/en/home/careers.html,https://www.crisil.com/en/home/careers.html,200,OK
+Dabur India,https://www.dabur.com/careers,https://www.dabur.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Den Networks,https://www.dennetworks.com/careers,https://dennetworks.com/careers,200,OK
+Dhani Services,https://www.dhani.com/careers,https://www.dhani.com/careers,404,NOT FOUND - URL likely wrong/outdated
+DLF Limited,https://www.dlf.in/careers,https://www.dlf.in/,200,OK
+Dr. Reddy's,https://careers.drreddys.com/,https://careers.drreddys.com/,200,OK
+DSP Mutual Fund,https://www.dspim.com/careers,https://www.dspim.com/careers,200,OK
+DTDC Express,https://www.dtdc.com/careers,https://www.dtdc.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Eicher Motors,https://www.eicher.in/careers,https://www.eicher.in/careers,200,OK
+EID Parry,https://www.eidparry.com/careers,https://eidparry.com/careers/,200,OK
+EIH Limited (Oberoi Hotels),https://www.oberoihotels.com/careers,https://www.oberoigroup.com/,200,OK
+Emami Limited,https://www.emamiltd.in/careers,https://www.emamiltd.in/careers,404,NOT FOUND - URL likely wrong/outdated
+Escorts Kubota,https://www.escortsgroup.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.escortsgroup.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.escortsgroup.com', port=443) at 0x1641f36f610>, 'Connection to www.escortsgroup.com timed out. (connect timeout=10)'))"
+Edelweiss Group,https://www.edelweissfin.com/careers,https://www.edelweissfin.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Emcure Pharma,https://www.emcure.com/careers,https://www.emcure.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Endurance Technologies,https://www.endurancegroup.com/careers,https://www.endurancegroup.com/careers,403,Blocked by bot-protection (site likely fine for humans)
+Engineers India Limited (EIL),https://engineersindia.com/careers,https://engineersindia.com/careers,200,OK
+Eveready Industries,https://www.evereadyindia.com/careers,https://www.eveready.in/careers/,404,NOT FOUND - URL likely wrong/outdated
+Finolex Cables,https://www.finolex.com/careers,https://www.finolex.com/Account/Login?returnUrl=%2Fcareers,200,OK
+Fortis Healthcare,https://www.fortishealthcare.com/careers,https://www.fortishealthcare.com/careers-at-Fortis-basic,403,Blocked by bot-protection (site likely fine for humans)
+Aarti Industries,https://www.aartiindustries.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='www.aartiindustries.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)')))"
+Abbott India,https://www.abbott.com/careers,https://www.abbott.com/en-us/careers,200,OK
+Adani Group,https://www.adani.com/careers,https://www.adani.com/careers,200,OK
+Adani Ports,https://www.adaniports.com/careers,https://www.adaniports.com/page-not-found?item=%2fcareers&user=default%5cAnonymous&site=Ports,200,OK
+Adani Power,https://www.adanipower.com/careers,https://www.adanipower.com/page-not-found?item=%2fcareers&user=default%5cAnonymous&site=Power,200,OK
+Adani Transmission,https://www.adanitransmission.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.adanitransmission.com', port=443): Max retries exceeded with url: /careers (Caused by NameResolutionError(""HTTPSConnection(host='www.adanitransmission.com', port=443): Failed to resolve 'www.adanitransmission.com' ([Errno 11001] getaddrinfo failed)""))"
+Adani Wilmar,https://www.adaniwilmar.com/careers,https://www.awl.in/careers,404,NOT FOUND - URL likely wrong/outdated
+Adobe India,https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced,https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced,200,OK
+Aegon Life Insurance,https://www.aegonlife.com/careers,,ERROR,"Connection error: HTTPSConnectionPool(host='www.aegonlife.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.aegonlife.com', port=443) at 0x16421458410>, 'Connection to www.aegonlife.com timed out. (connect timeout=10)'))"
+Ajanta Pharma,https://www.ajantapharma.com/careers,https://www.ajantapharma.com/careers,404,NOT FOUND - URL likely wrong/outdated
+AkzoNobel India,https://www.akzonobel.com/en/careers,https://www.akzonobel.com/en/careers,200,OK
+Alembic Pharmaceuticals,https://www.alembicpharmaceuticals.com/careers,https://alembicpharmaceuticals.com/careers,200,OK
+Allcargo Logistics,https://www.allcargologistics.com/careers,https://www.allcargologistics.com/careers,200,OK
+Amara Raja Batteries,https://www.amararaja.com/careers,https://amararaja.com/careers/,200,OK
+Ambuja Cements,https://www.ambujacement.com/careers,https://www.ambujacement.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Lupin Pharmaceuticals,https://www.lupin.com/careers,https://www.lupin.com/careers,404,NOT FOUND - URL likely wrong/outdated
+Lux Industries,https://www.luxinnerwear.com/careers,https://www.luxinnerwear.com/,200,OK
+Mahindra & Mahindra,https://www.mahindra.com/careers,https://www.mahindra.com/career,200,OK
+Marico Limited,https://www.marico.com/careers,https://marico.com/global/careers,200,OK
+Maruti Suzuki India,https://www.marutisuzuki.com/corporate/careers,https://www.marutisuzuki.com/corporate/careers,200,OK
+Max Healthcare,https://www.maxhealthcare.in/careers,https://www.maxhealthcare.in/careers,403,Blocked by bot-protection (site likely fine for humans)
+Muthoot Finance,https://www.muthootgroup.com/careers,,ERROR,"SSL error: HTTPSConnectionPool(host='www.muthootgroup.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))"
