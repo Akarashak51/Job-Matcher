@@ -762,15 +762,76 @@ def guess_workday(company_name, tenant_hint=None, verbose=True, max_seconds=45):
 # =====================================================================
 
 _WORKDAY_URL_RE = re.compile(
-    r"([a-z0-9_-]+)\.(wd\d+)\.myworkdayjobs\.com/(?:wday/cxs/[a-z0-9_-]+/)?([A-Za-z0-9_]+)",
+    r"([a-z0-9_-]+)\.(wd\d+)\.myworkdayjobs\.com"
+    r"(?:/wday/cxs/[a-z0-9_-]+)?"
+    r"(?:/[a-z]{2}(?:-[a-z]{2,4})?(?=/|$))?"   # optional locale like /en-US
+    r"(?:/([A-Za-z0-9_-]+))?",                  # site is now optional
     re.IGNORECASE,
+
 )
 _GREENHOUSE_URL_RE = re.compile(
     r"(?:boards|job-boards)\.greenhouse\.io/(?:embed/job_board\?for=)?([a-z0-9_-]+)", re.IGNORECASE
 )
 _LEVER_URL_RE = re.compile(r"jobs\.lever\.co/([a-z0-9_-]+)", re.IGNORECASE)
 _SMARTRECRUITERS_URL_RE = re.compile(r"careers\.smartrecruiters\.com/([A-Za-z0-9_-]+)")
-_ASHBY_URL_RE = re.compile(r"jobs\.ashbyhq\.com/([a-z0-9_-]+)", re.IGNORECASE)
+_WORKDAY_COMMON_SITES = [
+    "external_experienced", "external_university", "External", "external",
+    "Careers", "careers", "ExternalCareerSite", "External_Career_Site",
+    "Global_Careers", "GlobalCareers", "Career", "jobs",
+]
+_WORKDAY_NOT_SITES = {"wday", "assets", "static", "favicon.ico", "en", "us"}
+
+
+def _workday_from_careers_url(url):
+    """Pull (tenant, host, site-or-None) straight from a *.myworkdayjobs.com
+    URL with no network call."""
+    m = _WORKDAY_URL_RE.search(url or "")
+    if not m:
+        return None
+    site = m.group(3)
+    if site and site.lower() in _WORKDAY_NOT_SITES:
+        site = None
+    return m.group(1), m.group(2).lower(), site
+
+
+def _find_workday_site(tenant, wd_host, max_seconds=30):
+    """Tenant+host are known but the site name isn't. Look at where the root
+    URL redirects first, then try a short list of likely names on THIS
+    tenant+host only. Returns a working site name or None."""
+    start = time.monotonic()
+    tried = set()
+
+    def works(site):
+        if site in tried:
+            return False
+        tried.add(site)
+        jobs, _ = try_workday(tenant, wd_host, site)
+        return jobs is not None  # [] is still a valid board
+
+    root = f"https://{tenant}.{wd_host}.myworkdayjobs.com/"
+    try:
+        r = _bounded_request(requests.get, root, headers=HEADERS,
+                             timeout=REQUEST_TIMEOUT, allow_redirects=True)
+        haystack = r.url + "\n" + (r.text or "")[:200000]
+        for m in _WORKDAY_URL_RE.finditer(haystack):
+            site = m.group(3)
+            if (m.group(1).lower() == tenant.lower() and m.group(2).lower() == wd_host
+                    and site and site.lower() not in _WORKDAY_NOT_SITES and len(tried) < 5):
+                if works(site):
+                    return site
+    except requests.RequestException:
+        _note_inconclusive()
+
+    t = tenant
+    guesses = _WORKDAY_COMMON_SITES + [t, t.capitalize(), f"{t}_External",
+                                       f"{t}External", f"{t}_Careers", f"{t}Careers"]
+    for site in dict.fromkeys(guesses):
+        if time.monotonic() - start > max_seconds:
+            _note_inconclusive()
+            return None
+        if works(site):
+            return site
+    return None
 
 
 def discover_platform_from_url(url):
@@ -798,11 +859,16 @@ def discover_platform_from_url(url):
 
     haystack = resp.url + "\n" + (resp.text if resp.text else "")
 
-    m = _WORKDAY_URL_RE.search(haystack)
-    if m:
-        tenant, wd_host, site = m.group(1), m.group(2), m.group(3)
-        jobs, _ = try_workday(tenant, wd_host, site)
-        if jobs is not None:  # confirm it actually resolves before trusting it
+    parts = _workday_from_careers_url(haystack)
+    if parts:
+        tenant, wd_host, site = parts
+        if site:
+            jobs, _ = try_workday(tenant, wd_host, site)
+            if jobs is None:
+                site = None
+        if not site:
+            site = _find_workday_site(tenant, wd_host)
+        if site:
             return {"platform": "workday", "tenant": tenant, "wd_host": wd_host, "site": site}
 
     m = _GREENHOUSE_URL_RE.search(haystack)
@@ -954,7 +1020,15 @@ def resolve_company_platform(company, try_workday_guess=False):
     # it's cheap to check once whether the page actually embeds a known
     # ATS (common: an in-house careers page with a Greenhouse/Lever widget)
     # - a much better result than the generic HTML scraper if so.
-    found = discover_platform_from_url(company.get("careers_url"))
+    found = None
+    parts = _workday_from_careers_url(company.get("careers_url"))
+    if parts:  # the CSV link itself is a Workday URL - no guessing needed
+        tenant, wd_host, site = parts
+        site = site or _find_workday_site(tenant, wd_host)
+        if site:
+            found = {"platform": "workday", "tenant": tenant, "wd_host": wd_host, "site": site}
+    if found is None:
+        found = discover_platform_from_url(company.get("careers_url"))
 
     # HTML sniffing found nothing - try the cheap direct-slug guess against
     # every ATS with a public JSON API. Handles JS-rendered career pages

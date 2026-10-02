@@ -712,5 +712,8 @@ def known_companies_directory():
     )
 
 
-def role_suggestions():
-    return ROLE_SUGGESTIONS
+    kws = list(dict.fromkeys(k.strip() for k in remaining))
+    return re.compile(
+        "|".join(rf"(?<![A-Za-z0-9]){re.escape(k)}(?![A-Za-z0-9])" for k in kws),
+        re.IGNORECASE,
+    )
